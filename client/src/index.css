@@ -30,8 +30,10 @@
   --secondary-gray: hsl(210, 11%, 20%);
   --accent-teal: hsl(173, 80%, 40%);
   --accent-purple: hsl(250, 84%, 54%);
-  --light-gray: hsl(210, 25%, 98%);
-  --section-border: hsl(210, 20%, 94%);
+  --light-gray: hsl(210, 25%, 96%);
+  --light-blue: hsl(210, 40%, 98%);
+  --light-teal: hsl(174, 30%, 96%);
+  --light-purple: hsl(268, 30%, 96%);
   --medium-gray: hsl(210, 8%, 51%);
   --gradient-start: hsl(220, 26%, 14%);
   --gradient-end: hsl(217, 91%, 60%);
@@ -157,11 +159,6 @@
   
   .section-spacing {
     padding: 4rem 0;
-    border-bottom: 1px solid var(--section-border);
-  }
-  
-  .section-spacing:last-child {
-    border-bottom: none;
   }
   
   .container {
