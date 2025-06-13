@@ -168,19 +168,24 @@ export default function About() {
       {/* Core Values */}
       <section className="section-spacing bg-[var(--light-gray)]">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Values</h2>
-            <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto">The principles that guide everything we do</p>
-          </div>
-
-          <div className="elevated-card p-8 bg-gradient-to-r from-white to-gray-50 mx-4">
-            <div className="text-center">
-              <div className="w-20 h-20 primary-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg floating-element">
-                <Handshake className="text-white h-10 w-10" />
+          <div className="grid lg:grid-cols-2 gap-8 mx-4">
+            <div className="modern-card p-8">
+              <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element">
+                <Handshake className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6">Customer-Centric Excellence</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
+              </p>
+            </div>
+
+            <div className="modern-card p-8">
+              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element" style={{animationDelay: '1s'}}>
+                <Award className="text-white h-8 w-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Excellence & Quality</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
+                We are committed to delivering exceptional quality in every project, ensuring the highest standards of workmanship and professional service delivery.
               </p>
             </div>
           </div>
