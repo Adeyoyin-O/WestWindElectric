@@ -17,42 +17,48 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="glass-effect border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 maritime-gradient rounded-lg flex items-center justify-center">
-              <Anchor className="text-white h-6 w-6" />
+          <Link href="/" className="flex items-center space-x-4">
+            <div className="w-14 h-14 corporate-gradient rounded-xl flex items-center justify-center shadow-lg">
+              <Anchor className="text-white h-7 w-7" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-[var(--navy)]">West Wind Marine Electronics</h1>
-              <p className="text-sm text-gray-600">Maritime Solutions Leader</p>
+              <h1 className="text-2xl font-bold text-[var(--corporate-dark)] leading-tight">West Wind Marine Electronics</h1>
+              <p className="text-sm text-[var(--corporate-gray)] font-medium">Maritime Solutions Excellence</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex items-center space-x-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "font-medium transition-colors hover:text-[var(--maritime-blue)]",
+                  "px-4 py-2 font-semibold text-sm transition-all duration-200 rounded-lg",
                   location === item.href
-                    ? "text-[var(--navy)] nav-link active"
-                    : "text-gray-700"
+                    ? "text-[var(--corporate-blue)] nav-link active bg-blue-50"
+                    : "text-[var(--corporate-gray)] hover:text-[var(--corporate-blue)] hover:bg-gray-50"
                 )}
               >
                 {item.name}
               </Link>
             ))}
+            <Button 
+              className="ml-4 corporate-gradient text-white hover:opacity-90 shadow-lg px-6"
+              size="sm"
+            >
+              Get Quote
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-[var(--navy)]"
+            className="lg:hidden text-[var(--corporate-dark)]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -61,23 +67,26 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-4 py-4 space-y-3">
+          <div className="lg:hidden glass-effect border-t border-gray-100">
+            <div className="px-4 py-6 space-y-3">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "block font-medium transition-colors",
+                    "block py-3 px-4 font-semibold rounded-lg transition-all duration-200",
                     location === item.href
-                      ? "text-[var(--navy)]"
-                      : "text-gray-700"
+                      ? "text-[var(--corporate-blue)] bg-blue-50"
+                      : "text-[var(--corporate-gray)] hover:bg-gray-50"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
+              <Button className="w-full mt-4 corporate-gradient text-white">
+                Get Quote
+              </Button>
             </div>
           </div>
         )}

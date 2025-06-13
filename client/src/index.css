@@ -4,30 +4,33 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 11%, 15%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 11%, 15%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 84%, 4.9%);
-  --primary: hsl(217, 91%, 60%);
-  --primary-foreground: hsl(222, 47%, 99%);
-  --secondary: hsl(210, 40%, 98%);
-  --secondary-foreground: hsl(222, 84%, 4.9%);
-  --muted: hsl(210, 40%, 98%);
-  --muted-foreground: hsl(215, 16%, 47%);
-  --accent: hsl(210, 40%, 98%);
-  --accent-foreground: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 11%, 15%);
+  --primary: hsl(210, 100%, 45%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(210, 11%, 15%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(210, 13%, 40%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(210, 11%, 15%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
-  --ring: hsl(222, 84%, 4.9%);
-  --radius: 0.5rem;
+  --border: hsl(210, 20%, 90%);
+  --input: hsl(210, 20%, 90%);
+  --ring: hsl(210, 100%, 45%);
+  --radius: 0.75rem;
   
-  /* Custom maritime colors */
-  --navy: hsl(217, 91%, 26%);
-  --maritime-blue: hsl(217, 91%, 60%);
-  --gold: hsl(38, 92%, 50%);
+  /* Corporate colors */
+  --corporate-blue: hsl(210, 100%, 45%);
+  --corporate-dark: hsl(210, 11%, 15%);
+  --corporate-gray: hsl(210, 13%, 40%);
+  --corporate-light: hsl(210, 40%, 96%);
+  --accent-orange: hsl(25, 95%, 53%);
+  --success-green: hsl(142, 76%, 36%);
 }
 
 .dark {
@@ -64,53 +67,94 @@
 }
 
 @layer components {
-  .maritime-gradient {
-    background: linear-gradient(135deg, var(--navy), var(--maritime-blue));
+  .corporate-gradient {
+    background: linear-gradient(135deg, var(--corporate-blue), hsl(210, 100%, 55%));
   }
   
-  .gold-gradient {
-    background: linear-gradient(135deg, var(--gold), hsl(38, 92%, 45%));
+  .accent-gradient {
+    background: linear-gradient(135deg, var(--accent-orange), hsl(25, 95%, 63%));
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, var(--navy), var(--maritime-blue), hsl(217, 91%, 65%));
+    background: linear-gradient(135deg, var(--corporate-dark), var(--corporate-blue), hsl(210, 100%, 55%));
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .corporate-card {
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid hsl(210, 20%, 94%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .corporate-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
   }
   
   .nav-link.active {
-    color: var(--navy);
+    color: var(--corporate-blue);
     font-weight: 600;
+    position: relative;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--corporate-blue);
+    border-radius: 1px;
   }
   
   .page-transition {
-    animation: fadeIn 0.3s ease-in-out;
+    animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  @keyframes fadeIn {
+  @keyframes slideUp {
     from {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+  
+  .section-padding {
+    padding: 5rem 0;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, var(--corporate-blue), var(--accent-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(210, 40%, 98%);
+  background: hsl(210, 40%, 96%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--maritime-blue);
-  border-radius: 4px;
+  background: var(--corporate-blue);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--navy);
+  background: var(--corporate-gray);
 }

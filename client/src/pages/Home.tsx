@@ -21,48 +21,50 @@ export default function Home() {
       <Hero
         title={
           <>
-            Leading Maritime <span className="text-[var(--gold)]">Electronics Solutions</span> in West Africa
+            Leading Maritime <span className="gradient-text">Electronics Solutions</span> in West Africa
           </>
         }
         subtitle="Providing top-notch navigation, communication, automation, and electrical solutions to the maritime industry across Nigeria and Africa"
         showButtons
         onPrimaryClick={handleExploreServices}
         onSecondaryClick={handleGetConsultation}
+        primaryButtonText="Explore Solutions"
+        secondaryButtonText="Get Consultation"
       />
 
       {/* Company Overview */}
-      <section className="py-16 bg-white">
+      <section className="section-padding bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--navy)] mb-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[var(--corporate-dark)] mb-6">
               Trusted Maritime Electronics Partner
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[var(--corporate-gray)] max-w-4xl mx-auto leading-relaxed">
               Since 2019, West Wind Marine Electronics Ltd has been setting the pace in marine navigation and communication solutions across the Gulf of Guinea
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="w-16 h-16 maritime-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-                <Compass className="text-white h-8 w-8" />
+          <div className="grid lg:grid-cols-3 gap-8 mb-20">
+            <div className="corporate-card rounded-2xl p-8 text-center">
+              <div className="w-20 h-20 corporate-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Compass className="text-white h-10 w-10" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--navy)] mb-2">Navigation Systems</h3>
-              <p className="text-gray-600">Advanced navigation equipment for safe and efficient maritime operations</p>
+              <h3 className="text-2xl font-bold text-[var(--corporate-dark)] mb-4">Navigation Systems</h3>
+              <p className="text-[var(--corporate-gray)] leading-relaxed">Advanced navigation equipment for safe and efficient maritime operations with cutting-edge technology</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 maritime-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-                <Radio className="text-white h-8 w-8" />
+            <div className="corporate-card rounded-2xl p-8 text-center">
+              <div className="w-20 h-20 corporate-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Radio className="text-white h-10 w-10" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--navy)] mb-2">Communication Solutions</h3>
-              <p className="text-gray-600">Reliable communication systems for maritime safety and operations</p>
+              <h3 className="text-2xl font-bold text-[var(--corporate-dark)] mb-4">Communication Solutions</h3>
+              <p className="text-[var(--corporate-gray)] leading-relaxed">Reliable communication systems for maritime safety and operations ensuring seamless connectivity</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 maritime-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-                <ServerCog className="text-white h-8 w-8" />
+            <div className="corporate-card rounded-2xl p-8 text-center">
+              <div className="w-20 h-20 corporate-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <ServerCog className="text-white h-10 w-10" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--navy)] mb-2">Automation & Electrical</h3>
-              <p className="text-gray-600">Complete automation and electrical solutions for modern vessels</p>
+              <h3 className="text-2xl font-bold text-[var(--corporate-dark)] mb-4">Automation & Electrical</h3>
+              <p className="text-[var(--corporate-gray)] leading-relaxed">Complete automation and electrical solutions for modern vessels with intelligent control systems</p>
             </div>
           </div>
 
