@@ -22,7 +22,7 @@
   --border: hsl(210, 20%, 90%);
   --input: hsl(210, 20%, 90%);
   --ring: hsl(210, 100%, 45%);
-  --radius: 0.75rem;
+  --radius: 0.5rem;
   
   /* Modern theme colors */
   --primary-dark: hsl(220, 26%, 14%);

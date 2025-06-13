@@ -29,7 +29,7 @@ export default function Home() {
       />
 
       {/* Company Overview */}
-      <section className="section-spacing bg-[var(--light-gray)]">
+      <section className="section-spacing bg-[var(--light-blue)]">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">
@@ -56,7 +56,7 @@ export default function Home() {
               <p className="text-[var(--medium-gray)] leading-relaxed">Professional procurement services and expert installation of control systems and electrical equipment</p>
             </div>
             <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '2s'}}>
-              <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <ServerCog className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Commissioning</h3>
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing bg-[var(--light-teal)]">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Services</h2>
