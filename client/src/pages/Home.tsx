@@ -40,26 +40,26 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <div className="modern-card p-6 text-center floating-element">
+          <div className="grid lg:grid-cols-3 gap-6 mb-16 mx-4">
+            <div className="modern-card p-8 text-center floating-element">
               <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Compass className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Engineering & Design</h3>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Engineering & Design</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
             </div>
-            <div className="modern-card p-6 text-center floating-element" style={{animationDelay: '1s'}}>
+            <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '1s'}}>
               <div className="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Radio className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Procurement & Installation</h3>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Procurement & Installation</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Professional procurement services and expert installation of control systems and electrical equipment</p>
             </div>
-            <div className="modern-card p-6 text-center floating-element" style={{animationDelay: '2s'}}>
+            <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '2s'}}>
               <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <ServerCog className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Commissioning</h3>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Commissioning</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Complete system commissioning and testing to ensure optimal performance and reliability</p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Home() {
             <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto leading-relaxed">Comprehensive electrical and instrumentation solutions tailored to your needs with industry-leading expertise</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="elevated-card overflow-hidden">
               <div className="h-48 teal-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -105,23 +105,23 @@ export default function Home() {
                   <h3 className="text-2xl font-bold">Power & Control Systems</h3>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Design & Installation</h3>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Design & Installation</h3>
                 <p className="text-[var(--medium-gray)] mb-6 leading-relaxed">Complete system design, procurement, installation, and commissioning of electrical and control equipment with cutting-edge technology</p>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 teal-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Custom system design</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 teal-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Professional installation</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 teal-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">System commissioning</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 teal-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Performance testing</span>
                   </div>
@@ -137,23 +137,23 @@ export default function Home() {
                   <h3 className="text-2xl font-bold">Instrumentation Systems</h3>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Maintenance & Repair</h3>
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Maintenance & Repair</h3>
                 <p className="text-[var(--medium-gray)] mb-6 leading-relaxed">Comprehensive maintenance and repair services to ensure optimal performance of your equipment with 24/7 support</p>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 purple-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Preventive maintenance</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 purple-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Emergency repairs</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 purple-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Equipment upgrades</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 purple-gradient rounded-full"></div>
                     <span className="text-[var(--medium-gray)] text-sm">Technical support</span>
                   </div>

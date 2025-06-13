@@ -18,8 +18,8 @@ export default function About() {
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 mx-4">
+            <div className="px-4">
               <div className="space-y-6 text-lg text-[var(--medium-gray)] leading-relaxed">
                 <p>
                   <strong className="text-[var(--primary-dark)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
@@ -55,28 +55,28 @@ export default function About() {
           </div>
 
           {/* Areas of Expertise */}
-          <div className="mb-16">
+          <div className="mb-16 mx-4">
             <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-8 text-center">Our Areas of Expertise</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="modern-card p-6 text-center">
+              <div className="modern-card p-8 text-center">
                 <Building className="h-12 w-12 mx-auto mb-4 text-teal-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Building Construction</h4>
-                <p className="text-[var(--medium-gray)] text-sm">Complete electrical systems for commercial and industrial buildings</p>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Building Construction</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Complete electrical systems for commercial and industrial buildings</p>
               </div>
-              <div className="modern-card p-6 text-center">
+              <div className="modern-card p-8 text-center">
                 <Zap className="h-12 w-12 mx-auto mb-4 text-purple-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Power Plants</h4>
-                <p className="text-[var(--medium-gray)] text-sm">Advanced power generation and distribution systems</p>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Power Plants</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Advanced power generation and distribution systems</p>
               </div>
-              <div className="modern-card p-6 text-center">
+              <div className="modern-card p-8 text-center">
                 <Settings className="h-12 w-12 mx-auto mb-4 text-blue-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Manufacturing Plants</h4>
-                <p className="text-[var(--medium-gray)] text-sm">Industrial automation and control systems</p>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Manufacturing Plants</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Industrial automation and control systems</p>
               </div>
-              <div className="modern-card p-6 text-center">
+              <div className="modern-card p-8 text-center">
                 <Globe className="h-12 w-12 mx-auto mb-4 text-indigo-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Vessels</h4>
-                <p className="text-[var(--medium-gray)] text-sm">Maritime navigation and communication systems</p>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Vessels</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Maritime navigation and communication systems</p>
               </div>
             </div>
           </div>
