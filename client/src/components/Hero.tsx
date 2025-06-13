@@ -28,13 +28,13 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section className="relative hero-gradient text-white py-24 lg:py-40 overflow-hidden">
+      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       {backgroundImage && (
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
       )}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white bg-opacity-5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
