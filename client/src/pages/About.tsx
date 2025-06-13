@@ -7,8 +7,9 @@ export default function About() {
     <div className="page-transition">
       {/* About Hero */}
       <Hero
-        title="About West Wind Electric Power Ltd"
+        title="About Us"
         subtitle="Excellence in Electrical, Electronics and Instrumentation Services since 2011"
+        backgroundImage="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
 
       {/* Who We Are */}
