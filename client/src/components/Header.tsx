@@ -19,14 +19,14 @@ export default function Header() {
   return (
     <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center py-5">
-          <Link href="/" className="flex items-center space-x-5">
-            <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center shadow-xl floating-element">
-              <Anchor className="text-white h-8 w-8" />
+        <div className="flex justify-between items-center py-3">
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-12 h-12 primary-gradient rounded-xl flex items-center justify-center shadow-lg floating-element">
+              <Anchor className="text-white h-6 w-6" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
-              <p className="text-sm text-[var(--medium-gray)] font-semibold">EPIC Solutions Excellence</p>
+              <h1 className="text-lg font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
+              <p className="text-xs text-[var(--medium-gray)] font-semibold">EPIC Solutions Excellence</p>
             </div>
           </Link>
 
@@ -47,7 +47,7 @@ export default function Header() {
               </Link>
             ))}
             <Button 
-              className="ml-6 teal-gradient text-white hover:opacity-90 shadow-xl px-8 py-3 text-sm font-bold rounded-xl"
+              className="ml-4 teal-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
             >
               Get Quote
             </Button>
