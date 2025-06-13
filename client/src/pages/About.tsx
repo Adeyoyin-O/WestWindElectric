@@ -7,7 +7,7 @@ export default function About() {
     <div className="page-transition">
       {/* About Hero */}
       <Hero
-        title="About West Wind Electric Power Ltd"
+        title="About Us"
         subtitle="Excellence in Electrical, Electronics and Instrumentation Services since 2011"
       />
 
@@ -30,6 +30,64 @@ export default function About() {
                 <p>
                   We specialize in the <strong className="text-[var(--primary-dark)]">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
                 </p>
+              </div>
+            </div>
+            
+            <div className="px-4">
+              <div className="modern-card p-8 bg-gradient-to-br from-blue-50 to-teal-50">
+                <svg viewBox="0 0 400 300" className="w-full h-auto">
+                  {/* Background circuit pattern */}
+                  <defs>
+                    <pattern id="circuit" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M20,5 L20,35 M5,20 L35,20" stroke="#e2e8f0" strokeWidth="1" fill="none"/>
+                      <circle cx="20" cy="20" r="2" fill="#64748b"/>
+                    </pattern>
+                  </defs>
+                  <rect width="400" height="300" fill="url(#circuit)" opacity="0.3"/>
+                  
+                  {/* Main electrical panel */}
+                  <rect x="50" y="50" width="120" height="180" rx="8" fill="#1e293b" stroke="#334155" strokeWidth="2"/>
+                  <rect x="60" y="60" width="100" height="20" rx="4" fill="#0ea5e9"/>
+                  <text x="110" y="75" textAnchor="middle" fill="white" fontSize="10" fontFamily="monospace">CONTROL PANEL</text>
+                  
+                  {/* Circuit breakers */}
+                  <rect x="70" y="90" width="15" height="25" rx="2" fill="#22c55e"/>
+                  <rect x="95" y="90" width="15" height="25" rx="2" fill="#22c55e"/>
+                  <rect x="120" y="90" width="15" height="25" rx="2" fill="#ef4444"/>
+                  <rect x="145" y="90" width="15" height="25" rx="2" fill="#22c55e"/>
+                  
+                  {/* Monitoring display */}
+                  <rect x="70" y="130" width="80" height="40" rx="4" fill="#0f172a"/>
+                  <path d="M75,145 Q90,135 105,145 T135,145" stroke="#10b981" strokeWidth="2" fill="none"/>
+                  <circle cx="140" cy="145" r="2" fill="#10b981"/>
+                  
+                  {/* Wiring */}
+                  <path d="M170,100 Q200,100 230,120" stroke="#f59e0b" strokeWidth="3" fill="none"/>
+                  <path d="M170,130 Q200,130 230,150" stroke="#dc2626" strokeWidth="3" fill="none"/>
+                  <path d="M170,160 Q200,160 230,180" stroke="#2563eb" strokeWidth="3" fill="none"/>
+                  
+                  {/* Equipment/Motor */}
+                  <circle cx="280" cy="150" r="40" fill="#374151" stroke="#4b5563" strokeWidth="3"/>
+                  <circle cx="280" cy="150" r="25" fill="#6b7280"/>
+                  <path d="M280,125 L295,150 L280,175 L265,150 Z" fill="#1f2937"/>
+                  <text x="280" y="155" textAnchor="middle" fill="white" fontSize="8" fontFamily="monospace">M</text>
+                  
+                  {/* Instruments */}
+                  <circle cx="350" cy="80" r="20" fill="#f8fafc" stroke="#64748b" strokeWidth="2"/>
+                  <path d="M340,80 L350,70 L360,80" stroke="#1e293b" strokeWidth="2" fill="none"/>
+                  <text x="350" y="105" textAnchor="middle" fill="#1e293b" fontSize="8">GAUGE</text>
+                  
+                  {/* Connection lines */}
+                  <path d="M320,150 L330,80" stroke="#64748b" strokeWidth="2" fill="none"/>
+                  
+                  {/* Status indicators */}
+                  <circle cx="360" cy="200" r="8" fill="#22c55e"/>
+                  <circle cx="360" cy="220" r="8" fill="#fbbf24"/>
+                  <circle cx="360" cy="240" r="8" fill="#ef4444"/>
+                  <text x="375" y="205" fill="#1e293b" fontSize="8">PWR</text>
+                  <text x="375" y="225" fill="#1e293b" fontSize="8">COMM</text>
+                  <text x="375" y="245" fill="#1e293b" fontSize="8">ALRM</text>
+                </svg>
               </div>
             </div>
             <div className="elevated-card p-8 bg-gradient-to-br from-white to-gray-50">
