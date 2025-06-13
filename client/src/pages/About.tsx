@@ -139,7 +139,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-spacing bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
@@ -166,7 +166,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="section-spacing bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <div className="modern-card p-8 text-center">
