@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Eye, Target, Award, Handshake, Lightbulb, Building, Zap, Globe, Settings } from "lucide-react";
+import { Database, Cpu, Activity, Shield, Lightbulb, Building, Zap, Globe, Settings } from "lucide-react";
 
 export default function About() {
   return (
@@ -144,7 +144,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
               <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
-                <Eye className="text-white h-8 w-8" />
+                <Database className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
@@ -154,7 +154,7 @@ export default function About() {
 
             <div className="modern-card p-8">
               <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
-                <Target className="text-white h-8 w-8" />
+                <Cpu className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
@@ -168,24 +168,14 @@ export default function About() {
       {/* Core Values */}
       <section className="section-spacing bg-[var(--light-blue)]">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-8">
-              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
-                <Handshake className="text-white h-8 w-8" />
+          <div className="max-w-2xl mx-auto">
+            <div className="modern-card p-8 text-center">
+              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element">
+                <Shield className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
-              </p>
-            </div>
-
-            <div className="modern-card p-8">
-              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
-                <Award className="text-white h-8 w-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Excellence & Quality</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
-                We are committed to delivering exceptional quality in every project, ensuring the highest standards of workmanship and professional service delivery.
               </p>
             </div>
           </div>

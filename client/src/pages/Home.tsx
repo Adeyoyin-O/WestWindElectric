@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Compass, Radio, ServerCog, Award, Users, Globe, Clock } from "lucide-react";
+import { Activity, Zap, Settings, Monitor, Users, Globe, Clock } from "lucide-react";
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -43,21 +43,21 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-6 mb-16 mx-4">
             <div className="modern-card p-8 text-center floating-element">
               <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
-                <Compass className="text-white h-8 w-8" />
+                <Activity className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Engineering & Design</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
             </div>
             <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '1s'}}>
               <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
-                <Radio className="text-white h-8 w-8" />
+                <Zap className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Procurement & Installation</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Professional procurement services and expert installation of control systems and electrical equipment</p>
             </div>
             <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '2s'}}>
               <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
-                <ServerCog className="text-white h-8 w-8" />
+                <Settings className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Commissioning</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Complete system commissioning and testing to ensure optimal performance and reliability</p>
