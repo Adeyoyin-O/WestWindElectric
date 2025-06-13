@@ -138,43 +138,26 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Vision */}
+      {/* Vision & Mission */}
       <section className="section-spacing bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Vision</h2>
-            <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto">Leading the future of electrical and maritime solutions</p>
-          </div>
-
-          <div className="elevated-card p-8 bg-gradient-to-r from-white to-gray-50 mx-4">
-            <div className="text-center">
-              <div className="w-20 h-20 teal-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg floating-element">
-                <Eye className="text-white h-10 w-10" />
+          <div className="grid lg:grid-cols-2 gap-8 mx-4">
+            <div className="modern-card p-8">
+              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element">
+                <Eye className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6">World Class Solutions Provider</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Our Mission */}
-      <section className="section-spacing bg-[var(--light-gray)]">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Mission</h2>
-            <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto">Delivering excellence through solution-oriented approach</p>
-          </div>
-
-          <div className="elevated-card p-8 bg-gradient-to-r from-white to-gray-50 mx-4">
-            <div className="text-center">
-              <div className="w-20 h-20 purple-gradient rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg floating-element">
-                <Target className="text-white h-10 w-10" />
+            <div className="modern-card p-8">
+              <div className="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element" style={{animationDelay: '1s'}}>
+                <Target className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6">Solution-Oriented Services</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 To provide solution-oriented services to our customers, shareholders and stakeholders.
               </p>
             </div>
@@ -183,7 +166,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing bg-[var(--light-gray)]">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Values</h2>
