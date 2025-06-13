@@ -18,8 +18,8 @@ export default function Header() {
 
   return (
     <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
-      <nav className="container mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center py-3">
+      <nav className="container mx-auto">
+        <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 primary-gradient rounded-xl flex items-center justify-center shadow-lg floating-element">
               <Anchor className="text-white h-6 w-6" />
@@ -67,7 +67,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="lg:hidden modern-glass border-t border-gray-100">
-            <div className="px-6 py-8 space-y-4">
+            <div className="p-6 space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}

@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Company Overview */}
       <section className="section-spacing bg-[var(--light-gray)]">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">
               Trusted EPIC Solutions Partner
@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Services Preview */}
       <section className="section-spacing bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Services</h2>
             <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto leading-relaxed">Comprehensive electrical and instrumentation solutions tailored to your needs with industry-leading expertise</p>

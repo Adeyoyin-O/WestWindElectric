@@ -4,7 +4,7 @@ import { Anchor, Linkedin, Twitter, Facebook } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-[var(--primary-dark)] text-white py-12 diagonal-pattern">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">

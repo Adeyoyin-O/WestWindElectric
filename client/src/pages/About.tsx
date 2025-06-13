@@ -13,7 +13,7 @@ export default function About() {
 
       {/* Who We Are */}
       <section className="section-spacing bg-[var(--light-gray)]">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
           </div>
@@ -140,7 +140,7 @@ export default function About() {
 
       {/* Vision & Mission */}
       <section className="section-spacing bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="modern-card p-8">
               <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element">
@@ -167,7 +167,7 @@ export default function About() {
 
       {/* Core Values */}
       <section className="section-spacing bg-[var(--light-gray)]">
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Values</h2>
             <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto">The principles that guide everything we do</p>
