@@ -12,7 +12,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-[var(--light-gray)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -138,45 +138,42 @@ export default function About() {
         </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="section-spacing bg-[var(--light-purple)]">
+      {/* Vision, Mission & Core Values */}
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 mx-4">
+          <div className="max-w-4xl mx-auto">
             <div className="modern-card p-8">
-              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
-                <Database className="text-white h-8 w-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
-                To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
-              </p>
-            </div>
+              <div className="grid lg:grid-cols-3 gap-8 text-center">
+                <div>
+                  <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element">
+                    <Database className="text-white h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
+                  <p className="text-[var(--medium-gray)] leading-relaxed">
+                    To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
+                  </p>
+                </div>
 
-            <div className="modern-card p-8">
-              <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
-                <Cpu className="text-white h-8 w-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
-                To provide solution-oriented services to our customers, shareholders and stakeholders.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div>
+                  <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
+                    <Cpu className="text-white h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
+                  <p className="text-[var(--medium-gray)] leading-relaxed">
+                    To provide solution-oriented services to our customers, shareholders and stakeholders.
+                  </p>
+                </div>
 
-      {/* Core Values */}
-      <section className="section-spacing bg-[var(--light-blue)]">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mx-auto">
-            <div className="modern-card p-8 text-center">
-              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element">
-                <Shield className="text-white h-8 w-8" />
+                <div>
+                  <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element" style={{animationDelay: '2s'}}>
+                    <Shield className="text-white h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
+                  <p className="text-[var(--medium-gray)] leading-relaxed">
+                    Understanding customers' needs, providing professional services beyond expectations and taking full responsibility for our actions.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
-                Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
-              </p>
             </div>
           </div>
         </div>
