@@ -9,7 +9,7 @@ export default function About() {
       <Hero
         title="About Us"
         subtitle="Excellence in Electrical, Electronics and Instrumentation Services since 2011"
-        backgroundImage="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1581092918484-8313f4b19a46?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
 
       {/* Who We Are */}
