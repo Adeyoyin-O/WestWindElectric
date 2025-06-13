@@ -25,8 +25,8 @@ export default function Header() {
               <Anchor className="text-white h-8 w-8" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Marine Electronics</h1>
-              <p className="text-sm text-[var(--medium-gray)] font-semibold">Advanced Maritime Solutions</p>
+              <h1 className="text-2xl font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
+              <p className="text-sm text-[var(--medium-gray)] font-semibold">EPIC Solutions Excellence</p>
             </div>
           </Link>
 

@@ -12,17 +12,17 @@ export default function Footer() {
                 <Anchor className="text-white h-8 w-8" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">West Wind Marine Electronics</h3>
-                <p className="text-gray-300 text-sm font-semibold">Excellence in Maritime Solutions</p>
+                <h3 className="text-2xl font-bold">West Wind Electric Power Ltd</h3>
+                <p className="text-gray-300 text-sm font-semibold">EPIC Solutions Excellence</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-8 max-w-lg text-lg">
-              Leading provider of maritime electronics solutions across West Africa since 2019. 
-              Delivering innovation, reliability, and excellence in every project.
+              Leading provider of electrical, electronics and instrumentation services across Nigeria since 2011. 
+              Delivering EPIC solutions with innovation, reliability, and excellence in every project.
             </p>
             <div className="text-sm text-gray-400 space-y-1">
-              <p className="font-medium">RC Number: 1558935</p>
-              <p>Registered: February 5th, 2019</p>
+              <p className="font-medium">RC Number: 968009</p>
+              <p>Registered: July 26th, 2011</p>
               <p>Corporate Affairs Commission of Nigeria</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-600 pt-12 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-6 md:mb-0">
-            <p className="font-medium">&copy; 2024 West Wind Marine Electronics Ltd. All rights reserved.</p>
+            <p className="font-medium">&copy; 2024 West Wind Electric Power Ltd. All rights reserved.</p>
           </div>
           <div className="flex space-x-8">
             <a href="#" className="text-gray-400 hover:text-teal-300 transition-all duration-300 transform hover:scale-110">

@@ -21,10 +21,10 @@ export default function Home() {
       <Hero
         title={
           <>
-            Leading Maritime <span className="gradient-text">Electronics Solutions</span> in West Africa
+            Leading <span className="gradient-text">EPIC Solutions</span> Provider in Nigeria
           </>
         }
-        subtitle="Providing top-notch navigation, communication, automation, and electrical solutions to the maritime industry across Nigeria and Africa"
+        subtitle="Specializing in engineering, procurement, installation, and commissioning of electrical, electronics, and instrumentation systems for power and maritime industries"
         showButtons
         onPrimaryClick={handleExploreServices}
         onSecondaryClick={handleGetConsultation}
