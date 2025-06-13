@@ -143,7 +143,7 @@ export default function About() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
-              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element">
+              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
                 <Eye className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
@@ -153,7 +153,7 @@ export default function About() {
             </div>
 
             <div className="modern-card p-8">
-              <div className="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element" style={{animationDelay: '1s'}}>
+              <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
                 <Target className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
@@ -170,7 +170,7 @@ export default function About() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
-              <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element">
+              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
                 <Handshake className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
@@ -180,7 +180,7 @@ export default function About() {
             </div>
 
             <div className="modern-card p-8">
-              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mb-6 shadow-lg floating-element" style={{animationDelay: '1s'}}>
+              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
                 <Award className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Excellence & Quality</h3>

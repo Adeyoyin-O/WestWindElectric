@@ -42,14 +42,14 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-3 gap-6 mb-16 mx-4">
             <div className="modern-card p-8 text-center floating-element">
-              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <Compass className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Engineering & Design</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
             </div>
             <div className="modern-card p-8 text-center floating-element" style={{animationDelay: '1s'}}>
-              <div className="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <Radio className="text-white h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4 leading-tight">Procurement & Installation</h3>
