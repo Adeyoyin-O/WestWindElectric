@@ -19,11 +19,7 @@ export default function Home() {
     <div className="page-transition">
       {/* Hero Section */}
       <Hero
-        title={
-          <>
-            Leading <span className="gradient-text">EPIC Solutions</span> Provider in Nigeria
-          </>
-        }
+        title="Leading EPIC Solutions Provider in Nigeria"
         subtitle="Specializing in engineering, procurement, installation, and commissioning of electrical, electronics, and instrumentation systems for power and maritime industries"
         showButtons
         onPrimaryClick={handleExploreServices}
@@ -37,10 +33,10 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl lg:text-6xl font-bold text-[var(--primary-dark)] mb-8 tracking-tight">
-              Trusted Maritime Electronics Partner
+              Trusted EPIC Solutions Partner
             </h2>
             <p className="text-2xl text-[var(--medium-gray)] max-w-5xl mx-auto leading-relaxed">
-              Since 2019, West Wind Marine Electronics Ltd has been setting the pace in marine navigation and communication solutions across the Gulf of Guinea
+              Since 2011, West Wind Electric Power Ltd has been delivering comprehensive electrical, electronics and instrumentation services across Nigeria's power and maritime industries
             </p>
           </div>
 
@@ -49,22 +45,22 @@ export default function Home() {
               <div className="w-24 h-24 teal-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
                 <Compass className="text-white h-12 w-12" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Navigation Systems</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Advanced navigation equipment for safe and efficient maritime operations with cutting-edge technology</p>
+              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Engineering & Design</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
             </div>
             <div className="modern-card p-10 text-center floating-element" style={{animationDelay: '1s'}}>
               <div className="w-24 h-24 purple-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
                 <Radio className="text-white h-12 w-12" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Communication Solutions</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Reliable communication systems for maritime safety and operations ensuring seamless connectivity</p>
+              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Procurement & Installation</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Professional procurement services and expert installation of control systems and electrical equipment</p>
             </div>
             <div className="modern-card p-10 text-center floating-element" style={{animationDelay: '2s'}}>
               <div className="w-24 h-24 primary-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
                 <ServerCog className="text-white h-12 w-12" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Automation & Electrical</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Complete automation and electrical solutions for modern vessels with intelligent control systems</p>
+              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Commissioning</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Complete system commissioning and testing to ensure optimal performance and reliability</p>
             </div>
           </div>
 
@@ -72,16 +68,16 @@ export default function Home() {
           <div className="elevated-card p-16 bg-gradient-to-r from-white to-gray-50 shadow-2xl">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 text-center">
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">5+</div>
+                <div className="text-6xl font-bold gradient-text mb-4">13+</div>
                 <div className="text-[var(--medium-gray)] text-xl font-semibold">Years of Excellence</div>
               </div>
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">100+</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Projects Completed</div>
+                <div className="text-6xl font-bold gradient-text mb-4">EPIC</div>
+                <div className="text-[var(--medium-gray)] text-xl font-semibold">Service Solutions</div>
               </div>
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">50+</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Satisfied Clients</div>
+                <div className="text-6xl font-bold gradient-text mb-4">4</div>
+                <div className="text-[var(--medium-gray)] text-xl font-semibold">Industry Sectors</div>
               </div>
               <div>
                 <div className="text-6xl font-bold gradient-text mb-4">24/7</div>
