@@ -197,7 +197,29 @@
   }
   
   .diagonal-pattern {
-    background-image: linear-gradient(45deg, transparent 25%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.1) 75%);
+    background-image: linear-gradient(45deg, transparent 25%, rgba(255,255,255,0.08) 25%, rgba(255,255,255,0.08) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.08) 75%);
+    background-size: 16px 16px;
+  }
+
+  .teal-gradient {
+    background: linear-gradient(135deg, hsl(173, 60%, 35%) 0%, hsl(158, 55%, 40%) 100%);
+    border: 1px solid hsl(173, 40%, 50%);
+  }
+  
+  .purple-gradient {
+    background: linear-gradient(135deg, hsl(250, 70%, 45%) 0%, hsl(265, 65%, 50%) 100%);
+    border: 1px solid hsl(250, 50%, 60%);
+  }
+  
+  .primary-gradient {
+    background: linear-gradient(135deg, hsl(217, 80%, 50%) 0%, hsl(220, 40%, 25%) 100%);
+    border: 1px solid hsl(217, 60%, 65%);
+  }
+
+  .technical-grid {
+    background-image: 
+      linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 }

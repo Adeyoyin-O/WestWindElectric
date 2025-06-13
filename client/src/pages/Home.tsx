@@ -101,7 +101,7 @@ export default function Home() {
               <div className="h-48 teal-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <div className="text-center text-white relative z-10">
-                  <Compass className="h-12 w-12 mx-auto mb-4 floating-element" />
+                  <Monitor className="h-12 w-12 mx-auto mb-4 floating-element" />
                   <h3 className="text-2xl font-bold">Power & Control Systems</h3>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
               <div className="h-48 purple-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <div className="text-center text-white relative z-10">
-                  <Radio className="h-12 w-12 mx-auto mb-4 floating-element" style={{animationDelay: '2s'}} />
+                  <Activity className="h-12 w-12 mx-auto mb-4 floating-element" style={{animationDelay: '2s'}} />
                   <h3 className="text-2xl font-bold">Instrumentation Systems</h3>
                 </div>
               </div>
