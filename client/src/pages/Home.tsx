@@ -69,23 +69,23 @@ export default function Home() {
           </div>
 
           {/* Company Stats */}
-          <div className="maritime-gradient rounded-2xl p-8 text-white">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="corporate-gradient rounded-3xl p-12 text-white shadow-2xl">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
               <div>
-                <div className="text-3xl font-bold text-[var(--gold)] mb-2">5+</div>
-                <div className="text-blue-100">Years of Excellence</div>
+                <div className="text-5xl font-bold text-[var(--accent-orange)] mb-3">5+</div>
+                <div className="text-blue-100 text-lg font-medium">Years of Excellence</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[var(--gold)] mb-2">100+</div>
-                <div className="text-blue-100">Projects Completed</div>
+                <div className="text-5xl font-bold text-[var(--accent-orange)] mb-3">100+</div>
+                <div className="text-blue-100 text-lg font-medium">Projects Completed</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[var(--gold)] mb-2">50+</div>
-                <div className="text-blue-100">Satisfied Clients</div>
+                <div className="text-5xl font-bold text-[var(--accent-orange)] mb-3">50+</div>
+                <div className="text-blue-100 text-lg font-medium">Satisfied Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[var(--gold)] mb-2">24/7</div>
-                <div className="text-blue-100">Support Available</div>
+                <div className="text-5xl font-bold text-[var(--accent-orange)] mb-3">24/7</div>
+                <div className="text-blue-100 text-lg font-medium">Support Available</div>
               </div>
             </div>
           </div>
@@ -93,51 +93,88 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-16 bg-gray-50">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--navy)] mb-4">Our Core Services</h2>
-            <p className="text-xl text-gray-600">Comprehensive maritime electronics solutions tailored to your needs</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[var(--corporate-dark)] mb-6">Our Core Services</h2>
+            <p className="text-xl text-[var(--corporate-gray)] max-w-3xl mx-auto">Comprehensive maritime electronics solutions tailored to your needs with industry-leading expertise</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Compass className="h-16 w-16 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold">Navigation Control Room</h3>
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="corporate-card rounded-3xl overflow-hidden">
+              <div className="h-64 corporate-gradient flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+                <div className="text-center text-white relative z-10">
+                  <Compass className="h-20 w-20 mx-auto mb-6" />
+                  <h3 className="text-3xl font-bold">Navigation Control Systems</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-[var(--navy)] mb-3">Design & Installation</h3>
-                <p className="text-gray-600 mb-4">Complete system design, procurement, installation, and commissioning of maritime electronics equipment</p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Custom system design</li>
-                  <li>• Professional installation</li>
-                  <li>• System commissioning</li>
-                  <li>• Performance testing</li>
-                </ul>
-              </CardContent>
-            </Card>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-[var(--corporate-dark)] mb-4">Design & Installation</h3>
+                <p className="text-[var(--corporate-gray)] mb-6 leading-relaxed">Complete system design, procurement, installation, and commissioning of maritime electronics equipment with cutting-edge technology</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 accent-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Custom system design</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 accent-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Professional installation</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 accent-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">System commissioning</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 accent-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Performance testing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gradient-to-br from-indigo-500 to-purple-700 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Radio className="h-16 w-16 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold">Communication Systems</h3>
+            <div className="corporate-card rounded-3xl overflow-hidden">
+              <div className="h-64 bg-gradient-to-br from-[var(--accent-orange)] to-orange-600 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+                <div className="text-center text-white relative z-10">
+                  <Radio className="h-20 w-20 mx-auto mb-6" />
+                  <h3 className="text-3xl font-bold">Communication Systems</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-[var(--navy)] mb-3">Maintenance & Repair</h3>
-                <p className="text-gray-600 mb-4">Comprehensive maintenance and repair services to ensure optimal performance of your maritime equipment</p>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Preventive maintenance</li>
-                  <li>• Emergency repairs</li>
-                  <li>• Equipment upgrades</li>
-                  <li>• Technical support</li>
-                </ul>
-              </CardContent>
-            </Card>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-[var(--corporate-dark)] mb-4">Maintenance & Repair</h3>
+                <p className="text-[var(--corporate-gray)] mb-6 leading-relaxed">Comprehensive maintenance and repair services to ensure optimal performance of your maritime equipment with 24/7 support</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 corporate-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Preventive maintenance</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 corporate-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Emergency repairs</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 corporate-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Equipment upgrades</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 corporate-gradient rounded-full"></div>
+                    <span className="text-sm text-[var(--corporate-gray)]">Technical support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <Button 
+              size="lg"
+              className="corporate-gradient text-white hover:opacity-90 shadow-xl px-12 py-4 text-lg font-semibold rounded-xl"
+              onClick={handleExploreServices}
+            >
+              Explore All Services
+            </Button>
           </div>
         </div>
       </section>

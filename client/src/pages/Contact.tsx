@@ -79,17 +79,14 @@ export default function Contact() {
       />
 
       {/* Contact Content */}
-      <section className="py-16 bg-gray-50">
+      <section className="section-padding bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <Card className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-[var(--navy)]">Send Us a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div className="corporate-card rounded-3xl p-10 shadow-2xl">
+              <h2 className="text-3xl font-bold text-[var(--corporate-dark)] mb-8">Send Us a Message</h2>
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                     <div className="grid md:grid-cols-2 gap-4">
                       <FormField
                         control={form.control}
@@ -207,30 +204,27 @@ export default function Contact() {
 
                     <Button 
                       type="submit" 
-                      className="w-full maritime-gradient hover:opacity-90"
+                      className="w-full corporate-gradient hover:opacity-90 text-white py-4 text-lg font-semibold rounded-xl shadow-lg"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </Form>
-              </CardContent>
-            </Card>
+            </div>
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-[var(--navy)]">Get In Touch</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 maritime-gradient rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="text-white h-6 w-6" />
+              <div className="corporate-card rounded-3xl p-10 shadow-2xl">
+                <h2 className="text-3xl font-bold text-[var(--corporate-dark)] mb-8">Get In Touch</h2>
+                <div className="space-y-8">
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 corporate-gradient rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <MapPin className="text-white h-8 w-8" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[var(--navy)] mb-2">Office Address</h3>
-                      <p className="text-gray-600">
+                      <h3 className="font-bold text-[var(--corporate-dark)] mb-3 text-xl">Office Address</h3>
+                      <p className="text-[var(--corporate-gray)] leading-relaxed">
                         Plot 8, The Providence Street<br />
                         Lekki Phase 1, Lekki<br />
                         Lagos, Nigeria
@@ -238,66 +232,62 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 maritime-gradient rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="text-white h-6 w-6" />
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 accent-gradient rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <Phone className="text-white h-8 w-8" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[var(--navy)] mb-2">Phone Numbers</h3>
-                      <p className="text-gray-600">
-                        Tel: +234 7032509442<br />
-                        Mobile: +234 8064651345
+                      <h3 className="font-bold text-[var(--corporate-dark)] mb-3 text-xl">Phone Numbers</h3>
+                      <p className="text-[var(--corporate-gray)] leading-relaxed">
+                        Tel: +234 703 250 9442<br />
+                        Mobile: +234 806 465 1345
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 maritime-gradient rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="text-white h-6 w-6" />
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[var(--success-green)] to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <Mail className="text-white h-8 w-8" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[var(--navy)] mb-2">Email Address</h3>
-                      <p className="text-gray-600">admin@westwindelectricpower.com</p>
+                      <h3 className="font-bold text-[var(--corporate-dark)] mb-3 text-xl">Email Address</h3>
+                      <p className="text-[var(--corporate-gray)] leading-relaxed">admin@westwindelectricpower.com</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 maritime-gradient rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="text-white h-6 w-6" />
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 corporate-gradient rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <Clock className="text-white h-8 w-8" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[var(--navy)] mb-2">Business Hours</h3>
-                      <p className="text-gray-600">
+                      <h3 className="font-bold text-[var(--corporate-dark)] mb-3 text-xl">Business Hours</h3>
+                      <p className="text-[var(--corporate-gray)] leading-relaxed">
                         Monday - Friday: 8:00 AM - 6:00 PM<br />
                         Saturday: 9:00 AM - 4:00 PM<br />
                         Sunday: Emergency calls only
                       </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
               {/* Quick Contact Cards */}
-              <div className="grid grid-cols-2 gap-4">
-                <Card className="text-center shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Phone className="text-white h-6 w-6" />
-                    </div>
-                    <h3 className="font-semibold text-[var(--navy)] mb-2">Call Us</h3>
-                    <p className="text-sm text-gray-600">+234 703 250 9442</p>
-                  </CardContent>
-                </Card>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="corporate-card rounded-2xl p-8 text-center">
+                  <div className="w-16 h-16 accent-gradient rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Phone className="text-white h-8 w-8" />
+                  </div>
+                  <h3 className="font-bold text-[var(--corporate-dark)] mb-2 text-lg">Call Us</h3>
+                  <p className="text-[var(--corporate-gray)]">+234 703 250 9442</p>
+                </div>
 
-                <Card className="text-center shadow-lg">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Mail className="text-white h-6 w-6" />
-                    </div>
-                    <h3 className="font-semibold text-[var(--navy)] mb-2">Email Us</h3>
-                    <p className="text-sm text-gray-600">Quick Response</p>
-                  </CardContent>
-                </Card>
+                <div className="corporate-card rounded-2xl p-8 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[var(--success-green)] to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <Mail className="text-white h-8 w-8" />
+                  </div>
+                  <h3 className="font-bold text-[var(--corporate-dark)] mb-2 text-lg">Email Us</h3>
+                  <p className="text-[var(--corporate-gray)]">Quick Response</p>
+                </div>
               </div>
             </div>
           </div>
@@ -305,17 +295,17 @@ export default function Contact() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-12 maritime-gradient text-white">
+      <section className="py-16 corporate-gradient text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-2xl mx-auto">
-            <div className="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-              <AlertTriangle className="text-white h-8 w-8" />
+          <div className="max-w-3xl mx-auto">
+            <div className="w-20 h-20 accent-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
+              <AlertTriangle className="text-white h-10 w-10" />
             </div>
-            <h2 className="text-2xl font-bold mb-4">Emergency Support</h2>
-            <p className="text-blue-100 mb-6">
-              Need immediate assistance with your maritime electronics? Our emergency support team is available 24/7 for critical situations.
+            <h2 className="text-3xl font-bold mb-6">24/7 Emergency Support</h2>
+            <p className="text-blue-100 mb-8 text-lg leading-relaxed">
+              Need immediate assistance with your maritime electronics? Our emergency support team is available around the clock for critical situations.
             </p>
-            <Button className="gold-gradient hover:opacity-90">
+            <Button className="accent-gradient hover:opacity-90 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-2xl">
               Emergency Hotline: +234 806 465 1345
             </Button>
           </div>
