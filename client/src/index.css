@@ -95,29 +95,29 @@
   
   .modern-card {
     background: white;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
     border: 1px solid hsl(210, 20%, 94%);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .modern-card:hover {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    transform: translateY(-8px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
     border-color: hsl(217, 91%, 60%, 0.2);
   }
   
   .elevated-card {
     background: white;
-    border-radius: 1.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border: 1px solid hsl(210, 20%, 92%);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .elevated-card:hover {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
   }
   
   .nav-link.active {
@@ -153,7 +153,7 @@
   }
   
   .section-spacing {
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
   
   .gradient-text {

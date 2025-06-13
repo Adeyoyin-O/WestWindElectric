@@ -31,57 +31,57 @@ export default function Home() {
       {/* Company Overview */}
       <section className="section-spacing bg-[var(--light-gray)]">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl lg:text-6xl font-bold text-[var(--primary-dark)] mb-8 tracking-tight">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">
               Trusted EPIC Solutions Partner
             </h2>
-            <p className="text-2xl text-[var(--medium-gray)] max-w-5xl mx-auto leading-relaxed">
+            <p className="text-lg text-[var(--medium-gray)] max-w-4xl mx-auto leading-relaxed">
               Since 2011, West Wind Electric Power Ltd has been delivering comprehensive electrical, electronics and instrumentation services across Nigeria's power and maritime industries
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12 mb-24">
-            <div className="modern-card p-10 text-center floating-element">
-              <div className="w-24 h-24 teal-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                <Compass className="text-white h-12 w-12" />
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            <div className="modern-card p-6 text-center floating-element">
+              <div className="w-16 h-16 teal-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Compass className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Engineering & Design</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Engineering & Design</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">Custom system design and engineering solutions for electrical, electronics, and instrumentation projects</p>
             </div>
-            <div className="modern-card p-10 text-center floating-element" style={{animationDelay: '1s'}}>
-              <div className="w-24 h-24 purple-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                <Radio className="text-white h-12 w-12" />
+            <div className="modern-card p-6 text-center floating-element" style={{animationDelay: '1s'}}>
+              <div className="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Radio className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Procurement & Installation</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Professional procurement services and expert installation of control systems and electrical equipment</p>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Procurement & Installation</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">Professional procurement services and expert installation of control systems and electrical equipment</p>
             </div>
-            <div className="modern-card p-10 text-center floating-element" style={{animationDelay: '2s'}}>
-              <div className="w-24 h-24 primary-gradient rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                <ServerCog className="text-white h-12 w-12" />
+            <div className="modern-card p-6 text-center floating-element" style={{animationDelay: '2s'}}>
+              <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <ServerCog className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Commissioning</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">Complete system commissioning and testing to ensure optimal performance and reliability</p>
+              <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Commissioning</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">Complete system commissioning and testing to ensure optimal performance and reliability</p>
             </div>
           </div>
 
           {/* Company Stats */}
-          <div className="elevated-card p-16 bg-gradient-to-r from-white to-gray-50 shadow-2xl">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 text-center">
+          <div className="elevated-card p-8 bg-gradient-to-r from-white to-gray-50">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">13+</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Years of Excellence</div>
+                <div className="text-3xl font-bold gradient-text mb-2">13+</div>
+                <div className="text-[var(--medium-gray)] font-semibold">Years of Excellence</div>
               </div>
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">EPIC</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Service Solutions</div>
+                <div className="text-3xl font-bold gradient-text mb-2">EPIC</div>
+                <div className="text-[var(--medium-gray)] font-semibold">Service Solutions</div>
               </div>
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">4</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Industry Sectors</div>
+                <div className="text-3xl font-bold gradient-text mb-2">4</div>
+                <div className="text-[var(--medium-gray)] font-semibold">Industry Sectors</div>
               </div>
               <div>
-                <div className="text-6xl font-bold gradient-text mb-4">24/7</div>
-                <div className="text-[var(--medium-gray)] text-xl font-semibold">Support Available</div>
+                <div className="text-3xl font-bold gradient-text mb-2">24/7</div>
+                <div className="text-[var(--medium-gray)] font-semibold">Support Available</div>
               </div>
             </div>
           </div>
@@ -91,71 +91,71 @@ export default function Home() {
       {/* Services Preview */}
       <section className="section-spacing bg-white">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl lg:text-6xl font-bold text-[var(--primary-dark)] mb-8 tracking-tight">Our Core Services</h2>
-            <p className="text-2xl text-[var(--medium-gray)] max-w-4xl mx-auto leading-relaxed">Comprehensive maritime electronics solutions tailored to your needs with industry-leading expertise</p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Services</h2>
+            <p className="text-lg text-[var(--medium-gray)] max-w-3xl mx-auto leading-relaxed">Comprehensive electrical and instrumentation solutions tailored to your needs with industry-leading expertise</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8">
             <div className="elevated-card overflow-hidden">
-              <div className="h-80 teal-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
+              <div className="h-48 teal-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <div className="text-center text-white relative z-10">
-                  <Compass className="h-24 w-24 mx-auto mb-8 floating-element" />
-                  <h3 className="text-4xl font-bold">Navigation Control Systems</h3>
+                  <Compass className="h-12 w-12 mx-auto mb-4 floating-element" />
+                  <h3 className="text-2xl font-bold">Power & Control Systems</h3>
                 </div>
               </div>
-              <div className="p-12">
-                <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Design & Installation</h3>
-                <p className="text-[var(--medium-gray)] mb-8 leading-relaxed text-lg">Complete system design, procurement, installation, and commissioning of maritime electronics equipment with cutting-edge technology</p>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 teal-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Custom system design</span>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Design & Installation</h3>
+                <p className="text-[var(--medium-gray)] mb-6 leading-relaxed">Complete system design, procurement, installation, and commissioning of electrical and control equipment with cutting-edge technology</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 teal-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Custom system design</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 teal-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Professional installation</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 teal-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Professional installation</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 teal-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">System commissioning</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 teal-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">System commissioning</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 teal-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Performance testing</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 teal-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Performance testing</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="elevated-card overflow-hidden">
-              <div className="h-80 purple-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
+              <div className="h-48 purple-gradient flex items-center justify-center relative overflow-hidden diagonal-pattern">
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <div className="text-center text-white relative z-10">
-                  <Radio className="h-24 w-24 mx-auto mb-8 floating-element" style={{animationDelay: '2s'}} />
-                  <h3 className="text-4xl font-bold">Communication Systems</h3>
+                  <Radio className="h-12 w-12 mx-auto mb-4 floating-element" style={{animationDelay: '2s'}} />
+                  <h3 className="text-2xl font-bold">Instrumentation Systems</h3>
                 </div>
               </div>
-              <div className="p-12">
-                <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-6">Maintenance & Repair</h3>
-                <p className="text-[var(--medium-gray)] mb-8 leading-relaxed text-lg">Comprehensive maintenance and repair services to ensure optimal performance of your maritime equipment with 24/7 support</p>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 purple-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Preventive maintenance</span>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Maintenance & Repair</h3>
+                <p className="text-[var(--medium-gray)] mb-6 leading-relaxed">Comprehensive maintenance and repair services to ensure optimal performance of your equipment with 24/7 support</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 purple-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Preventive maintenance</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 purple-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Emergency repairs</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 purple-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Emergency repairs</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 purple-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Equipment upgrades</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 purple-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Equipment upgrades</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 purple-gradient rounded-full"></div>
-                    <span className="text-[var(--medium-gray)] font-medium">Technical support</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 purple-gradient rounded-full"></div>
+                    <span className="text-[var(--medium-gray)] text-sm">Technical support</span>
                   </div>
                 </div>
               </div>
@@ -163,10 +163,10 @@ export default function Home() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-20">
+          <div className="text-center mt-12">
             <Button 
               size="lg"
-              className="teal-gradient text-white hover:opacity-90 shadow-2xl px-16 py-6 text-xl font-bold rounded-2xl transform hover:scale-105 transition-all duration-300"
+              className="teal-gradient text-white hover:opacity-90 shadow-lg px-8 py-3 font-bold rounded-xl transform hover:scale-105 transition-all duration-300"
               onClick={handleExploreServices}
             >
               Explore All Services

@@ -14,13 +14,13 @@ export default function About() {
       {/* Who We Are */}
       <section className="section-spacing bg-[var(--light-gray)]">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl lg:text-6xl font-bold text-[var(--primary-dark)] mb-8 tracking-tight">Who We Are</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <div className="space-y-8 text-xl text-[var(--medium-gray)] leading-relaxed">
+              <div className="space-y-6 text-lg text-[var(--medium-gray)] leading-relaxed">
                 <p>
                   <strong className="text-[var(--primary-dark)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
                 </p>
