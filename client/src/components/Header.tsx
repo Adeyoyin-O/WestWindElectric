@@ -17,38 +17,37 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="glass-effect border-b border-gray-100 sticky top-0 z-50">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-4">
-            <div className="w-14 h-14 corporate-gradient rounded-xl flex items-center justify-center shadow-lg">
-              <Anchor className="text-white h-7 w-7" />
+    <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
+      <nav className="container mx-auto px-6 lg:px-8">
+        <div className="flex justify-between items-center py-5">
+          <Link href="/" className="flex items-center space-x-5">
+            <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center shadow-xl floating-element">
+              <Anchor className="text-white h-8 w-8" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-[var(--corporate-dark)] leading-tight">West Wind Marine Electronics</h1>
-              <p className="text-sm text-[var(--corporate-gray)] font-medium">Maritime Solutions Excellence</p>
+              <h1 className="text-2xl font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Marine Electronics</h1>
+              <p className="text-sm text-[var(--medium-gray)] font-semibold">Advanced Maritime Solutions</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "px-4 py-2 font-semibold text-sm transition-all duration-200 rounded-lg",
+                  "px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl",
                   location === item.href
-                    ? "text-[var(--corporate-blue)] nav-link active bg-blue-50"
-                    : "text-[var(--corporate-gray)] hover:text-[var(--corporate-blue)] hover:bg-gray-50"
+                    ? "text-[var(--primary-blue)] nav-link active bg-gradient-to-r from-blue-50 to-teal-50"
+                    : "text-[var(--medium-gray)] hover:text-[var(--primary-blue)] hover:bg-gray-50"
                 )}
               >
                 {item.name}
               </Link>
             ))}
             <Button 
-              className="ml-4 corporate-gradient text-white hover:opacity-90 shadow-lg px-6"
-              size="sm"
+              className="ml-6 teal-gradient text-white hover:opacity-90 shadow-xl px-8 py-3 text-sm font-bold rounded-xl"
             >
               Get Quote
             </Button>
@@ -58,7 +57,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden text-[var(--corporate-dark)]"
+            className="lg:hidden text-[var(--primary-dark)]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -67,24 +66,24 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden glass-effect border-t border-gray-100">
-            <div className="px-4 py-6 space-y-3">
+          <div className="lg:hidden modern-glass border-t border-gray-100">
+            <div className="px-6 py-8 space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "block py-3 px-4 font-semibold rounded-lg transition-all duration-200",
+                    "block py-4 px-6 font-semibold rounded-xl transition-all duration-300",
                     location === item.href
-                      ? "text-[var(--corporate-blue)] bg-blue-50"
-                      : "text-[var(--corporate-gray)] hover:bg-gray-50"
+                      ? "text-[var(--primary-blue)] bg-gradient-to-r from-blue-50 to-teal-50"
+                      : "text-[var(--medium-gray)] hover:bg-gray-50"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 corporate-gradient text-white">
+              <Button className="w-full mt-6 teal-gradient text-white py-4 text-lg font-bold rounded-xl">
                 Get Quote
               </Button>
             </div>
