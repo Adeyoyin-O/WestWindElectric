@@ -12,7 +12,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-[var(--light-gray)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -139,7 +139,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-spacing bg-[var(--light-purple)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
@@ -166,7 +166,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="section-spacing bg-[var(--light-blue)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <div className="modern-card p-8 text-center">

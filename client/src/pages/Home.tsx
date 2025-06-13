@@ -29,7 +29,7 @@ export default function Home() {
       />
 
       {/* Company Overview */}
-      <section className="section-spacing bg-[var(--light-blue)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="section-spacing bg-[var(--light-teal)]">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Services</h2>
