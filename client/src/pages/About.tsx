@@ -13,7 +13,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-gradient-to-br from-white via-slate-50/30 to-blue-50/20 circuit-pattern">
+      <section className="section-spacing bg-gradient-to-br from-slate-50/30 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -33,114 +33,114 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="elevated-card p-8 bg-gradient-to-br from-white via-indigo-50/15 to-blue-50/25 backdrop-blur-sm border-l-4 border-gradient-to-b from-blue-400 to-purple-500">
-              <div className="grid grid-cols-2 gap-8 text-center">
-                <div className="group hover:scale-110 transition-transform duration-300">
-                  <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg">2011</div>
-                  <div className="text-[var(--medium-gray)] font-semibold">Established</div>
+            <div className="elevated-card p-10 bg-white border border-slate-200/60">
+              <div className="grid grid-cols-2 gap-10 text-center">
+                <div className="group">
+                  <div className="text-4xl font-bold text-[var(--primary-blue)] mb-2">2011</div>
+                  <div className="text-[var(--medium-gray)] text-sm font-medium uppercase tracking-wide">Established</div>
                 </div>
-                <div className="group hover:scale-110 transition-transform duration-300">
-                  <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg">13+</div>
-                  <div className="text-[var(--medium-gray)] font-semibold">Years Experience</div>
+                <div className="group">
+                  <div className="text-4xl font-bold text-[var(--primary-blue)] mb-2">13+</div>
+                  <div className="text-[var(--medium-gray)] text-sm font-medium uppercase tracking-wide">Years Experience</div>
                 </div>
-                <div className="group hover:scale-110 transition-transform duration-300">
-                  <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg">EPIC</div>
-                  <div className="text-[var(--medium-gray)] font-semibold">Services</div>
+                <div className="group">
+                  <div className="text-2xl font-bold text-[var(--primary-blue)] mb-2">EPIC</div>
+                  <div className="text-[var(--medium-gray)] text-sm font-medium uppercase tracking-wide">Services</div>
                 </div>
-                <div className="group hover:scale-110 transition-transform duration-300">
-                  <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg">968009</div>
-                  <div className="text-[var(--medium-gray)] font-semibold">RC Number</div>
+                <div className="group">
+                  <div className="text-lg font-bold text-[var(--primary-blue)] mb-2">968009</div>
+                  <div className="text-[var(--medium-gray)] text-sm font-medium uppercase tracking-wide">RC Number</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Areas of Expertise */}
-          <div className="mb-16 mx-4">
-            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-8 text-center tracking-tight">Technical Expertise</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white via-blue-50/20 to-cyan-50/30 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-2 border-blue-200">
-                <div className="w-14 h-14 teal-gradient rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:rotate-3 transition-transform duration-300">
-                  <Building className="h-7 w-7 text-white" />
+          <div className="mb-20 mx-4">
+            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-12 text-center tracking-tight">Technical Expertise</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="modern-card p-8 text-center bg-white group">
+                <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
+                  <Building className="h-8 w-8 text-[var(--accent-slate)] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Building Systems</h4>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Building Systems</h4>
                 <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white via-yellow-50/20 to-orange-50/30 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-2 border-orange-200">
-                <div className="w-14 h-14 orange-gradient rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:rotate-3 transition-transform duration-300">
-                  <Zap className="h-7 w-7 text-white" />
+              <div className="modern-card p-8 text-center bg-white group">
+                <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
+                  <Zap className="h-8 w-8 text-[var(--accent-slate)] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Power Generation</h4>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Power Generation</h4>
                 <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Advanced power generation and distribution networks</p>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white via-green-50/20 to-emerald-50/30 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-2 border-green-200">
-                <div className="w-14 h-14 green-gradient rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:rotate-3 transition-transform duration-300">
-                  <Factory className="h-7 w-7 text-white" />
+              <div className="modern-card p-8 text-center bg-white group">
+                <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
+                  <Factory className="h-8 w-8 text-[var(--accent-slate)] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Industrial Plants</h4>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Industrial Plants</h4>
                 <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Process automation and control systems</p>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white via-purple-50/20 to-violet-50/30 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-2 border-purple-200">
-                <div className="w-14 h-14 purple-gradient rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:rotate-3 transition-transform duration-300">
-                  <MonitorSpeaker className="h-7 w-7 text-white" />
+              <div className="modern-card p-8 text-center bg-white group">
+                <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
+                  <MonitorSpeaker className="h-8 w-8 text-[var(--accent-slate)] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Marine Systems</h4>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Marine Systems</h4>
                 <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Navigation and communication equipment</p>
               </div>
             </div>
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-8 bg-gradient-to-br from-indigo-50/30 via-blue-50/20 to-cyan-50/30 technical-grid border-l-4 border-gradient-to-b from-blue-400 to-indigo-500 shadow-lg">
-            <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-8 text-center technical-heading">Technical Coverage Areas</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-cyan-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Control Panels</span>
+          <div className="elevated-card p-12 bg-slate-50/30">
+            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-10 text-center tracking-tight">Technical Coverage Areas</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Control Panels</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-emerald-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Generators & Pumps</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Generators & Pumps</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-orange-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Turbo Generators</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Turbo Generators</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-purple-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Medium & Low Voltage Panels</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Medium & Low Voltage Panels</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-pink-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Transformers</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Transformers</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-blue-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Ship Steering Systems</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Ship Steering Systems</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-green-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Gyrocompass</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Gyrocompass</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-indigo-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Voyage Data Recorder</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Voyage Data Recorder</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-amber-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Radio Survey on Ships & Rigs</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Radio Survey on Ships & Rigs</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-teal-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Bridge Equipment Installation</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Bridge Equipment Installation</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-violet-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Navigation Systems</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">Navigation Systems</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/70 p-4 rounded-lg backdrop-blur-sm hover:bg-white/90 hover:scale-105 transition-all duration-200 shadow-sm border border-slate-100">
-                <div className="w-4 h-4 bg-gradient-to-r from-slate-500 to-gray-600 rounded-full shadow-md"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">DC & AC Control Panels</span>
+              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
+                <div className="w-2 h-2 bg-[var(--primary-blue)] rounded-full flex-shrink-0"></div>
+                <span className="text-[var(--medium-gray)] text-sm font-medium">DC & AC Control Panels</span>
               </div>
             </div>
           </div>
@@ -148,27 +148,25 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-16 bg-gradient-to-r from-slate-100/50 via-blue-50/30 to-slate-100/50 industrial-texture">
+      <section className="py-20 bg-white">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-8 bg-gradient-to-br from-white via-emerald-50/15 to-teal-50/25 border-l-4 border-emerald-400 hover:shadow-xl hover:scale-105 transition-all duration-300 group">
-              <div className="w-18 h-18 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg relative group-hover:rotate-6 transition-transform duration-300">
-                <Server className="text-white h-9 w-9" />
-                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-2xl blur opacity-30"></div>
+          <div className="grid lg:grid-cols-2 gap-10 mx-4">
+            <div className="modern-card p-10 bg-white border border-slate-200/60">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
+                <Server className="h-8 w-8 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Vision</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
+              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Vision</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
                 To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
               </p>
             </div>
 
-            <div className="modern-card p-8 bg-gradient-to-br from-white via-orange-50/15 to-amber-50/25 border-l-4 border-orange-400 hover:shadow-xl hover:scale-105 transition-all duration-300 group">
-              <div className="w-18 h-18 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg relative group-hover:rotate-6 transition-transform duration-300">
-                <Cpu className="text-white h-9 w-9" />
-                <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-amber-500 rounded-2xl blur opacity-30"></div>
+            <div className="modern-card p-10 bg-white border border-slate-200/60">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
+                <Cpu className="h-8 w-8 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Mission</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
+              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Mission</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
                 To provide solution-oriented services to our customers, shareholders and stakeholders.
               </p>
             </div>
@@ -177,38 +175,40 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 bg-gradient-to-br from-white to-slate-50/40 circuit-pattern">
+      <section className="py-20 bg-slate-50/30">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto">
-            <div className="modern-card p-10 text-center bg-gradient-to-br from-white via-indigo-50/10 to-purple-50/15 backdrop-blur-sm border-t-4 border-gradient-to-r from-indigo-400 to-purple-500 shadow-xl group hover:shadow-2xl transition-all duration-300">
-              <div className="w-24 h-24 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-600 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-xl relative group-hover:scale-110 transition-transform duration-300">
-                <Shield className="text-white h-12 w-12" />
-                <div className="absolute -inset-3 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 rounded-3xl blur opacity-25"></div>
+          <div className="max-w-4xl mx-auto">
+            <div className="modern-card p-12 text-center bg-white border border-slate-200/60">
+              <div className="w-20 h-20 bg-slate-100 rounded-3xl flex items-center justify-center mx-auto mb-10">
+                <Shield className="h-10 w-10 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6 technical-heading">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text text-lg max-w-2xl mx-auto">
+              <h3 className="text-3xl font-semibold text-[var(--primary-dark)] mb-8 tracking-tight">Our Core Values</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-xl max-w-3xl mx-auto mb-12">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
               </p>
               
               {/* Value highlights */}
-              <div className="grid md:grid-cols-3 gap-8 mt-10 pt-8 border-t border-gradient-to-r from-transparent via-gray-200 to-transparent">
-                <div className="text-center group hover:scale-110 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+              <div className="grid md:grid-cols-3 gap-12 mt-12 pt-12 border-t border-slate-200">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
                   </div>
-                  <span className="text-base font-semibold text-[var(--primary-dark)]">Customer Focus</span>
+                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Understanding and exceeding expectations</p>
                 </div>
-                <div className="text-center group hover:scale-110 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
                   </div>
-                  <span className="text-base font-semibold text-[var(--primary-dark)]">Excellence</span>
+                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Delivering professional services beyond expectations</p>
                 </div>
-                <div className="text-center group hover:scale-110 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
                   </div>
-                  <span className="text-base font-semibold text-[var(--primary-dark)]">Responsibility</span>
+                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Taking full accountability for our actions</p>
                 </div>
               </div>
             </div>

@@ -24,22 +24,20 @@
   --ring: hsl(210, 100%, 45%);
   --radius: 0.5rem;
   
-  /* Professional engineering theme colors */
-  --primary-dark: hsl(210, 25%, 15%);
-  --primary-blue: hsl(210, 100%, 25%);
-  --secondary-gray: hsl(210, 15%, 25%);
-  --accent-steel: hsl(210, 20%, 35%);
-  --accent-electric: hsl(210, 100%, 30%);
-  --accent-teal: hsl(180, 65%, 45%);
-  --accent-orange: hsl(25, 85%, 60%);
-  --accent-green: hsl(140, 60%, 50%);
-  --accent-purple: hsl(260, 70%, 55%);
-  --light-gray: hsl(210, 10%, 97%);
-  --light-steel: hsl(210, 15%, 96%);
-  --medium-gray: hsl(210, 10%, 45%);
-  --dark-steel: hsl(210, 20%, 20%);
-  --gradient-start: hsl(210, 25%, 15%);
-  --gradient-end: hsl(210, 100%, 25%);
+  /* Modern professional theme colors */
+  --primary-dark: hsl(215, 25%, 12%);
+  --primary-blue: hsl(215, 85%, 35%);
+  --secondary-gray: hsl(215, 10%, 20%);
+  --accent-blue: hsl(215, 85%, 50%);
+  --accent-indigo: hsl(235, 85%, 60%);
+  --accent-slate: hsl(215, 15%, 40%);
+  --accent-neutral: hsl(215, 8%, 50%);
+  --light-gray: hsl(215, 20%, 98%);
+  --light-blue: hsl(215, 100%, 98%);
+  --medium-gray: hsl(215, 8%, 45%);
+  --dark-slate: hsl(215, 25%, 15%);
+  --gradient-start: hsl(215, 25%, 12%);
+  --gradient-end: hsl(215, 85%, 35%);
 }
 
 .dark {
@@ -101,30 +99,32 @@
   
   .modern-card {
     background: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-    border: 1.5px solid hsl(210, 15%, 85%);
-    transition: all 0.2s ease-in-out;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+    border: 1px solid hsl(215, 15%, 92%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0.5rem;
   }
   
   .modern-card:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    border-color: hsl(210, 15%, 75%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+    border-color: hsl(215, 15%, 85%);
+    transform: translateY(-2px);
   }
   
   .elevated-card {
     background: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-    border: 1px solid hsl(210, 15%, 88%);
-    transition: all 0.2s ease-in-out;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    border: 1px solid hsl(215, 15%, 90%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0.75rem;
   }
   
   .elevated-card:hover {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-color: hsl(210, 15%, 80%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+    border-color: hsl(215, 15%, 82%);
+    transform: translateY(-4px);
   }
   
   .nav-link.active {
@@ -206,39 +206,20 @@
     background-size: 16px 16px;
   }
 
-  .steel-gradient {
-    background: linear-gradient(135deg, var(--accent-steel) 0%, var(--dark-steel) 100%);
-    border: 1px solid var(--accent-steel);
+  .modern-gradient-blue {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-blue) 100%);
   }
   
-  .electric-gradient {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-electric) 100%);
-    border: 1px solid var(--primary-blue);
+  .modern-gradient-indigo {
+    background: linear-gradient(135deg, var(--accent-indigo) 0%, hsl(235, 85%, 50%) 100%);
   }
   
-  .primary-gradient {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-gray) 100%);
-    border: 1px solid var(--primary-dark);
+  .modern-gradient-slate {
+    background: linear-gradient(135deg, var(--accent-slate) 0%, var(--dark-slate) 100%);
   }
   
-  .teal-gradient {
-    background: linear-gradient(135deg, var(--accent-teal) 0%, hsl(180, 65%, 35%) 100%);
-    border: 1px solid var(--accent-teal);
-  }
-  
-  .orange-gradient {
-    background: linear-gradient(135deg, var(--accent-orange) 0%, hsl(25, 85%, 50%) 100%);
-    border: 1px solid var(--accent-orange);
-  }
-  
-  .green-gradient {
-    background: linear-gradient(135deg, var(--accent-green) 0%, hsl(140, 60%, 40%) 100%);
-    border: 1px solid var(--accent-green);
-  }
-  
-  .purple-gradient {
-    background: linear-gradient(135deg, var(--accent-purple) 0%, hsl(260, 70%, 45%) 100%);
-    border: 1px solid var(--accent-purple);
+  .modern-gradient-neutral {
+    background: linear-gradient(135deg, var(--accent-neutral) 0%, hsl(215, 8%, 40%) 100%);
   }
 
   .technical-grid {
