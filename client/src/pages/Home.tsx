@@ -39,7 +39,7 @@ export default function Home() {
                 <Award className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">10+ Years of Proven Delivery</h3>
-              <p className="text-xs text-slate-600">Trusted expertise in complex engineering projects</p>
+              <p className="text-xs text-slate-600">Trusted expertise in<br />complex engineering projects</p>
             </div>
             
             <div className="text-center group">
@@ -55,7 +55,7 @@ export default function Home() {
                 <Anchor className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">Powering Land & Sea</h3>
-              <p className="text-xs text-slate-600">Specialized solutions for power and maritime industries</p>
+              <p className="text-xs text-slate-600">Specialized solutions for<br />power and maritime industries</p>
             </div>
             
             <div className="text-center group">
@@ -63,7 +63,7 @@ export default function Home() {
                 <Network className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">Smart Systems Integration</h3>
-              <p className="text-xs text-slate-600">Advanced automation and control system solutions</p>
+              <p className="text-xs text-slate-600">Advanced automation and<br />control system solutions</p>
             </div>
           </div>
         </div>
