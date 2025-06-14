@@ -155,36 +155,36 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-8 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50 relative overflow-hidden">
+      <section className="py-4 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-20 w-20 h-20 border-2 border-[var(--primary-blue)] rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 right-20 w-16 h-16 border-2 border-[var(--bright-coral)] rounded-full animate-pulse"></div>
         </div>
         
         <div className="container mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-8 bg-white border border-gray-200 shadow-lg relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+          <div className="grid lg:grid-cols-2 gap-6 mx-4">
+            <div className="modern-card p-6 bg-white border border-gray-200 shadow-lg relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
               <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[var(--primary-blue)] to-transparent opacity-10 rounded-bl-3xl"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary-blue)] to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Target className="h-7 w-7 text-white" />
+                <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary-blue)] to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <Target className="h-5 w-5 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
-                <div className="w-12 h-1 bg-[var(--primary-blue)] rounded-full mb-4"></div>
+                <h3 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 tracking-tight">Our Vision</h3>
+                <div className="w-8 h-0.5 bg-[var(--primary-blue)] rounded-full mb-3"></div>
                 <p className="text-gray-600 leading-relaxed">
                   To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
                 </p>
               </div>
             </div>
 
-            <div className="modern-card p-8 bg-white border border-gray-200 shadow-lg relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+            <div className="modern-card p-6 bg-white border border-gray-200 shadow-lg relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
               <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[var(--bright-coral)] to-transparent opacity-10 rounded-bl-3xl"></div>
               <div className="relative z-10">
-                <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary-blue)] to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Compass className="h-7 w-7 text-white" />
+                <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary-blue)] to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <Compass className="h-5 w-5 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
-                <div className="w-12 h-1 bg-[var(--primary-blue)] rounded-full mb-4"></div>
+                <h3 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 tracking-tight">Our Mission</h3>
+                <div className="w-8 h-0.5 bg-[var(--primary-blue)] rounded-full mb-3"></div>
                 <p className="text-gray-600 leading-relaxed">
                   To provide solution-oriented services to our customers, shareholders and stakeholders.
                 </p>
@@ -195,32 +195,28 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-8 bg-white">
+      <section className="py-4 bg-white">
         <div className="container mx-auto mx-4">
-          <div className="modern-card p-10 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg">
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-gray-100 rounded-3xl mx-auto mb-6 flex items-center justify-center">
-                <Award className="h-8 w-8 text-[var(--primary-blue)]" />
+          <div className="modern-card p-6 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg">
+            <div className="text-center mb-8">
+              <div className="w-12 h-12 bg-gray-100 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                <Award className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-4 tracking-tight">Our Core Values</h3>
-              <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto text-lg">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-3 tracking-tight">Our Core Values</h3>
+              <p className="text-gray-600 leading-relaxed max-w-xl mx-auto">
                 Our core values are centered on understanding customers' needs, providing professional services beyond expectations and taking full responsibility for our actions.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="relative group">
-                <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Heart className="w-5 h-5 text-[var(--primary-blue)]" />
-                    </div>
-                  </div>
-                  <div className="pt-8 text-center">
-                    <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Customer Focus</h4>
-                    <p className="text-gray-600 leading-relaxed">Understanding and exceeding expectations through dedicated service and attention to detail</p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-5 h-5 text-[var(--primary-blue)]" />
                   </div>
                 </div>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
+                <p className="text-gray-600 leading-relaxed text-sm">Understanding and exceeding expectations through dedicated service and attention to detail</p>
               </div>
               
               <div className="relative group">
