@@ -10,6 +10,12 @@ import serviceImage3 from "@assets/service7_1749934776068.jpg";
 import serviceImage4 from "@assets/service8_1749934789632.jpg";
 import serviceImage5 from "@assets/service9_1749934761978.jpg";
 import serviceImage6 from "@assets/service18_1749934858577.jpg";
+import serviceImage7 from "@assets/service14_1749934710232.jpg";
+import serviceImage8 from "@assets/service23_1749934808291.jpg";
+import serviceImage9 from "@assets/service20_1749934817170.jpg";
+import serviceImage10 from "@assets/service19_1749934843078.jpg";
+import serviceImage11 from "@assets/service17_1749934870522.jpg";
+import serviceImage12 from "@assets/service15_1749934878839.jpg";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
@@ -46,6 +52,36 @@ function ServiceCarousel() {
       image: serviceImage6,
       title: "Control Panel Design",
       description: "Custom electrical control and monitoring systems"
+    },
+    {
+      image: serviceImage7,
+      title: "Infrastructure Cabling",
+      description: "Structured cabling and electrical infrastructure systems"
+    },
+    {
+      image: serviceImage8,
+      title: "Generator Systems",
+      description: "Industrial power generation and backup systems"
+    },
+    {
+      image: serviceImage9,
+      title: "Civil Engineering",
+      description: "Foundation and structural work for electrical installations"
+    },
+    {
+      image: serviceImage10,
+      title: "Cable Installation",
+      description: "Underground and overhead cable installation services"
+    },
+    {
+      image: serviceImage11,
+      title: "Industrial Equipment",
+      description: "Heavy-duty industrial electrical equipment and installations"
+    },
+    {
+      image: serviceImage12,
+      title: "Project Construction",
+      description: "Complete project execution from design to commissioning"
     }
   ];
 
