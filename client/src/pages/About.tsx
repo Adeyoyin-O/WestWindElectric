@@ -22,6 +22,19 @@ export default function About() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 mx-4">
+            <div className="px-4">
+              <div className="space-y-6 text-lg text-black leading-relaxed">
+                <p>
+                  <strong className="text-black">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
+                </p>
+                <p>
+                  We are a company registered under the Corporate Affairs Commission of Nigeria on July 26th, 2011 with RC number 968009.
+                </p>
+                <p>
+                  We specialize in the engineering, procurement, installation, and commissioning (EPIC) of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
+                </p>
+              </div>
+            </div>
             <div className="elevated-card p-10 bg-gradient-to-br from-white via-blue-50 to-white border border-gray-200 shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-10 rounded-bl-full"></div>
               <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-[var(--bright-coral)] to-transparent opacity-10 rounded-tr-full"></div>
@@ -47,19 +60,6 @@ export default function About() {
                   <div className="text-lg font-bold text-[var(--bright-coral)] mb-2">968009</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">RC Number</div>
                 </div>
-              </div>
-            </div>
-            <div className="px-4">
-              <div className="space-y-6 text-lg text-black leading-relaxed">
-                <p>
-                  <strong className="text-black">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
-                </p>
-                <p>
-                  We are a company registered under the Corporate Affairs Commission of Nigeria on July 26th, 2011 with RC number 968009.
-                </p>
-                <p>
-                  We specialize in the engineering, procurement, installation, and commissioning (EPIC) of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
-                </p>
               </div>
             </div>
           </div>
