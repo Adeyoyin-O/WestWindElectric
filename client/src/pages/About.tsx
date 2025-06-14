@@ -18,6 +18,11 @@ export default function About() {
       <section className="section-spacing bg-gradient-to-br from-gray-50 to-gray-100/50">
         <div className="container mx-auto">
           <div className="text-center mb-12">
+            <div className="flex items-center justify-center mb-4">
+              <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent-teal)] to-transparent w-24"></div>
+              <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full mx-4"></div>
+              <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent-teal)] to-transparent w-24"></div>
+            </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
           </div>
           
@@ -35,8 +40,10 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="elevated-card p-10 bg-white border border-gray-200">
-              <div className="grid grid-cols-2 gap-10 text-center">
+            <div className="elevated-card p-10 bg-white border border-gray-200 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-[var(--accent-teal)] bg-opacity-5 rounded-full -translate-y-10 translate-x-10"></div>
+              <div className="absolute bottom-0 left-0 w-16 h-16 bg-[var(--accent-teal)] bg-opacity-10 rounded-full translate-y-8 -translate-x-8"></div>
+              <div className="grid grid-cols-2 gap-10 text-center relative">
                 <div className="group">
                   <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">2011</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Established</div>
@@ -93,8 +100,16 @@ export default function About() {
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-12 bg-gray-100">
-            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-10 text-center tracking-tight">Technical Coverage Areas</h3>
+          <div className="elevated-card p-12 bg-gray-100 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[var(--accent-teal)] via-transparent to-[var(--accent-teal)] opacity-30"></div>
+            <div className="absolute -top-4 -right-4 w-12 h-12 bg-[var(--accent-teal)] bg-opacity-10 rounded-full"></div>
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center mb-4">
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full mr-3"></div>
+                <h3 className="text-2xl font-semibold text-[var(--primary-dark)] tracking-tight">Technical Coverage Areas</h3>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full ml-3"></div>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
                 <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
@@ -164,8 +179,10 @@ export default function About() {
       <section className="py-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-6 bg-white border border-gray-200">
-              <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <div className="modern-card p-6 bg-white border border-gray-200 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-16 h-16 bg-[var(--accent-teal)] bg-opacity-5 rounded-full -translate-y-8 translate-x-8"></div>
+              <div className="absolute bottom-2 left-2 w-1 h-8 bg-[var(--accent-teal)] rounded-full opacity-30"></div>
+              <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 relative">
                 <Target className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
@@ -174,8 +191,10 @@ export default function About() {
               </p>
             </div>
 
-            <div className="modern-card p-6 bg-white border border-gray-200">
-              <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <div className="modern-card p-6 bg-white border border-gray-200 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-16 h-16 bg-[var(--accent-teal)] bg-opacity-5 rounded-full -translate-y-8 -translate-x-8"></div>
+              <div className="absolute bottom-2 right-2 w-1 h-8 bg-[var(--accent-teal)] rounded-full opacity-30"></div>
+              <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 relative">
                 <Compass className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
@@ -190,10 +209,17 @@ export default function About() {
       {/* Core Values */}
       <section className="py-8 bg-white">
         <div className="container mx-auto mx-4">
-          <div className="modern-card p-10 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg">
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-gray-100 rounded-3xl mx-auto mb-6 flex items-center justify-center">
-                <Award className="h-8 w-8 text-[var(--primary-blue)]" />
+          <div className="modern-card p-10 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[var(--accent-teal)] via-transparent to-[var(--accent-teal)] opacity-20"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-[var(--accent-teal)] bg-opacity-5 rounded-full"></div>
+            <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-[var(--accent-teal)] bg-opacity-5 rounded-full"></div>
+            <div className="text-center mb-12 relative">
+              <div className="flex items-center justify-center mb-6">
+                <div className="h-px bg-[var(--accent-teal)] w-16 opacity-50"></div>
+                <div className="w-16 h-16 bg-gray-100 rounded-3xl mx-4 flex items-center justify-center border-2 border-[var(--accent-teal)] border-opacity-10">
+                  <Award className="h-8 w-8 text-[var(--primary-blue)]" />
+                </div>
+                <div className="h-px bg-[var(--accent-teal)] w-16 opacity-50"></div>
               </div>
               <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-4 tracking-tight">Our Core Values</h3>
               <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto text-lg">
