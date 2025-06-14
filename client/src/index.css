@@ -30,6 +30,10 @@
   --secondary-gray: hsl(210, 15%, 25%);
   --accent-steel: hsl(210, 20%, 35%);
   --accent-electric: hsl(210, 100%, 30%);
+  --accent-teal: hsl(180, 65%, 45%);
+  --accent-orange: hsl(25, 85%, 60%);
+  --accent-green: hsl(140, 60%, 50%);
+  --accent-purple: hsl(260, 70%, 55%);
   --light-gray: hsl(210, 10%, 97%);
   --light-steel: hsl(210, 15%, 96%);
   --medium-gray: hsl(210, 10%, 45%);
@@ -215,6 +219,26 @@
   .primary-gradient {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-gray) 100%);
     border: 1px solid var(--primary-dark);
+  }
+  
+  .teal-gradient {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, hsl(180, 65%, 35%) 100%);
+    border: 1px solid var(--accent-teal);
+  }
+  
+  .orange-gradient {
+    background: linear-gradient(135deg, var(--accent-orange) 0%, hsl(25, 85%, 50%) 100%);
+    border: 1px solid var(--accent-orange);
+  }
+  
+  .green-gradient {
+    background: linear-gradient(135deg, var(--accent-green) 0%, hsl(140, 60%, 40%) 100%);
+    border: 1px solid var(--accent-green);
+  }
+  
+  .purple-gradient {
+    background: linear-gradient(135deg, var(--accent-purple) 0%, hsl(260, 70%, 45%) 100%);
+    border: 1px solid var(--accent-purple);
   }
 
   .technical-grid {
