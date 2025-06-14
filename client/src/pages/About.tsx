@@ -194,22 +194,22 @@ export default function About() {
                   <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Users className="w-4 h-4 text-white" />
                   </div>
-                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Customer Focus</h4>
-                  <p className="text-[var(--medium-gray)] text-xs">Understanding and exceeding expectations</p>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Understanding and exceeding expectations</p>
                 </div>
                 <div className="text-center">
                   <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Star className="w-4 h-4 text-white" />
                   </div>
-                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Excellence</h4>
-                  <p className="text-[var(--medium-gray)] text-xs">Delivering professional services beyond expectations</p>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Delivering professional services beyond expectations</p>
                 </div>
                 <div className="text-center">
                   <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Shield className="w-4 h-4 text-white" />
                   </div>
-                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Responsibility</h4>
-                  <p className="text-[var(--medium-gray)] text-xs">Taking full accountability for our actions</p>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
+                  <p className="text-[var(--medium-gray)] text-sm">Taking full accountability for our actions</p>
                 </div>
               </div>
             </div>
