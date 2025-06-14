@@ -31,7 +31,6 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-lg font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
-              <p className="text-xs text-[var(--medium-gray)] font-semibold">EPIC Solutions Excellence</p>
             </div>
           </Link>
 
