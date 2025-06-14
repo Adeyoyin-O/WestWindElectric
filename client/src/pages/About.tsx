@@ -189,29 +189,35 @@ export default function About() {
               </p>
             </div>
 
-            <div className="modern-card p-6 bg-white border border-gray-200">
-              <div className="grid grid-cols-1 gap-6">
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <Heart className="w-4 h-4 text-white" />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-6 h-6 text-white" />
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
-                  <p className="text-gray-600 text-sm">Understanding and exceeding expectations</p>
                 </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <Trophy className="w-4 h-4 text-white" />
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Customer Focus</h4>
+                <p className="text-gray-600 leading-relaxed">Understanding and exceeding expectations</p>
+              </div>
+              
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Trophy className="w-6 h-6 text-white" />
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
-                  <p className="text-gray-600 text-sm">Delivering professional services beyond expectations</p>
                 </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <CheckCircle className="w-4 h-4 text-white" />
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Excellence</h4>
+                <p className="text-gray-600 leading-relaxed">Delivering professional services beyond expectations</p>
+              </div>
+              
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <CheckCircle className="w-6 h-6 text-white" />
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
-                  <p className="text-gray-600 text-sm">Taking full accountability for our actions</p>
                 </div>
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Responsibility</h4>
+                <p className="text-gray-600 leading-relaxed">Taking full accountability for our actions</p>
               </div>
             </div>
           </div>
