@@ -14,7 +14,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-gradient-to-br from-gray-50 to-gray-100/50">
+      <section className="section-spacing bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -149,7 +149,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-4 bg-gray-50">
+      <section className="py-4 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-gray-200">
