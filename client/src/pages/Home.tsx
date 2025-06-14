@@ -2,8 +2,105 @@ import { useLocation, Link } from "wouter";
 import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Trophy, Workflow, Ship, Cpu, ArrowRight, Zap, Settings } from "lucide-react";
+import { Trophy, Workflow, Ship, Cpu, ArrowRight, Zap, Settings, ChevronLeft, ChevronRight } from "lucide-react";
 import heroBackground from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749921189527.jpg";
+import serviceImage1 from "@assets/alexander-kovalev-mIG_NqkYBoI-unsplash_1749906855750.jpg";
+import serviceImage2 from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749906284778.jpg";
+import serviceImage3 from "@assets/2_1749919437736.png";
+import serviceImage4 from "@assets/3-removebg-preview_1749920563703.png";
+import { useState, useEffect } from "react";
+
+// Service Carousel Component
+function ServiceCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const slides = [
+    {
+      image: serviceImage1,
+      title: "Electrical Infrastructure",
+      description: "Advanced electrical systems and power distribution"
+    },
+    {
+      image: serviceImage2,
+      title: "Maritime Systems",
+      description: "Specialized marine electronics and control systems"
+    },
+    {
+      image: serviceImage3,
+      title: "Industrial Automation",
+      description: "Smart automation and control solutions"
+    },
+    {
+      image: serviceImage4,
+      title: "EPIC Services",
+      description: "Engineering, Procurement, Installation & Commissioning"
+    }
+  ];
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  return (
+    <div className="relative w-full h-96 bg-white rounded-2xl overflow-hidden shadow-xl">
+      {/* Slides Container */}
+      <div 
+        className="flex transition-transform duration-700 ease-in-out h-full"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
+          <div key={index} className="min-w-full h-full relative">
+            <img 
+              src={slide.image} 
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
+            
+            {/* Overlay with gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            
+            {/* Content Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 className="text-xl font-bold mb-2">{slide.title}</h3>
+              <p className="text-sm opacity-90">{slide.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Dots Navigation */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              currentIndex === index 
+                ? 'bg-white scale-125' 
+                : 'bg-white/50 hover:bg-white/75'
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Service Badge */}
+      <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">
+        Our Services
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -106,65 +203,9 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Right Side - Engineering Animation */}
+            {/* Right Side - Services Carousel */}
             <div className="relative">
-              <div className="relative w-full h-96 bg-gradient-to-br from-slate-100 to-blue-100 rounded-2xl p-8 overflow-hidden shadow-xl">
-                
-                {/* Animated Circuit Lines */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300">
-                  <defs>
-                    <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.6" />
-                      <stop offset="100%" stopColor="#1e40af" stopOpacity="0.8" />
-                    </linearGradient>
-                  </defs>
-                  
-                  {/* Horizontal Lines */}
-                  <line x1="50" y1="80" x2="350" y2="80" stroke="url(#circuitGradient)" strokeWidth="3" className="animate-pulse" />
-                  <line x1="50" y1="150" x2="350" y2="150" stroke="url(#circuitGradient)" strokeWidth="3" className="animate-pulse" style={{animationDelay: '0.5s'}} />
-                  <line x1="50" y1="220" x2="350" y2="220" stroke="url(#circuitGradient)" strokeWidth="3" className="animate-pulse" style={{animationDelay: '1s'}} />
-                  
-                  {/* Vertical Lines */}
-                  <line x1="150" y1="50" x2="150" y2="250" stroke="url(#circuitGradient)" strokeWidth="3" className="animate-pulse" style={{animationDelay: '1.5s'}} />
-                  <line x1="250" y1="50" x2="250" y2="250" stroke="url(#circuitGradient)" strokeWidth="3" className="animate-pulse" style={{animationDelay: '2s'}} />
-                  
-                  {/* Circuit Nodes */}
-                  <circle cx="150" cy="80" r="6" fill="#1e40af" className="animate-pulse" />
-                  <circle cx="250" cy="80" r="6" fill="#1e40af" className="animate-pulse" style={{animationDelay: '0.3s'}} />
-                  <circle cx="150" cy="150" r="6" fill="#1e40af" className="animate-pulse" style={{animationDelay: '0.6s'}} />
-                  <circle cx="250" cy="150" r="6" fill="#1e40af" className="animate-pulse" style={{animationDelay: '0.9s'}} />
-                  <circle cx="150" cy="220" r="6" fill="#1e40af" className="animate-pulse" style={{animationDelay: '1.2s'}} />
-                  <circle cx="250" cy="220" r="6" fill="#1e40af" className="animate-pulse" style={{animationDelay: '1.5s'}} />
-                </svg>
-                
-                {/* Floating Engineering Icons */}
-                <div className="absolute top-8 left-8 w-12 h-12 bg-white rounded-lg shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}>
-                  <Zap className="w-6 h-6 text-blue-600" />
-                </div>
-                
-                <div className="absolute top-8 right-8 w-12 h-12 bg-white rounded-lg shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '1s', animationDuration: '3s'}}>
-                  <Settings className="w-6 h-6 text-slate-600" />
-                </div>
-                
-                <div className="absolute bottom-8 left-8 w-12 h-12 bg-white rounded-lg shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '2s', animationDuration: '3s'}}>
-                  <Cpu className="w-6 h-6 text-emerald-600" />
-                </div>
-                
-                <div className="absolute bottom-8 right-8 w-12 h-12 bg-white rounded-lg shadow-lg flex items-center justify-center animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3s'}}>
-                  <Ship className="w-6 h-6 text-blue-700" />
-                </div>
-                
-                {/* Central Engineering Hub */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full shadow-2xl flex items-center justify-center animate-spin" style={{animationDuration: '10s'}}>
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <Workflow className="w-6 h-6 text-blue-600" />
-                  </div>
-                </div>
-              </div>
-              
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-slate-500 rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
+              <ServiceCarousel />
             </div>
             
           </div>
