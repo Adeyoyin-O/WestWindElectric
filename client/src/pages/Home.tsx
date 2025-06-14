@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Activity, Zap, Settings, Monitor, Users, Globe, Clock } from "lucide-react";
+import { Activity, Zap, Settings, Monitor, Users, Globe, Clock, Award, MapPin, CheckCircle, Wrench } from "lucide-react";
 import heroBackground from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749921189527.jpg";
 
 export default function Home() {
@@ -29,6 +29,45 @@ export default function Home() {
         primaryButtonText="Explore Our Services"
         secondaryButtonText="Get a Quote"
       />
+
+      {/* Highlight Stats Section */}
+      <section className="bg-white py-16 -mt-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center group">
+              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Award className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">10+ Years</h3>
+              <p className="text-gray-600 text-sm">Industry Excellence</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">National</h3>
+              <p className="text-gray-600 text-sm">Reach</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <CheckCircle className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">98%</h3>
+              <p className="text-gray-600 text-sm">Project Completion Rate</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="mx-auto w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Wrench className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">End-to-End</h3>
+              <p className="text-gray-600 text-sm">From Design to Commissioning</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Company Overview */}
       <section className="section-spacing bg-white">
