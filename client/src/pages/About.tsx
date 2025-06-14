@@ -176,7 +176,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-4 bg-gray-100">
+      <section className="py-4 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-gray-200">
