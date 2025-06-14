@@ -57,7 +57,7 @@ export default function Header() {
                 Contact Us
               </Button>
             </Link>
-            <div className="flex items-center space-x-3 ml-4">
+            <div className="flex items-center space-x-4 ml-4">
               <div className="w-px h-6 bg-gray-300"></div>
               <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
                 <FaFacebook className="h-5 w-5" />
