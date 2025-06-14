@@ -154,7 +154,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-                <Target className="h-6 w-6 text-teal-600" />
+                <Target className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -164,7 +164,7 @@ export default function About() {
 
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-                <Compass className="h-6 w-6 text-teal-600" />
+                <Compass className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -181,7 +181,7 @@ export default function About() {
           <div className="modern-card p-10 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg">
             <div className="text-center mb-12">
               <div className="w-16 h-16 bg-gray-100 rounded-3xl mx-auto mb-6 flex items-center justify-center">
-                <Award className="h-8 w-8 text-teal-600" />
+                <Award className="h-8 w-8 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-3xl font-bold text-[var(--primary-dark)] mb-4 tracking-tight">Our Core Values</h3>
               <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto text-lg">
@@ -194,7 +194,7 @@ export default function About() {
                 <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                   <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                     <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Heart className="w-5 h-5 text-teal-600" />
+                      <Heart className="w-5 h-5 text-[var(--primary-blue)]" />
                     </div>
                   </div>
                   <div className="pt-8 text-center">
@@ -208,7 +208,7 @@ export default function About() {
                 <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                   <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                     <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Trophy className="w-5 h-5 text-teal-600" />
+                      <Trophy className="w-5 h-5 text-[var(--primary-blue)]" />
                     </div>
                   </div>
                   <div className="pt-8 text-center">
@@ -222,7 +222,7 @@ export default function About() {
                 <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                   <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                     <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="w-5 h-5 text-teal-600" />
+                      <CheckCircle className="w-5 h-5 text-[var(--primary-blue)]" />
                     </div>
                   </div>
                   <div className="pt-8 text-center">
