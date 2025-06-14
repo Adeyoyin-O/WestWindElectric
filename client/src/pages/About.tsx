@@ -158,62 +158,83 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-16 bg-gradient-to-r from-slate-100/50 via-blue-50/30 to-slate-100/50 industrial-texture">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l-4 border-[var(--accent-steel)] hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 steel-gradient rounded-lg flex items-center justify-center mb-6 shadow-md relative">
-                <Server className="text-white h-8 w-8" />
-                <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-lg blur opacity-25"></div>
+      <section className="py-20 industrial-texture relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/60 via-blue-50/40 to-slate-100/60"></div>
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[var(--primary-dark)] mb-4 technical-heading">Our Foundation</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-[var(--accent-electric)] via-[var(--accent-gold)] to-[var(--accent-electric)] mx-auto rounded-full"></div>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 mx-4">
+            <div className="modern-card p-10 group hover:scale-105">
+              <div className="w-20 h-20 steel-gradient rounded-2xl flex items-center justify-center mb-8 shadow-2xl relative group-hover:shadow-3xl transition-all duration-500">
+                <Server className="text-white h-10 w-10" />
+                <div className="absolute -inset-2 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-2xl blur opacity-20 group-hover:opacity-30 transition-all duration-500"></div>
               </div>
-              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Vision</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6 technical-heading">Our Vision</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text text-lg mb-6">
                 To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
               </p>
+              <div className="w-20 h-1 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--accent-gold)] rounded-full"></div>
             </div>
 
-            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l-4 border-[var(--accent-electric)] hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 electric-gradient rounded-lg flex items-center justify-center mb-6 shadow-md relative">
-                <Cpu className="text-white h-8 w-8" />
-                <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-lg blur opacity-25"></div>
+            <div className="modern-card p-10 group hover:scale-105">
+              <div className="w-20 h-20 electric-gradient rounded-2xl flex items-center justify-center mb-8 shadow-2xl relative group-hover:shadow-3xl transition-all duration-500">
+                <Cpu className="text-white h-10 w-10" />
+                <div className="absolute -inset-2 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-2xl blur opacity-20 group-hover:opacity-30 transition-all duration-500"></div>
               </div>
-              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Mission</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-6 technical-heading">Our Mission</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text text-lg mb-6">
                 To provide solution-oriented services to our customers, shareholders and stakeholders.
               </p>
+              <div className="w-20 h-1 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--accent-gold)] rounded-full"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Core Values */}
-      <section className="py-16 bg-gradient-to-br from-white to-slate-50/40 circuit-pattern">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto">
-            <div className="modern-card p-10 text-center bg-gradient-to-br from-white via-blue-50/10 to-white backdrop-blur-sm border-t-4 border-[var(--primary-blue)] shadow-xl">
-              <div className="w-20 h-20 primary-gradient rounded-xl flex items-center justify-center mx-auto mb-8 shadow-lg relative">
-                <Shield className="text-white h-10 w-10" />
-                <div className="absolute -inset-2 bg-gradient-to-r from-[var(--primary-blue)] to-[var(--secondary-gray)] rounded-xl blur opacity-20"></div>
+      <section className="py-20 premium-mesh relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-blue-50/30 to-slate-50/50"></div>
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="w-24 h-24 premium-gradient rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl relative">
+                <Shield className="text-white h-12 w-12" />
+                <div className="absolute -inset-3 bg-gradient-to-r from-[var(--premium-navy)] via-[var(--accent-electric)] to-[var(--accent-gold)] rounded-3xl blur opacity-25"></div>
               </div>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 technical-heading">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed professional-text text-lg max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold text-[var(--primary-dark)] mb-4 technical-heading">Our Core Values</h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-[var(--accent-electric)] via-[var(--accent-gold)] to-[var(--accent-electric)] mx-auto rounded-full mb-8"></div>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text text-xl max-w-3xl mx-auto">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
               </p>
-              
-              {/* Value highlights */}
-              <div className="grid md:grid-cols-3 gap-6 mt-8 pt-6 border-t border-slate-200">
-                <div className="text-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-full mx-auto mb-2"></div>
-                  <span className="text-sm font-medium text-[var(--primary-dark)]">Customer Focus</span>
+            </div>
+            
+            {/* Value pillars */}
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              <div className="elevated-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 steel-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                  <span className="text-white font-bold text-xl">C</span>
                 </div>
-                <div className="text-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-full mx-auto mb-2"></div>
-                  <span className="text-sm font-medium text-[var(--primary-dark)]">Excellence</span>
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3 technical-heading">Customer Focus</h4>
+                <p className="text-[var(--medium-gray)] professional-text">Understanding and exceeding client expectations through dedicated service</p>
+                <div className="w-16 h-1 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--accent-gold)] mx-auto mt-4 rounded-full"></div>
+              </div>
+              <div className="elevated-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 electric-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                  <span className="text-white font-bold text-xl">E</span>
                 </div>
-                <div className="text-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--secondary-gray)] rounded-full mx-auto mb-2"></div>
-                  <span className="text-sm font-medium text-[var(--primary-dark)]">Responsibility</span>
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3 technical-heading">Excellence</h4>
+                <p className="text-[var(--medium-gray)] professional-text">Delivering superior quality and precision in every engineering solution</p>
+                <div className="w-16 h-1 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--accent-gold)] mx-auto mt-4 rounded-full"></div>
+              </div>
+              <div className="elevated-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+                  <span className="text-white font-bold text-xl">R</span>
                 </div>
+                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3 technical-heading">Responsibility</h4>
+                <p className="text-[var(--medium-gray)] professional-text">Taking full accountability for our actions and delivering on commitments</p>
+                <div className="w-16 h-1 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--accent-gold)] mx-auto mt-4 rounded-full"></div>
               </div>
             </div>
           </div>
