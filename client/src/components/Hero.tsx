@@ -70,7 +70,7 @@ export default function Hero({
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-slate-800 font-semibold py-4 px-8 rounded-2xl transition-all duration-300 text-base backdrop-blur-sm bg-transparent !text-white w-full sm:w-48"
+                className="border-2 border-white text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 text-base backdrop-blur-sm bg-transparent !text-white w-full sm:w-48"
                 onClick={onSecondaryClick}
               >
                 Get a Quote
