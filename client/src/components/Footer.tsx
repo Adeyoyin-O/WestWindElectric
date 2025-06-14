@@ -34,12 +34,6 @@ export default function Footer() {
                 <p className="font-bold text-white mb-1">Email</p>
                 <p>admin@westwindelectricpower.com</p>
               </div>
-              <div className="mt-6">
-                <p className="font-bold text-white mb-1">Company Registration</p>
-                <p>RC Number: 968009</p>
-                <p>Registered: July 26th, 2011</p>
-                <p>Corporate Affairs Commission of Nigeria</p>
-              </div>
             </div>
           </div>
         </div>
