@@ -46,9 +46,9 @@
   --light-teal: hsl(175, 90%, 85%);
   
   /* Coral color palette */
-  --bright-coral: hsl(16, 100%, 66%);
-  --coral-accent: hsl(16, 95%, 70%);
-  --light-coral: hsl(16, 100%, 90%);
+  --bright-coral: #B7410E;
+  --coral-accent: #C54A16;
+  --light-coral: #F4D1C1;
 }
 
 .dark {
