@@ -301,7 +301,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
-                  <div className="inline-flex items-center justify-center px-3 py-1 bg-blue-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
+                  <div className="inline-flex items-center justify-center px-3 py-1 bg-orange-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
                     Power Systems
                   </div>
                   <h3 className="text-2xl font-bold mb-3">Power Distribution & Control</h3>
