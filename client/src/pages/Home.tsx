@@ -17,6 +17,7 @@ import serviceImage10 from "@assets/service19_1749934843078.jpg";
 import serviceImage11 from "@assets/service17_1749934870522.jpg";
 import serviceImage12 from "@assets/service15_1749934878839.jpg";
 import controlPanelImage from "@assets/staff-woman-worker-work-operate-cutting-machine-lathe-cnc-engineer-modern-factory-working-woman-smart-women-worker-industry-workplace-photo_1749941219517.jpg";
+import electricalPanelImage from "@assets/image_1749941409917.png";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
@@ -292,8 +293,8 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-7 group">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&fit=crop&crop=center"
-                  alt="Electrical engineers working on power distribution panel"
+                  src={electricalPanelImage}
+                  alt="Technician working on electrical distribution panel"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
