@@ -176,11 +176,7 @@ export default function Home() {
       />
 
       {/* Stats Highlight Strip */}
-      <section className="bg-gradient-to-r from-gray-50 to-slate-100 py-16 border-b border-slate-200 relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute top-4 left-8 w-20 h-20 bg-blue-100/30 rounded-full blur-xl"></div>
-        <div className="absolute bottom-8 right-12 w-16 h-16 bg-orange-100/40 rounded-full blur-lg"></div>
-        <div className="absolute top-1/2 left-1/4 w-1 h-12 bg-gradient-to-b from-blue-200/50 to-transparent rotate-12"></div>
+      <section className="bg-gradient-to-r from-gray-50 to-slate-100 py-16 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center group p-6 rounded-3xl bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
@@ -233,17 +229,14 @@ export default function Home() {
             
             {/* Left Side - Company Intro */}
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium relative">
-                <div className="absolute -left-1 top-1/2 w-1.5 h-1.5 bg-orange-300/60 rounded-full transform -translate-y-1/2"></div>
+              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
                 <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
                 About West Wind
-                <div className="absolute -right-1 top-1/2 w-1.5 h-1.5 bg-orange-300/60 rounded-full transform -translate-y-1/2"></div>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight relative">
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                 Engineering Excellence
                 <span className="block text-blue-700">Since 2011</span>
-                <div className="absolute -top-2 right-8 w-8 h-0.5 bg-gradient-to-r from-blue-300/50 to-transparent transform rotate-45"></div>
               </h2>
               
               <p className="text-lg text-slate-700 leading-relaxed">
@@ -280,24 +273,16 @@ export default function Home() {
             backgroundSize: '800px 800px, 600px 600px, 60px 60px'
           }}></div>
         </div>
-        
-        {/* Floating Design Elements */}
-        <div className="absolute top-10 right-20 w-8 h-8 border-2 border-orange-200/50 rounded-lg rotate-45 animate-pulse"></div>
-        <div className="absolute bottom-16 left-16 w-6 h-6 bg-blue-200/30 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/3 w-12 h-1 bg-gradient-to-r from-slate-300/40 to-transparent rotate-45"></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4 relative">
-              <div className="absolute -left-2 top-1/2 w-2 h-2 bg-orange-300/50 rounded-full transform -translate-y-1/2"></div>
+            <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
               <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
               Our Solutions
-              <div className="absolute -right-2 top-1/2 w-2 h-2 bg-orange-300/50 rounded-full transform -translate-y-1/2"></div>
             </div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4 relative">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">
               Tailored Expertise for Every Project
-              <div className="absolute -top-3 right-1/4 w-12 h-0.5 bg-gradient-to-r from-blue-200/60 to-transparent transform rotate-12"></div>
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Discover our comprehensive range of specialized services designed to power your success
@@ -315,10 +300,7 @@ export default function Home() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px] relative">
-                  <div className="absolute top-2 right-4 w-6 h-6 border border-white/20 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                  </div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
                   <div className="inline-flex items-center justify-center px-3 py-1 bg-orange-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
                     Power Systems
                   </div>
@@ -340,8 +322,7 @@ export default function Home() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px] relative">
-                    <div className="absolute top-1 right-3 w-4 h-4 border border-white/30 rounded-sm rotate-45"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
                     <div className="inline-flex items-center justify-center px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
                       Automation
                     </div>
@@ -361,8 +342,7 @@ export default function Home() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px] relative">
-                    <div className="absolute top-1 right-3 w-3 h-3 bg-cyan-400/30 rounded-full"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
                     <div className="inline-flex items-center justify-center px-3 py-1 bg-cyan-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
                       Maritime
                     </div>
@@ -377,8 +357,7 @@ export default function Home() {
           </div>
 
           {/* Stylish Explore Button */}
-          <div className="text-center relative">
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-blue-200/60 to-transparent"></div>
+          <div className="text-center">
             <Link href="/products-services">
               <Button 
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden"
@@ -390,9 +369,6 @@ export default function Home() {
                 </span>
               </Button>
             </Link>
-            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-8 h-8 border border-blue-100/50 rounded-full flex items-center justify-center">
-              <div className="w-1.5 h-1.5 bg-blue-200/60 rounded-full"></div>
-            </div>
           </div>
         </div>
       </section>
