@@ -47,7 +47,7 @@ export default function Header() {
               </Link>
             ))}
             <Button 
-              className="ml-4 teal-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
+              className="ml-4 burnt-orange-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
             >
               Get Quote
             </Button>
@@ -83,7 +83,7 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-6 teal-gradient text-white py-4 text-lg font-bold rounded-xl">
+              <Button className="w-full mt-6 burnt-orange-gradient text-white py-4 text-lg font-bold rounded-xl">
                 Get Quote
               </Button>
             </div>

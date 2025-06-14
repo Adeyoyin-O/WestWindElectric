@@ -60,7 +60,7 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg"
-                className="accent-gradient hover:opacity-90 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg"
+                className="burnt-orange-gradient hover:opacity-90 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg"
                 onClick={onPrimaryClick}
               >
                 {primaryButtonText}
