@@ -3,7 +3,7 @@ import { Anchor, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-gray-900 text-white py-12">
+    <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-gray-900 text-white py-12 diagonal-pattern">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
@@ -37,30 +37,30 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Our Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li className="hover:text-teal-300 transition-colors">Pumps and Motors</li>
-              <li className="hover:text-teal-300 transition-colors">Electrical and Lighting Fittings</li>
-              <li className="hover:text-teal-300 transition-colors">Circuit Breakers</li>
-              <li className="hover:text-teal-300 transition-colors">Transformers</li>
-              <li className="hover:text-teal-300 transition-colors">Medium and Low Voltage Panels</li>
-              <li className="hover:text-teal-300 transition-colors">DC Panels, Battery Chargers and Batteries</li>
-              <li className="hover:text-teal-300 transition-colors">Starters (DOL, Star-Delta, Auto Transformer)</li>
-              <li className="hover:text-teal-300 transition-colors">Variable Frequency Drives (VFD)</li>
-              <li className="hover:text-teal-300 transition-colors">Control Consoles</li>
-              <li className="hover:text-teal-300 transition-colors">Electric Installations</li>
-              <li className="hover:text-teal-300 transition-colors">Rewinding of Motors and Generator Spare Parts</li>
-              <li className="hover:text-teal-300 transition-colors">Inverters and UPS Systems</li>
-              <li className="hover:text-teal-300 transition-colors">Motor Control Centers (MCC)</li>
+              <li className="hover:text-[#B7410E] transition-colors">Pumps and Motors</li>
+              <li className="hover:text-[#B7410E] transition-colors">Electrical and Lighting Fittings</li>
+              <li className="hover:text-[#B7410E] transition-colors">Circuit Breakers</li>
+              <li className="hover:text-[#B7410E] transition-colors">Transformers</li>
+              <li className="hover:text-[#B7410E] transition-colors">Medium and Low Voltage Panels</li>
+              <li className="hover:text-[#B7410E] transition-colors">DC Panels, Battery Chargers and Batteries</li>
+              <li className="hover:text-[#B7410E] transition-colors">Starters (DOL, Star-Delta, Auto Transformer)</li>
+              <li className="hover:text-[#B7410E] transition-colors">Variable Frequency Drives (VFD)</li>
+              <li className="hover:text-[#B7410E] transition-colors">Control Consoles</li>
+              <li className="hover:text-[#B7410E] transition-colors">Electric Installations</li>
+              <li className="hover:text-[#B7410E] transition-colors">Rewinding of Motors and Generator Spare Parts</li>
+              <li className="hover:text-[#B7410E] transition-colors">Inverters and UPS Systems</li>
+              <li className="hover:text-[#B7410E] transition-colors">Motor Control Centers (MCC)</li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Quick Links</h4>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Home</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">About Us</Link></li>
-              <li><Link href="/products-services" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Products & Services</Link></li>
-              <li><Link href="/partnerships" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Partnerships</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Contact Us</Link></li>
+              <li><Link href="/" className="text-gray-300 hover:text-[#B7410E] transition-colors font-medium">Home</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-[#B7410E] transition-colors font-medium">About Us</Link></li>
+              <li><Link href="/products-services" className="text-gray-300 hover:text-[#B7410E] transition-colors font-medium">Products & Services</Link></li>
+              <li><Link href="/partnerships" className="text-gray-300 hover:text-[#B7410E] transition-colors font-medium">Partnerships</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-[#B7410E] transition-colors font-medium">Contact Us</Link></li>
             </ul>
           </div>
         </div>
@@ -70,13 +70,13 @@ export default function Footer() {
             <p className="text-sm">&copy; 2024 West Wind Electric Power Ltd. All rights reserved.</p>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-teal-300 transition-all duration-300 transform hover:scale-110">
+            <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-teal-300 transition-all duration-300 transform hover:scale-110">
+            <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
               <Twitter className="h-5 w-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-teal-300 transition-all duration-300 transform hover:scale-110">
+            <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
               <Facebook className="h-5 w-5" />
             </a>
           </div>
