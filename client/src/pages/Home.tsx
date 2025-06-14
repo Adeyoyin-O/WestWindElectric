@@ -4,10 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Trophy, Workflow, Ship, Cpu, ArrowRight, Zap, Settings, ChevronLeft, ChevronRight } from "lucide-react";
 import heroBackground from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749921189527.jpg";
-import serviceImage1 from "@assets/alexander-kovalev-mIG_NqkYBoI-unsplash_1749906855750.jpg";
-import serviceImage2 from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749906284778.jpg";
-import serviceImage3 from "@assets/2_1749919437736.png";
-import serviceImage4 from "@assets/3-removebg-preview_1749920563703.png";
+import serviceImage1 from "@assets/service11_1749934695026.jpg";
+import serviceImage2 from "@assets/service10_1749934751504.jpg";
+import serviceImage3 from "@assets/service7_1749934776068.jpg";
+import serviceImage4 from "@assets/service8_1749934789632.jpg";
+import serviceImage5 from "@assets/service9_1749934761978.jpg";
+import serviceImage6 from "@assets/service18_1749934858577.jpg";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
@@ -17,23 +19,33 @@ function ServiceCarousel() {
   const slides = [
     {
       image: serviceImage1,
-      title: "Electrical Infrastructure",
-      description: "Advanced electrical systems and power distribution"
+      title: "Power Distribution Systems",
+      description: "High-voltage electrical switchgear and distribution panels"
     },
     {
       image: serviceImage2,
-      title: "Maritime Systems",
-      description: "Specialized marine electronics and control systems"
+      title: "Industrial Control Systems",
+      description: "Advanced automation and process control solutions"
     },
     {
       image: serviceImage3,
-      title: "Industrial Automation",
-      description: "Smart automation and control solutions"
+      title: "Electrical Installations",
+      description: "Complete electrical switchboard and control panel systems"
     },
     {
       image: serviceImage4,
-      title: "EPIC Services",
-      description: "Engineering, Procurement, Installation & Commissioning"
+      title: "Marine Power Systems",
+      description: "Specialized electrical systems for maritime applications"
+    },
+    {
+      image: serviceImage5,
+      title: "Testing & Commissioning",
+      description: "Professional testing and system commissioning services"
+    },
+    {
+      image: serviceImage6,
+      title: "Control Panel Design",
+      description: "Custom electrical control and monitoring systems"
     }
   ];
 
