@@ -100,79 +100,58 @@ export default function About() {
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-12 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden shadow-lg">
-            <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-5 rounded-br-full"></div>
-            <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-[var(--bright-coral)] to-transparent opacity-5 rounded-tl-full"></div>
-            
-            <div className="text-center mb-10 relative z-10">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-8 h-1 bg-[var(--bright-coral)] rounded-full mr-2"></div>
-                <div className="w-4 h-1 bg-[var(--primary-blue)] rounded-full mr-2"></div>
-                <div className="w-2 h-1 bg-[var(--bright-coral)] rounded-full"></div>
-              </div>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] tracking-tight">Technical Coverage Areas</h3>
-              <div className="w-20 h-1 bg-gradient-to-r from-[var(--primary-blue)] to-[var(--bright-coral)] mx-auto mt-4 rounded-full"></div>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Control Panels</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Generators & Pumps</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Turbo Generators</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Medium & Low Voltage Panels</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Transformers</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Ship Steering Systems</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Gyrocompass</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Voyage Data Recorder</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Radio Survey on Ships & Rigs</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Bridge Equipment Installation</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">Navigation Systems</span>
-              </div>
-              <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--bright-coral)] rounded-full flex-shrink-0"></div>
-                <span className="text-gray-600 text-sm font-medium">DC & AC Control Panels</span>
-              </div>
+          <div className="elevated-card p-16 bg-white relative overflow-hidden shadow-xl border border-gray-100">
+            {/* Modern background pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute top-8 right-8 w-40 h-40 border-2 border-[var(--primary-blue)] rounded-full"></div>
+              <div className="absolute bottom-8 left-8 w-32 h-32 border-2 border-[var(--bright-coral)] rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-[var(--primary-blue)] via-transparent to-[var(--bright-coral)] rounded-full blur-3xl"></div>
             </div>
             
-            {/* Link to Products & Services */}
-            <div className="w-full text-center mt-6 pt-4 border-t border-gray-200">
-              <Link 
-                href="/products-services" 
-                className="inline-flex items-center space-x-2 text-[var(--bright-coral)] hover:text-red-700 font-medium transition-colors duration-200 group"
-              >
-                <span>View Our Products & Services</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
+            {/* Header */}
+            <div className="text-center mb-16 relative z-10">
+              <div className="inline-flex items-center justify-center mb-6">
+                <div className="w-3 h-3 bg-[var(--bright-coral)] rounded-full mr-2"></div>
+                <div className="w-8 h-1 bg-[var(--primary-blue)] rounded-full mr-2"></div>
+                <div className="w-3 h-3 bg-[var(--bright-coral)] rounded-full"></div>
+              </div>
+              <h3 className="text-3xl font-bold text-[var(--primary-dark)] tracking-tight mb-4">Technical Coverage Areas</h3>
+              <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Comprehensive engineering solutions across electrical, electronics, and maritime systems
+              </p>
+            </div>
+
+            {/* Modern grid layout */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 relative z-10">
+              {[
+                "Control Panels", "Generators & Pumps", "Turbo Generators", "Medium & Low Voltage Panels",
+                "Transformers", "Ship Steering Systems", "Gyrocompass", "Voyage Data Recorder",
+                "Radio Survey on Ships & Rigs", "Bridge Equipment Installation", "Navigation Systems", "DC & AC Control Panels"
+              ].map((item, index) => (
+                <div key={index} className="group relative">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-[var(--primary-blue)] hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-3 h-3 bg-gradient-to-br from-[var(--bright-coral)] to-red-500 rounded-full flex-shrink-0 shadow-sm group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="text-gray-700 font-medium text-sm leading-relaxed group-hover:text-[var(--primary-dark)] transition-colors duration-300">{item}</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Enhanced CTA */}
+            <div className="relative z-10">
+              <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8"></div>
+              <div className="text-center">
+                <Link 
+                  href="/products-services" 
+                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-[var(--bright-coral)] to-red-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
+                >
+                  <span>Explore Our Complete Service Portfolio</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
