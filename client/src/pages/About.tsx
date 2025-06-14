@@ -96,51 +96,51 @@ export default function About() {
             <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-10 text-center tracking-tight">Technical Coverage Areas</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Control Panels</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Generators & Pumps</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Turbo Generators</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Medium & Low Voltage Panels</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Transformers</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Ship Steering Systems</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Gyrocompass</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Voyage Data Recorder</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Radio Survey on Ships & Rigs</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Bridge Equipment Installation</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">Navigation Systems</span>
               </div>
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-gray-200">
-                <div className="w-2 h-2 bg-[var(--burnt-teal)] rounded-full flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">DC & AC Control Panels</span>
               </div>
             </div>
