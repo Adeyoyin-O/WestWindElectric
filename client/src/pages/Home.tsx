@@ -256,12 +256,15 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
-        {/* Background Pattern */}
+        {/* Enhanced Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-32 h-32 border-2 border-slate-300 rounded-full"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-blue-300 rounded-full"></div>
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-slate-200 rounded-lg rotate-45"></div>
           <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-blue-200 rounded-lg rotate-12"></div>
+          <div className="absolute top-16 right-1/3 w-4 h-4 bg-orange-200 rounded-full"></div>
+          <div className="absolute bottom-32 left-1/3 w-6 h-6 border border-cyan-200 rounded-full"></div>
+          <div className="absolute top-1/4 left-16 w-2 h-16 bg-gradient-to-b from-blue-200 to-transparent rotate-45"></div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -286,8 +289,10 @@ export default function Home() {
                 West Wind Electric Power Ltd is a leading Nigerian engineering company specializing in comprehensive EPIC services. We deliver cutting-edge electrical, electronics, instrumentation, and maritime control systems that power industries across land and sea...
               </p>
               
-              <div className="pt-4">
-                <Link href="/about" className="group inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-base transition-colors duration-300">
+              <div className="pt-4 relative">
+                <div className="absolute -left-2 top-6 w-1 h-8 bg-gradient-to-b from-blue-200/40 to-transparent rotate-12"></div>
+                <Link href="/about" className="group inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-base transition-colors duration-300 relative">
+                  <div className="absolute -left-1 top-1/2 w-1.5 h-1.5 bg-blue-300/50 rounded-full transform -translate-y-1/2"></div>
                   Learn More About Us
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
@@ -296,6 +301,8 @@ export default function Home() {
             
             {/* Right Side - Services Carousel */}
             <div className="relative">
+              <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-orange-200/30 rounded-full"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-100/40 rounded-full"></div>
               <ServiceCarousel />
             </div>
             
@@ -341,10 +348,15 @@ export default function Home() {
           </div>
 
           {/* Creative Uneven Layout */}
-          <div className="grid grid-cols-12 gap-6 mb-12">
+          <div className="grid grid-cols-12 gap-6 mb-12 relative">
+            {/* Subtle grid decorations */}
+            <div className="absolute -top-8 left-4 w-3 h-3 bg-orange-200/30 rounded-full"></div>
+            <div className="absolute -bottom-8 right-8 w-2 h-12 bg-gradient-to-b from-blue-200/20 to-transparent rotate-45"></div>
+            
             {/* Large Service Card - Spans 7 columns */}
             <div className="col-span-12 lg:col-span-7 group">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
+                <div className="absolute top-4 left-4 w-4 h-4 border border-white/20 rounded-sm rotate-12 z-10"></div>
                 <img 
                   src={electricalPanelImage}
                   alt="Technician working on electrical distribution panel"
@@ -367,9 +379,13 @@ export default function Home() {
             </div>
 
             {/* Two Smaller Cards - Each spans 5 columns, stacked vertically */}
-            <div className="col-span-12 lg:col-span-5 space-y-6">
+            <div className="col-span-12 lg:col-span-5 space-y-6 relative">
+              <div className="absolute -top-2 -right-2 w-5 h-5 border border-purple-200/40 rounded-full"></div>
+              <div className="absolute bottom-1/2 -left-3 w-2 h-8 bg-gradient-to-b from-cyan-200/30 to-transparent rotate-45"></div>
+              
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                  <div className="absolute top-3 left-3 w-3 h-3 bg-purple-300/40 rounded-full z-10"></div>
                   <img 
                     src={controlPanelImage}
                     alt="Female engineer operating CNC machinery in modern factory"
@@ -391,6 +407,7 @@ export default function Home() {
 
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                  <div className="absolute top-3 right-3 w-1 h-6 bg-gradient-to-b from-cyan-300/40 to-transparent rotate-12 z-10"></div>
                   <img 
                     src={marineControlImage}
                     alt="Marine control room with navigation and monitoring systems"
