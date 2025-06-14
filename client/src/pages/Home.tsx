@@ -245,8 +245,8 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-7 group">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
                 <img 
-                  src={serviceImage1} 
-                  alt="Power Distribution Systems"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&crop=center"
+                  alt="Engineers working on power distribution systems"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
@@ -267,8 +267,8 @@ export default function Home() {
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
                   <img 
-                    src={serviceImage2} 
-                    alt="Industrial Control Systems"
+                    src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=600&h=400&fit=crop&crop=center"
+                    alt="Engineers working on industrial control systems"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
@@ -287,8 +287,8 @@ export default function Home() {
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
                   <img 
-                    src={serviceImage6} 
-                    alt="Marine Electronics"
+                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop&crop=center"
+                    alt="Marine engineers working on ship systems"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
