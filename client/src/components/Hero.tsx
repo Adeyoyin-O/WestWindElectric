@@ -47,7 +47,7 @@ export default function Hero({
             {typeof title === 'string' ? title : title}
           </h1>
           {subtitle && (
-            <p className="text-xl lg:text-2xl mb-10 text-blue-100 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-lg lg:text-xl mb-12 text-blue-100 leading-relaxed max-w-4xl mx-auto font-normal">
               {subtitle}
             </p>
           )}
@@ -58,7 +58,7 @@ export default function Hero({
           )}
           
           {showButtons && (
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mt-8">
               <Button 
                 size="lg"
                 className="blue-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-base w-full sm:w-48 flex items-center justify-center gap-2"
