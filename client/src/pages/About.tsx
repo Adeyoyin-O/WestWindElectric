@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Server, Cpu, MonitorSpeaker, Shield, Zap, Building, Factory, Globe, Settings } from "lucide-react";
+import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings } from "lucide-react";
 
 export default function About() {
   return (
@@ -153,7 +153,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-slate-200/60">
               <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
-                <Server className="h-6 w-6 text-[var(--primary-blue)]" />
+                <Target className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
@@ -163,7 +163,7 @@ export default function About() {
 
             <div className="modern-card p-6 bg-white border border-slate-200/60">
               <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
-                <Cpu className="h-6 w-6 text-[var(--primary-blue)]" />
+                <Compass className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
@@ -180,7 +180,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-slate-200/60">
               <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
-                <Shield className="h-6 w-6 text-[var(--primary-blue)]" />
+                <Award className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Core Values</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
