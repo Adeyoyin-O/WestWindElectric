@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--primary-dark)] text-white py-12 diagonal-pattern">
       <div className="container mx-auto">
-        <div className="mb-12">
-          <div className="max-w-md">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div>
             <div className="flex items-center space-x-4 mb-8">
               <div className="w-12 h-12 teal-gradient rounded-xl flex items-center justify-center shadow-lg">
                 <Anchor className="text-white h-6 w-6" />
@@ -32,6 +32,17 @@ export default function Footer() {
                 <p>admin@westwindelectricpower.com</p>
               </div>
             </div>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-6 text-white">Quick Links</h4>
+            <ul className="space-y-3 text-sm">
+              <li><Link href="/" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Home</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">About Us</Link></li>
+              <li><Link href="/products-services" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Products & Services</Link></li>
+              <li><Link href="/partnerships" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Partnerships</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-teal-300 transition-colors font-medium">Contact Us</Link></li>
+            </ul>
           </div>
         </div>
 
