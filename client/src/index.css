@@ -40,7 +40,8 @@
   --gradient-end: hsl(215, 85%, 35%);
   
   /* Secondary color palette */
-  --secondary-orange: hsl(35, 85%, 55%);
+  --secondary-orange: hsl(25, 85%, 50%);
+  --burnt-orange: hsl(25, 85%, 50%);
   --accent-orange: hsl(35, 100%, 60%);
   --light-orange: hsl(35, 90%, 85%);
 }
