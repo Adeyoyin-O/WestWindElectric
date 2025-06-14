@@ -222,8 +222,21 @@
   
   .diagonal-pattern {
     background-image: 
-      linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.02) 50%);
-    background-size: 60px 60px;
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 1px,
+        rgba(255,255,255,0.015) 1px,
+        rgba(255,255,255,0.015) 2px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgba(255,255,255,0.008) 20px,
+        rgba(255,255,255,0.008) 21px
+      );
+    background-size: 12px 12px, 80px 80px;
   }
 
   .modern-gradient-blue {
