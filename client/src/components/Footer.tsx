@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--primary-dark)] text-white py-12 diagonal-pattern">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-4 mb-8">
               <div className="w-12 h-12 teal-gradient rounded-xl flex items-center justify-center shadow-lg">
@@ -32,6 +32,25 @@ export default function Footer() {
                 <p>admin@westwindelectricpower.com</p>
               </div>
             </div>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-6 text-white">Our Services</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li className="hover:text-teal-300 transition-colors">Pumps and Motors</li>
+              <li className="hover:text-teal-300 transition-colors">Electrical and Lighting Fittings</li>
+              <li className="hover:text-teal-300 transition-colors">Circuit Breakers</li>
+              <li className="hover:text-teal-300 transition-colors">Transformers</li>
+              <li className="hover:text-teal-300 transition-colors">Medium and Low Voltage Panels</li>
+              <li className="hover:text-teal-300 transition-colors">DC Panels, Battery Chargers and Batteries</li>
+              <li className="hover:text-teal-300 transition-colors">Starters (DOL, Star-Delta, Auto Transformer)</li>
+              <li className="hover:text-teal-300 transition-colors">Variable Frequency Drives (VFD)</li>
+              <li className="hover:text-teal-300 transition-colors">Control Consoles</li>
+              <li className="hover:text-teal-300 transition-colors">Electric Installations</li>
+              <li className="hover:text-teal-300 transition-colors">Rewinding of Motors and Generator Spare Parts</li>
+              <li className="hover:text-teal-300 transition-colors">Inverters and UPS Systems</li>
+              <li className="hover:text-teal-300 transition-colors">Motor Control Centers (MCC)</li>
+            </ul>
           </div>
 
           <div>
