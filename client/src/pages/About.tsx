@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings, Users, Star, Shield } from "lucide-react";
+import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings, Heart, Trophy, CheckCircle } from "lucide-react";
 import aboutHeroImage from "@assets/alexander-kovalev-mIG_NqkYBoI-unsplash_1749906855750.jpg";
 
 export default function About() {
@@ -192,22 +192,22 @@ export default function About() {
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="grid grid-cols-1 gap-6">
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <Users className="w-4 h-4 text-white" />
+                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <Heart className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
                   <p className="text-gray-600 text-sm">Understanding and exceeding expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <Star className="w-4 h-4 text-white" />
+                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <Trophy className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
                   <p className="text-gray-600 text-sm">Delivering professional services beyond expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
-                    <Shield className="w-4 h-4 text-white" />
+                  <div className="w-10 h-10 bg-[var(--bright-coral)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
                   <p className="text-gray-600 text-sm">Taking full accountability for our actions</p>
