@@ -278,6 +278,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
+              <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
               Our Solutions
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
