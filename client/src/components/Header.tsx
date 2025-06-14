@@ -21,11 +21,11 @@ export default function Header() {
       <nav className="container mx-auto">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-100">
               <img 
                 src={logoImage} 
                 alt="West Wind Electric Power Ltd Logo" 
-                className="w-14 h-14 object-contain"
+                className="w-12 h-12 object-contain"
               />
             </div>
             <div>
