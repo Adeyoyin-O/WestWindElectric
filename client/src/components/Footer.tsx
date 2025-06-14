@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Anchor, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Linkedin, Twitter, Facebook } from "lucide-react";
+import footerLogo from "@assets/3-removebg-preview_1749920563703.png";
 
 export default function Footer() {
   return (
@@ -8,8 +9,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-4 mb-8">
-              <div className="w-12 h-12 teal-gradient rounded-xl flex items-center justify-center shadow-lg">
-                <Anchor className="text-white h-6 w-6" />
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img 
+                  src={footerLogo} 
+                  alt="West Wind Electric Power Ltd Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">West Wind Electric Power Ltd</h3>
