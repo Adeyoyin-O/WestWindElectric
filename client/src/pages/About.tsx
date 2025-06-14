@@ -177,37 +177,38 @@ export default function About() {
       {/* Core Values */}
       <section className="py-20 bg-slate-50/30">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto">
-            <div className="modern-card p-12 text-center bg-white border border-slate-200/60">
-              <div className="w-20 h-20 bg-slate-100 rounded-3xl flex items-center justify-center mx-auto mb-10">
-                <Shield className="h-10 w-10 text-[var(--primary-blue)]" />
+          <div className="grid lg:grid-cols-2 gap-10 mx-4">
+            <div className="modern-card p-10 bg-white border border-slate-200/60">
+              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
+                <Shield className="h-8 w-8 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-3xl font-semibold text-[var(--primary-dark)] mb-8 tracking-tight">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-xl max-w-3xl mx-auto mb-12">
+              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Values</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
               </p>
-              
-              {/* Value highlights */}
-              <div className="grid md:grid-cols-3 gap-12 mt-12 pt-12 border-t border-slate-200">
+            </div>
+
+            <div className="modern-card p-10 bg-white border border-slate-200/60">
+              <div className="grid grid-cols-1 gap-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
                   <p className="text-[var(--medium-gray)] text-sm">Understanding and exceeding expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
                   <p className="text-[var(--medium-gray)] text-sm">Delivering professional services beyond expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
+                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
                   <p className="text-[var(--medium-gray)] text-sm">Taking full accountability for our actions</p>
                 </div>
               </div>
