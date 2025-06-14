@@ -184,7 +184,7 @@ export default function Home() {
                 <Trophy className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">13+ Years of Proven Delivery</h3>
-              <p className="text-xs text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Trusted expertise in<br />complex engineering projects</p>
+              <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Trusted expertise in<br />complex engineering projects</p>
             </div>
             
             <div className="text-center group p-4 rounded-lg bg-white/50 shadow-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:scale-105">
@@ -192,7 +192,7 @@ export default function Home() {
                 <Workflow className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">EPIC Services, All in One Place</h3>
-              <p className="text-xs text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Complete engineering, procurement, installation & commissioning</p>
+              <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Complete engineering, procurement, installation & commissioning</p>
             </div>
             
             <div className="text-center group p-4 rounded-lg bg-white/50 shadow-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:scale-105">
@@ -200,7 +200,7 @@ export default function Home() {
                 <Ship className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">Powering Land & Sea</h3>
-              <p className="text-xs text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Specialized solutions for<br />power and maritime industries</p>
+              <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Specialized solutions for<br />power and maritime industries</p>
             </div>
             
             <div className="text-center group p-4 rounded-lg bg-white/50 shadow-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:scale-105">
@@ -208,7 +208,7 @@ export default function Home() {
                 <Cpu className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">Smart Systems Integration</h3>
-              <p className="text-xs text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Advanced automation and<br />control system solutions</p>
+              <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Advanced automation and<br />control system solutions</p>
             </div>
           </div>
         </div>
