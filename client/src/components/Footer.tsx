@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Linkedin, Twitter, Facebook } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { FaFacebook } from "react-icons/fa";
 import footerLogo from "@assets/3-removebg-preview_1749920563703.png";
 
 export default function Footer() {
@@ -76,13 +77,10 @@ export default function Footer() {
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
-              <Linkedin className="h-5 w-5" />
+              <FaFacebook className="h-5 w-5" />
             </a>
             <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
-              <Facebook className="h-5 w-5" />
+              <MessageCircle className="h-5 w-5" />
             </a>
           </div>
         </div>
