@@ -128,7 +128,7 @@ export default function About() {
                 <div key={index} className="group relative">
                   <div className="bg-gradient-to-br from-white to-gray-50 p-4 rounded-xl border border-gray-200 hover:border-[var(--primary-blue)] hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-gradient-to-br from-[var(--bright-coral)] to-red-500 rounded-full flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300"></div>
+                      <div className="w-1.5 h-1.5 bg-gradient-to-br from-[var(--bright-coral)] to-red-500 rounded-full flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300"></div>
                       <span className="text-gray-700 font-medium text-sm leading-tight group-hover:text-[var(--primary-dark)] transition-colors duration-300">{item}</span>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300"></div>
