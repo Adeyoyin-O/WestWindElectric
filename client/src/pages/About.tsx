@@ -64,88 +64,37 @@ export default function About() {
             </div>
           </div>
 
-          {/* Technical Expertise */}
+          {/* Areas of Expertise */}
           <div className="mb-20 mx-4">
-            <div className="text-center mb-12">
-              <span className="text-sm font-bold text-[var(--bright-coral)] uppercase tracking-wider mb-2 block">Our Capabilities</span>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] tracking-tight">Technical Expertise</h3>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary-blue)] to-blue-600 rounded-2xl transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-                <div className="relative bg-white rounded-2xl p-8 border-2 border-transparent group-hover:border-blue-200 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary-blue)] to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Building className="h-7 w-7 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Building Systems</h4>
-                      <p className="text-gray-600 mb-4 leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Infrastructure</span>
-                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Commercial</span>
-                      </div>
-                    </div>
-                  </div>
+            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-12 text-center tracking-tight">Technical Expertise</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+                  <Building className="h-8 w-8 text-white group-hover:text-blue-600 transition-colors duration-300" />
                 </div>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Building Systems</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
               </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[var(--bright-coral)] to-red-600 rounded-2xl transform -rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-                <div className="relative bg-white rounded-2xl p-8 border-2 border-transparent group-hover:border-red-200 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[var(--bright-coral)] to-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Zap className="h-7 w-7 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Power Generation</h4>
-                      <p className="text-gray-600 mb-4 leading-relaxed">Advanced power generation and distribution networks</p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">Generation</span>
-                        <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">Distribution</span>
-                      </div>
-                    </div>
-                  </div>
+              <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+                  <Zap className="h-8 w-8 text-white group-hover:text-blue-600 transition-colors duration-300" />
                 </div>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Power Generation</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Advanced power generation and distribution networks</p>
               </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-                <div className="relative bg-white rounded-2xl p-8 border-2 border-transparent group-hover:border-slate-200 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Factory className="h-7 w-7 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Industrial Plants</h4>
-                      <p className="text-gray-600 mb-4 leading-relaxed">Process automation and control systems</p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Automation</span>
-                        <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">Control Systems</span>
-                      </div>
-                    </div>
-                  </div>
+              <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+                  <Factory className="h-8 w-8 text-white group-hover:text-blue-600 transition-colors duration-300" />
                 </div>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Industrial Plants</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Process automation and control systems</p>
               </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl transform -rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-                <div className="relative bg-white rounded-2xl p-8 border-2 border-transparent group-hover:border-teal-200 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MonitorSpeaker className="h-7 w-7 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Marine Systems</h4>
-                      <p className="text-gray-600 mb-4 leading-relaxed">Navigation and communication equipment</p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Navigation</span>
-                        <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Communication</span>
-                      </div>
-                    </div>
-                  </div>
+              <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+                  <MonitorSpeaker className="h-8 w-8 text-white group-hover:text-blue-600 transition-colors duration-300" />
                 </div>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Marine Systems</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">Navigation and communication equipment</p>
               </div>
             </div>
           </div>
