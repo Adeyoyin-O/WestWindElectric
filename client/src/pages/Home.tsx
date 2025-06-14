@@ -165,8 +165,8 @@ export default function Home() {
     <div className="page-transition">
       {/* Hero Section */}
       <Hero
-        title="Leading EPIC Solutions Provider in Nigeria"
-        subtitle="Specializing in engineering, procurement, installation, and commissioning of electrical, electronics, and instrumentation systems for power and maritime industries"
+        title="Your EPIC Partner in Engineering Excellence"
+        subtitle="From electrical systems to control infrastructure, we bring precision, expertise, and reliability to every stage of your project lifecycle."
         backgroundImage={heroBackground}
         showButtons
         onPrimaryClick={handleExploreServices}
