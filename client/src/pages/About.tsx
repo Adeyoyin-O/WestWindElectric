@@ -24,13 +24,13 @@ export default function About() {
             <div className="px-4">
               <div className="space-y-6 text-lg text-black leading-relaxed">
                 <p>
-                  <strong className="text-[var(--bright-coral)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
+                  <strong className="text-black">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
                 </p>
                 <p>
-                  We are a company registered under the Corporate Affairs Commission of Nigeria on <strong className="text-[var(--bright-coral)]">July 26th, 2011</strong> with RC number <strong className="text-[var(--bright-coral)]">968009</strong>.
+                  We are a company registered under the Corporate Affairs Commission of Nigeria on <strong className="text-black">July 26th, 2011</strong> with RC number <strong className="text-black">968009</strong>.
                 </p>
                 <p>
-                  We specialize in the <strong className="text-[var(--bright-coral)]">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
+                  We specialize in the <strong className="text-black">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
                 </p>
               </div>
             </div>
