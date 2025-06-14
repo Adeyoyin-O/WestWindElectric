@@ -9,7 +9,6 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Products & Services", href: "/products-services" },
   { name: "Partnerships", href: "/partnerships" },
-  { name: "Get a Quote", href: "/contact" },
 ];
 
 export default function Header() {
@@ -46,6 +45,13 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <Link href="/contact">
+              <Button 
+                className="ml-4 burnt-teal-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,6 +84,11 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full mt-6 burnt-teal-gradient text-white py-4 text-lg font-bold rounded-xl">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         )}
