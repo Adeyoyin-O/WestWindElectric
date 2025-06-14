@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings, Users, Star, Shield } from "lucide-react";
+import aboutHeroImage from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749906284778.jpg";
 
 export default function About() {
   return (
@@ -9,7 +10,7 @@ export default function About() {
       <Hero
         title="About Us"
         subtitle="Excellence in Electrical, Electronics and Instrumentation Services since 2011"
-        backgroundImage="@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749906284778.jpg"
+        backgroundImage={aboutHeroImage}
       />
 
       {/* Who We Are */}
