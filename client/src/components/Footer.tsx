@@ -1,6 +1,5 @@
 import { Link } from "wouter";
-import { MessageCircle } from "lucide-react";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import footerLogo from "@assets/3-removebg-preview_1749920563703.png";
 
 export default function Footer() {
@@ -80,7 +79,7 @@ export default function Footer() {
               <FaFacebook className="h-5 w-5" />
             </a>
             <a href="#" className="text-gray-400 hover:text-[#B7410E] transition-all duration-300 transform hover:scale-110">
-              <MessageCircle className="h-5 w-5" />
+              <FaWhatsapp className="h-5 w-5" />
             </a>
           </div>
         </div>
