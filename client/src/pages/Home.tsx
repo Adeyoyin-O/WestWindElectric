@@ -211,6 +211,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-10 w-32 h-32 border-2 border-slate-300 rounded-full"></div>
+          <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-blue-300 rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-slate-200 rounded-lg rotate-45"></div>
+          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-blue-200 rounded-lg rotate-12"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Left Side - Company Intro */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
+                About West Wind
+              </div>
+              
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                Engineering Excellence
+                <span className="block text-blue-700">Since 2011</span>
+              </h2>
+              
+              <p className="text-lg text-slate-700 leading-relaxed">
+                West Wind Electric Power Ltd is a leading Nigerian engineering company specializing in comprehensive EPIC services. We deliver cutting-edge electrical, electronics, instrumentation, and maritime control systems that power industries across land and sea...
+              </p>
+              
+              <div className="pt-4">
+                <Link href="/about" className="group inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-base transition-colors duration-300">
+                  Learn More About Us
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Link>
+              </div>
+            </div>
+            
+            {/* Right Side - Services Carousel */}
+            <div className="relative">
+              <ServiceCarousel />
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
       {/* Our Solutions Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
         {/* Background Texture */}
@@ -319,52 +365,6 @@ export default function Home() {
                 </span>
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Us Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-32 h-32 border-2 border-slate-300 rounded-full"></div>
-          <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-blue-300 rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-slate-200 rounded-lg rotate-45"></div>
-          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-blue-200 rounded-lg rotate-12"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Side - Company Intro */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
-                About West Wind
-              </div>
-              
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                Engineering Excellence
-                <span className="block text-blue-700">Since 2011</span>
-              </h2>
-              
-              <p className="text-lg text-slate-700 leading-relaxed">
-                West Wind Electric Power Ltd is a leading Nigerian engineering company specializing in comprehensive EPIC services. We deliver cutting-edge electrical, electronics, instrumentation, and maritime control systems that power industries across land and sea...
-              </p>
-              
-              <div className="pt-4">
-                <Link href="/about" className="group inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-base transition-colors duration-300">
-                  Learn More About Us
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </div>
-            </div>
-            
-            {/* Right Side - Services Carousel */}
-            <div className="relative">
-              <ServiceCarousel />
-            </div>
-            
           </div>
         </div>
       </section>
