@@ -16,6 +16,7 @@ import serviceImage9 from "@assets/service20_1749934817170.jpg";
 import serviceImage10 from "@assets/service19_1749934843078.jpg";
 import serviceImage11 from "@assets/service17_1749934870522.jpg";
 import serviceImage12 from "@assets/service15_1749934878839.jpg";
+import controlPanelImage from "@assets/wonderlane-HCQhrghD_Tw-unsplash_1749940788825.jpg";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
@@ -313,7 +314,7 @@ export default function Home() {
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
                   <img 
-                    src="/attached_assets/wonderlane-HCQhrghD_Tw-unsplash_1749940788825.jpg"
+                    src={controlPanelImage}
                     alt="Industrial control panel with monitoring systems"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
