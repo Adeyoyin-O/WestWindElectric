@@ -24,19 +24,18 @@
   --ring: hsl(210, 100%, 45%);
   --radius: 0.5rem;
   
-  /* Modern theme colors */
-  --primary-dark: hsl(220, 26%, 14%);
-  --primary-blue: hsl(217, 91%, 60%);
-  --secondary-gray: hsl(210, 11%, 20%);
-  --accent-teal: hsl(173, 80%, 40%);
-  --accent-purple: hsl(250, 84%, 54%);
-  --light-gray: hsl(210, 25%, 96%);
-  --light-blue: hsl(210, 40%, 98%);
-  --light-teal: hsl(174, 30%, 96%);
-  --light-purple: hsl(268, 30%, 96%);
-  --medium-gray: hsl(210, 8%, 51%);
-  --gradient-start: hsl(220, 26%, 14%);
-  --gradient-end: hsl(217, 91%, 60%);
+  /* Professional engineering theme colors */
+  --primary-dark: hsl(210, 25%, 15%);
+  --primary-blue: hsl(210, 100%, 25%);
+  --secondary-gray: hsl(210, 15%, 25%);
+  --accent-steel: hsl(210, 20%, 35%);
+  --accent-electric: hsl(210, 100%, 30%);
+  --light-gray: hsl(210, 10%, 97%);
+  --light-steel: hsl(210, 15%, 96%);
+  --medium-gray: hsl(210, 10%, 45%);
+  --dark-steel: hsl(210, 20%, 20%);
+  --gradient-start: hsl(210, 25%, 15%);
+  --gradient-end: hsl(210, 100%, 25%);
 }
 
 .dark {
@@ -98,31 +97,30 @@
   
   .modern-card {
     background: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-    border: 1px solid hsl(210, 20%, 92%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid hsl(210, 15%, 88%);
+    transition: all 0.2s ease-in-out;
     margin: 0.5rem;
   }
   
   .modern-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
-    border-color: hsl(217, 91%, 60%, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-steel);
   }
   
   .elevated-card {
     background: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-    border: 1px solid hsl(210, 20%, 90%);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid hsl(210, 15%, 85%);
+    transition: all 0.2s ease-in-out;
     margin: 0.75rem;
   }
   
   .elevated-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-electric);
   }
   
   .nav-link.active {
@@ -187,13 +185,16 @@
     background-clip: text;
   }
   
-  .floating-element {
-    animation: float 6s ease-in-out infinite;
+  .professional-text {
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.4;
   }
   
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+  .technical-heading {
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
   }
   
   .diagonal-pattern {
@@ -201,19 +202,19 @@
     background-size: 16px 16px;
   }
 
-  .teal-gradient {
-    background: linear-gradient(135deg, hsl(173, 60%, 35%) 0%, hsl(158, 55%, 40%) 100%);
-    border: 1px solid hsl(173, 40%, 50%);
+  .steel-gradient {
+    background: linear-gradient(135deg, var(--accent-steel) 0%, var(--dark-steel) 100%);
+    border: 1px solid var(--accent-steel);
   }
   
-  .purple-gradient {
-    background: linear-gradient(135deg, hsl(250, 70%, 45%) 0%, hsl(265, 65%, 50%) 100%);
-    border: 1px solid hsl(250, 50%, 60%);
+  .electric-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-electric) 100%);
+    border: 1px solid var(--primary-blue);
   }
   
   .primary-gradient {
-    background: linear-gradient(135deg, hsl(217, 80%, 50%) 0%, hsl(220, 40%, 25%) 100%);
-    border: 1px solid hsl(217, 60%, 65%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-gray) 100%);
+    border: 1px solid var(--primary-dark);
   }
 
   .technical-grid {

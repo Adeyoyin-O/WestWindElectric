@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Database, Cpu, Activity, Shield, Lightbulb, Building, Zap, Globe, Settings } from "lucide-react";
+import { Server, Cpu, MonitorSpeaker, Shield, Zap, Building, Factory, Globe, Settings } from "lucide-react";
 
 export default function About() {
   return (
@@ -57,27 +57,27 @@ export default function About() {
 
           {/* Areas of Expertise */}
           <div className="mb-16 mx-4">
-            <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-8 text-center">Our Areas of Expertise</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="modern-card p-8 text-center">
-                <Building className="h-12 w-12 mx-auto mb-4 text-teal-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Building Construction</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Complete electrical systems for commercial and industrial buildings</p>
+            <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-8 text-center tracking-tight">Technical Expertise</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="modern-card p-6 text-center">
+                <Building className="h-10 w-10 mx-auto mb-4 text-[var(--accent-steel)]" />
+                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Building Systems</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
               </div>
-              <div className="modern-card p-8 text-center">
-                <Zap className="h-12 w-12 mx-auto mb-4 text-purple-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Power Plants</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Advanced power generation and distribution systems</p>
+              <div className="modern-card p-6 text-center">
+                <Zap className="h-10 w-10 mx-auto mb-4 text-[var(--accent-electric)]" />
+                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Power Generation</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Advanced power generation and distribution networks</p>
               </div>
-              <div className="modern-card p-8 text-center">
-                <Settings className="h-12 w-12 mx-auto mb-4 text-blue-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Manufacturing Plants</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Industrial automation and control systems</p>
+              <div className="modern-card p-6 text-center">
+                <Factory className="h-10 w-10 mx-auto mb-4 text-[var(--dark-steel)]" />
+                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Industrial Plants</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Process automation and control systems</p>
               </div>
-              <div className="modern-card p-8 text-center">
-                <Globe className="h-12 w-12 mx-auto mb-4 text-indigo-600" />
-                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-3 leading-tight">Vessels</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Maritime navigation and communication systems</p>
+              <div className="modern-card p-6 text-center">
+                <MonitorSpeaker className="h-10 w-10 mx-auto mb-4 text-[var(--secondary-gray)]" />
+                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Marine Systems</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Navigation and communication equipment</p>
               </div>
             </div>
           </div>
@@ -144,8 +144,8 @@ export default function About() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-8">
-              <div className="w-16 h-16 teal-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element">
-                <Database className="text-white h-8 w-8" />
+              <div className="w-16 h-16 steel-gradient rounded-sm flex items-center justify-center mb-6 shadow-sm">
+                <Server className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
               <p className="text-[var(--medium-gray)] leading-relaxed">
@@ -154,7 +154,7 @@ export default function About() {
             </div>
 
             <div className="modern-card p-8">
-              <div className="w-16 h-16 purple-gradient rounded-lg flex items-center justify-center mb-6 shadow-sm floating-element" style={{animationDelay: '1s'}}>
+              <div className="w-16 h-16 electric-gradient rounded-sm flex items-center justify-center mb-6 shadow-sm">
                 <Cpu className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
@@ -171,7 +171,7 @@ export default function About() {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <div className="modern-card p-8 text-center">
-              <div className="w-16 h-16 primary-gradient rounded-lg flex items-center justify-center mx-auto mb-6 shadow-sm floating-element">
+              <div className="w-16 h-16 primary-gradient rounded-sm flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <Shield className="text-white h-8 w-8" />
               </div>
               <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
