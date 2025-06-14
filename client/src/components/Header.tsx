@@ -20,7 +20,7 @@ export default function Header() {
     <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto">
         <div className="flex justify-between items-center py-3">
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-2">
             <div className="w-12 h-12 flex items-center justify-center">
               <img 
                 src={logoImage} 
