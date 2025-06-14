@@ -60,7 +60,7 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg"
-                className="blue-gradient hover:opacity-90 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg"
+                className="blue-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-base w-full sm:w-48"
                 onClick={onPrimaryClick}
               >
                 {primaryButtonText}
@@ -68,7 +68,7 @@ export default function Hero({
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-slate-800 font-bold py-5 px-10 rounded-2xl transition-all duration-300 text-lg backdrop-blur-sm bg-transparent !text-white"
+                className="border-2 border-white text-white hover:bg-white hover:text-slate-800 font-semibold py-4 px-8 rounded-2xl transition-all duration-300 text-base backdrop-blur-sm bg-transparent !text-white w-full sm:w-48"
                 onClick={onSecondaryClick}
               >
                 Get a Quote
