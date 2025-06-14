@@ -70,10 +70,11 @@ export default function Hero({
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:text-black font-semibold py-4 px-8 rounded-2xl transition-all duration-300 text-base backdrop-blur-sm bg-transparent w-full sm:w-48"
+                className="border-2 border-white text-white hover:text-black font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-base backdrop-blur-sm bg-transparent w-full sm:w-48 flex items-center justify-center gap-2"
                 onClick={onSecondaryClick}
               >
                 Get a Quote
+                <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
           )}
