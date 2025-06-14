@@ -3,7 +3,7 @@ import { Anchor, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-gray-900 text-white py-12 diagonal-pattern">
+    <footer className="bg-[var(--primary-dark)] text-white py-12 diagonal-pattern">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
