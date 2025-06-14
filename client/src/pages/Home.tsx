@@ -233,14 +233,17 @@ export default function Home() {
             
             {/* Left Side - Company Intro */}
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium relative">
+                <div className="absolute -left-1 top-1/2 w-1.5 h-1.5 bg-orange-300/60 rounded-full transform -translate-y-1/2"></div>
                 <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
                 About West Wind
+                <div className="absolute -right-1 top-1/2 w-1.5 h-1.5 bg-orange-300/60 rounded-full transform -translate-y-1/2"></div>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight relative">
                 Engineering Excellence
                 <span className="block text-blue-700">Since 2011</span>
+                <div className="absolute -top-2 right-8 w-8 h-0.5 bg-gradient-to-r from-blue-300/50 to-transparent transform rotate-45"></div>
               </h2>
               
               <p className="text-lg text-slate-700 leading-relaxed">
@@ -374,7 +377,8 @@ export default function Home() {
           </div>
 
           {/* Stylish Explore Button */}
-          <div className="text-center">
+          <div className="text-center relative">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-blue-200/60 to-transparent"></div>
             <Link href="/products-services">
               <Button 
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden"
@@ -386,6 +390,9 @@ export default function Home() {
                 </span>
               </Button>
             </Link>
+            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-8 h-8 border border-blue-100/50 rounded-full flex items-center justify-center">
+              <div className="w-1.5 h-1.5 bg-blue-200/60 rounded-full"></div>
+            </div>
           </div>
         </div>
       </section>
