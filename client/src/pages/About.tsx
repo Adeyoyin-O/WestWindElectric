@@ -61,29 +61,29 @@ export default function About() {
             <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-12 text-center tracking-tight">Technical Expertise</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
-                  <Building className="h-8 w-8 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-400 transition-colors duration-300">
+                  <Building className="h-8 w-8 text-white transition-colors duration-300" />
                 </div>
                 <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Building Systems</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
               </div>
               <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
-                  <Zap className="h-8 w-8 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-400 transition-colors duration-300">
+                  <Zap className="h-8 w-8 text-white transition-colors duration-300" />
                 </div>
                 <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Power Generation</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">Advanced power generation and distribution networks</p>
               </div>
               <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
-                  <Factory className="h-8 w-8 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-400 transition-colors duration-300">
+                  <Factory className="h-8 w-8 text-white transition-colors duration-300" />
                 </div>
                 <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Industrial Plants</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">Process automation and control systems</p>
               </div>
               <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
-                <div className="w-16 h-16 bg-gray-200 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[var(--primary-blue)] transition-colors duration-300">
-                  <MonitorSpeaker className="h-8 w-8 text-gray-600 group-hover:text-white transition-colors duration-300" />
+                <div className="w-16 h-16 bg-[var(--primary-blue)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-400 transition-colors duration-300">
+                  <MonitorSpeaker className="h-8 w-8 text-white transition-colors duration-300" />
                 </div>
                 <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight">Marine Systems</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">Navigation and communication equipment</p>
