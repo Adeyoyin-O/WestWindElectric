@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 
 interface HeroProps {
   title: string;
@@ -60,18 +61,20 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg"
-                className="blue-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-base w-full sm:w-48"
+                className="blue-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-base w-full sm:w-48 flex items-center justify-center gap-2"
                 onClick={onPrimaryClick}
               >
                 {primaryButtonText}
+                <ChevronRight className="w-4 h-4" />
               </Button>
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-slate-800 font-semibold py-4 px-8 rounded-2xl transition-all duration-300 text-base backdrop-blur-sm bg-transparent !text-white w-full sm:w-48"
+                className="border border-white/70 text-white hover:border-white/90 hover:shadow-lg font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-base backdrop-blur-sm bg-gradient-to-r from-white/5 to-white/10 w-full sm:w-48 flex items-center justify-center gap-2 hover:bg-gradient-to-r hover:from-white/10 hover:to-white/15"
                 onClick={onSecondaryClick}
               >
                 Get a Quote
+                <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
           )}
