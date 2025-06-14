@@ -12,7 +12,7 @@ export default function Home() {
     setLocation("/products-services");
   };
 
-  const handleGetConsultation = () => {
+  const handleGetQuote = () => {
     setLocation("/contact");
   };
 
@@ -25,9 +25,9 @@ export default function Home() {
         backgroundImage={heroBackground}
         showButtons
         onPrimaryClick={handleExploreServices}
-        onSecondaryClick={handleGetConsultation}
-        primaryButtonText="Explore Solutions"
-        secondaryButtonText="Get Consultation"
+        onSecondaryClick={handleGetQuote}
+        primaryButtonText="Explore Our Services"
+        secondaryButtonText="Get a Quote"
       />
 
       {/* Company Overview */}
