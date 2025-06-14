@@ -41,9 +41,10 @@
   
   /* Secondary color palette */
   --secondary-teal: hsl(175, 85%, 40%);
-  --burnt-teal: hsl(175, 85%, 40%);
   --accent-teal: hsl(175, 100%, 45%);
   --light-teal: hsl(175, 90%, 85%);
+  --bright-accent: hsl(45, 100%, 55%);
+  --bright-orange: hsl(25, 100%, 60%);
 }
 
 .dark {
@@ -96,8 +97,12 @@
     background: linear-gradient(135deg, var(--primary-dark), var(--secondary-gray), var(--primary-blue));
   }
   
-  .burnt-teal-gradient {
-    background: linear-gradient(135deg, var(--burnt-teal) 0%, hsl(170, 85%, 35%) 100%);
+  .blue-button-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, hsl(210, 85%, 45%) 100%);
+  }
+  
+  .bright-accent-gradient {
+    background: linear-gradient(135deg, var(--bright-accent) 0%, var(--bright-orange) 100%);
   }
   
   .modern-glass {
