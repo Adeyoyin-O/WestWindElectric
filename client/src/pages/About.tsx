@@ -14,7 +14,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-gradient-to-br from-slate-50/30 to-white">
+      <section className="section-spacing bg-gradient-to-br from-slate-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -92,7 +92,7 @@ export default function About() {
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-12 bg-slate-50/30">
+          <div className="elevated-card p-12 bg-gradient-to-br from-blue-50/40 to-sky-50/60">
             <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-10 text-center tracking-tight">Technical Coverage Areas</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-center space-x-4 bg-white p-5 rounded-xl hover:shadow-md transition-all duration-200 border border-slate-200/50">
@@ -176,7 +176,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-4 bg-slate-50/30">
+      <section className="py-4 bg-gradient-to-br from-slate-100/70 to-blue-50/50">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-slate-200/60">
