@@ -31,39 +31,39 @@ export default function Home() {
       />
 
       {/* Stats Highlight Strip */}
-      <section className="bg-gradient-to-r from-slate-50 to-blue-50 py-16 border-b border-slate-200">
+      <section className="bg-gradient-to-r from-slate-50 to-blue-50 py-10 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <Award className="w-8 h-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Award className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-slate-800 mb-2">10+ Years of Proven Delivery</h3>
-              <p className="text-sm text-slate-600">Trusted expertise in complex engineering projects</p>
+              <h3 className="text-base font-bold text-slate-800 mb-1">10+ Years of Proven Delivery</h3>
+              <p className="text-xs text-slate-600">Trusted expertise in complex engineering projects</p>
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <Layers className="w-8 h-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Layers className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-slate-800 mb-2">EPIC Services, All in One Place</h3>
-              <p className="text-sm text-slate-600">Complete engineering, procurement, installation & commissioning</p>
+              <h3 className="text-base font-bold text-slate-800 mb-1">EPIC Services, All in One Place</h3>
+              <p className="text-xs text-slate-600">Complete engineering, procurement, installation & commissioning</p>
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <Anchor className="w-8 h-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Anchor className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-slate-800 mb-2">Powering Land & Sea</h3>
-              <p className="text-sm text-slate-600">Specialized solutions for power and maritime industries</p>
+              <h3 className="text-base font-bold text-slate-800 mb-1">Powering Land & Sea</h3>
+              <p className="text-xs text-slate-600">Specialized solutions for power and maritime industries</p>
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <Network className="w-8 h-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Network className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-slate-800 mb-2">Smart Systems Integration</h3>
-              <p className="text-sm text-slate-600">Advanced automation and control system solutions</p>
+              <h3 className="text-base font-bold text-slate-800 mb-1">Smart Systems Integration</h3>
+              <p className="text-xs text-slate-600">Advanced automation and control system solutions</p>
             </div>
           </div>
         </div>
