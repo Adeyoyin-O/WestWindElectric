@@ -17,7 +17,7 @@ import serviceImage10 from "@assets/service19_1749934843078.jpg";
 import serviceImage11 from "@assets/service17_1749934870522.jpg";
 import serviceImage12 from "@assets/service15_1749934878839.jpg";
 import controlPanelImage from "@assets/staff-woman-worker-work-operate-cutting-machine-lathe-cnc-engineer-modern-factory-working-woman-smart-women-worker-industry-workplace-photo_1749941219517.jpg";
-import electricalPanelImage from "@assets/image_1749941409917.png";
+import electricalPanelImage from "@assets/electricity-electrical-maintenance-service-electrician-260nw-2251896605_1749941607977.jpg";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
