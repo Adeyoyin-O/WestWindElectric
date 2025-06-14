@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface HeroProps {
   title: string;
@@ -65,7 +65,7 @@ export default function Hero({
                 onClick={onPrimaryClick}
               >
                 {primaryButtonText}
-                <ChevronRight className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4" />
               </Button>
               <Button 
                 variant="outline"
@@ -74,7 +74,7 @@ export default function Hero({
                 onClick={onSecondaryClick}
               >
                 Get a Quote
-                <ChevronRight className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4" />
               </Button>
             </div>
           )}
