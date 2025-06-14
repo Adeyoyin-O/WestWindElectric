@@ -183,7 +183,7 @@ export default function Home() {
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Trophy className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-base font-bold text-slate-800 mb-1 group-hover:text-slate-900 transition-colors duration-300">10+ Years of Proven Delivery</h3>
+              <h3 className="text-base font-bold text-slate-800 mb-1 group-hover:text-slate-900 transition-colors duration-300">13+ Years of Proven Delivery</h3>
               <p className="text-xs text-slate-600 group-hover:text-slate-700 transition-colors duration-300">Trusted expertise in<br />complex engineering projects</p>
             </div>
             
@@ -236,7 +236,7 @@ export default function Home() {
               
               <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                 Engineering Excellence
-                <span className="block text-blue-700">Since 2013</span>
+                <span className="block text-blue-700">Since 2011</span>
               </h2>
               
               <p className="text-lg text-slate-700 leading-relaxed">
