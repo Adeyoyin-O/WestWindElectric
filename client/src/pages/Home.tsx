@@ -313,8 +313,8 @@ export default function Home() {
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop&crop=center"
-                    alt="Technician operating industrial automation control panel"
+                    src="/attached_assets/wonderlane-HCQhrghD_Tw-unsplash_1749940788825.jpg"
+                    alt="Industrial control panel with monitoring systems"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
