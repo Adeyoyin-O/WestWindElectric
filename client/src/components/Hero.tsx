@@ -68,10 +68,10 @@ export default function Hero({
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-[var(--corporate-dark)] font-bold py-5 px-10 rounded-2xl transition-all duration-300 text-lg backdrop-blur-sm"
+                className="border-2 border-white text-white hover:bg-white hover:text-slate-800 font-bold py-5 px-10 rounded-2xl transition-all duration-300 text-lg backdrop-blur-sm bg-transparent !text-white"
                 onClick={onSecondaryClick}
               >
-                {secondaryButtonText}
+                Get a Quote
               </Button>
             </div>
           )}
