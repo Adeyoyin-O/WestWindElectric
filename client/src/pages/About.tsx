@@ -27,10 +27,10 @@ export default function About() {
                   <strong className="text-black">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
                 </p>
                 <p>
-                  We are a company registered under the Corporate Affairs Commission of Nigeria on <strong className="text-black">July 26th, 2011</strong> with RC number <strong className="text-black">968009</strong>.
+                  We are a company registered under the Corporate Affairs Commission of Nigeria on July 26th, 2011 with RC number 968009.
                 </p>
                 <p>
-                  We specialize in the <strong className="text-black">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
+                  We specialize in the engineering, procurement, installation, and commissioning (EPIC) of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
                 </p>
               </div>
             </div>
