@@ -18,6 +18,7 @@ import serviceImage11 from "@assets/service17_1749934870522.jpg";
 import serviceImage12 from "@assets/service15_1749934878839.jpg";
 import controlPanelImage from "@assets/staff-woman-worker-work-operate-cutting-machine-lathe-cnc-engineer-modern-factory-working-woman-smart-women-worker-industry-workplace-photo_1749941219517.jpg";
 import electricalPanelImage from "@assets/electricity-electrical-maintenance-service-electrician-260nw-2251896605_1749941607977.jpg";
+import marineControlImage from "@assets/image_1749942411532.png";
 import { useState, useEffect } from "react";
 
 // Service Carousel Component
@@ -335,8 +336,8 @@ export default function Home() {
               <div className="group">
                 <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop&crop=center"
-                    alt="Marine engineer working on ship navigation and control systems"
+                    src={marineControlImage}
+                    alt="Marine control room with navigation and monitoring systems"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
