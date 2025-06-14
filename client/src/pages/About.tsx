@@ -13,7 +13,7 @@ export default function About() {
       />
 
       {/* Who We Are */}
-      <section className="section-spacing bg-gradient-to-br from-white via-slate-50/30 to-blue-50/20 circuit-pattern">
+      <section className="section-spacing premium-mesh relative overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary-dark)] mb-6 tracking-tight">Who We Are</h2>
@@ -33,7 +33,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="elevated-card p-8 bg-gradient-to-br from-white via-blue-50/10 to-slate-50/40 backdrop-blur-sm border-l-4 border-[var(--accent-electric)]">
+            <div className="elevated-card p-8 bg-gradient-to-br from-white/95 via-blue-50/20 to-slate-50/30 backdrop-blur-md border-l-4 border-[var(--accent-gold)]">
               <div className="grid grid-cols-2 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold gradient-text mb-2">2011</div>
@@ -59,88 +59,98 @@ export default function About() {
           <div className="mb-16 mx-4">
             <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-8 text-center tracking-tight">Technical Expertise</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white to-blue-50/30 border-t-2 border-[var(--accent-steel)] hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Building className="h-6 w-6 text-white" />
+              <div className="modern-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 steel-gradient rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-2xl transition-all duration-500">
+                  <Building className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Building Systems</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Electrical infrastructure for commercial and industrial facilities</p>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight technical-heading">Building Systems</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed professional-text">Electrical infrastructure for commercial and industrial facilities</p>
+                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--accent-gold)] mx-auto rounded-full"></div>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white to-blue-50/30 border-t-2 border-[var(--accent-electric)] hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Zap className="h-6 w-6 text-white" />
+              <div className="modern-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 electric-gradient rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-2xl transition-all duration-500">
+                  <Zap className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Power Generation</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Advanced power generation and distribution networks</p>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight technical-heading">Power Generation</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed professional-text">Advanced power generation and distribution networks</p>
+                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--accent-gold)] mx-auto rounded-full"></div>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white to-slate-50/40 border-t-2 border-[var(--dark-steel)] hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-[var(--dark-steel)] to-[var(--secondary-gray)] rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Factory className="h-6 w-6 text-white" />
+              <div className="modern-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 primary-gradient rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-2xl transition-all duration-500">
+                  <Factory className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Industrial Plants</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Process automation and control systems</p>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight technical-heading">Industrial Plants</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed professional-text">Process automation and control systems</p>
+                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--accent-gold)] mx-auto rounded-full"></div>
               </div>
-              <div className="modern-card p-6 text-center bg-gradient-to-br from-white to-slate-50/30 border-t-2 border-[var(--secondary-gray)] hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-[var(--secondary-gray)] to-[var(--primary-dark)] rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <MonitorSpeaker className="h-6 w-6 text-white" />
+              <div className="modern-card p-8 text-center group hover:scale-105">
+                <div className="w-16 h-16 premium-gradient rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-2xl transition-all duration-500">
+                  <MonitorSpeaker className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2 leading-tight">Marine Systems</h4>
-                <p className="text-[var(--medium-gray)] text-sm leading-relaxed">Navigation and communication equipment</p>
+                <h4 className="text-lg font-semibold text-[var(--primary-dark)] mb-3 leading-tight technical-heading">Marine Systems</h4>
+                <p className="text-[var(--medium-gray)] text-sm leading-relaxed professional-text">Navigation and communication equipment</p>
+                <div className="mt-4 h-1 w-16 bg-gradient-to-r from-[var(--premium-navy)] to-[var(--accent-gold)] mx-auto rounded-full"></div>
               </div>
             </div>
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-8 bg-gradient-to-br from-slate-50/50 to-blue-50/30 technical-grid border-l-4 border-[var(--primary-blue)]">
-            <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-6 text-center technical-heading">Technical Coverage Areas</h3>
+          <div className="elevated-card p-10 bg-gradient-to-br from-white/95 via-slate-50/40 to-blue-50/20 backdrop-blur-lg border-2 border-white/30">
+            <div className="text-center mb-8">
+              <div className="w-20 h-20 premium-gradient rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-2xl">
+                <Settings className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-[var(--primary-dark)] technical-heading">Technical Coverage Areas</h3>
+              <div className="w-24 h-1 bg-gradient-to-r from-[var(--accent-electric)] via-[var(--accent-gold)] to-[var(--accent-electric)] mx-auto mt-4 rounded-full"></div>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Control Panels</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 steel-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Control Panels</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Generators & Pumps</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 electric-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Generators & Pumps</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--secondary-gray)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Turbo Generators</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 primary-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Turbo Generators</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Medium & Low Voltage Panels</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 steel-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Medium & Low Voltage Panels</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Transformers</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 electric-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Transformers</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--secondary-gray)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Ship Steering Systems</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 primary-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Ship Steering Systems</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Gyrocompass</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 steel-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Gyrocompass</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Voyage Data Recorder</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 electric-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Voyage Data Recorder</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--secondary-gray)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Radio Survey on Ships & Rigs</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 primary-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Radio Survey on Ships & Rigs</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Bridge Equipment Installation</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 steel-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Bridge Equipment Installation</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">Navigation Systems</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 electric-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">Navigation Systems</span>
               </div>
-              <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
-                <div className="w-3 h-3 bg-gradient-to-r from-[var(--primary-dark)] to-[var(--secondary-gray)] rounded-full shadow-sm"></div>
-                <span className="text-[var(--medium-gray)] text-sm professional-text">DC & AC Control Panels</span>
+              <div className="flex items-center space-x-4 bg-white/80 p-4 rounded-xl backdrop-blur-md hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-lg group">
+                <div className="w-4 h-4 primary-gradient rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text font-medium">DC & AC Control Panels</span>
               </div>
             </div>
           </div>
