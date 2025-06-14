@@ -38,6 +38,11 @@
   --dark-slate: hsl(215, 25%, 15%);
   --gradient-start: hsl(215, 25%, 12%);
   --gradient-end: hsl(215, 85%, 35%);
+  
+  /* Secondary color palette */
+  --secondary-orange: hsl(35, 85%, 55%);
+  --accent-orange: hsl(35, 100%, 60%);
+  --light-orange: hsl(35, 90%, 85%);
 }
 
 .dark {
