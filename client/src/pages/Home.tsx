@@ -26,7 +26,7 @@ export default function Home() {
         showButtons
         onPrimaryClick={handleExploreServices}
         onSecondaryClick={handleGetQuote}
-        primaryButtonText="Explore Our Services"
+        primaryButtonText="Explore"
         secondaryButtonText="Get a Quote"
       />
 
