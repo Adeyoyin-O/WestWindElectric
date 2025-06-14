@@ -19,13 +19,13 @@ export default function Header() {
   return (
     <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-16 h-16 flex items-center justify-center">
+            <div className="w-12 h-12 flex items-center justify-center">
               <img 
                 src={logoImage} 
                 alt="West Wind Electric Power Ltd Logo" 
-                className="w-12 h-12 object-contain"
+                className="w-10 h-10 object-contain"
               />
             </div>
             <div>
