@@ -47,7 +47,7 @@ export default function Header() {
             ))}
             <Link href="/contact">
               <Button 
-                className="ml-4 blue-button-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
+                className="ml-4 burnt-teal-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
               >
                 Contact Us
               </Button>
@@ -85,7 +85,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full mt-6 blue-button-gradient text-white py-4 text-lg font-bold rounded-xl">
+                <Button className="w-full mt-6 burnt-teal-gradient text-white py-4 text-lg font-bold rounded-xl">
                   Contact Us
                 </Button>
               </Link>
