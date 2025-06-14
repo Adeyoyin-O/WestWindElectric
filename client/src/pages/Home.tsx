@@ -142,10 +142,7 @@ function ServiceCarousel() {
         <ChevronRight className="w-5 h-5" />
       </button>
 
-      {/* Service Badge */}
-      <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium">
-        Our Services
-      </div>
+
     </div>
   );
 }
