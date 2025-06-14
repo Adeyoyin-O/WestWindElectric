@@ -37,6 +37,16 @@ export default function Hero({
         />
       )}
       
+      {/* Animated Power Lines */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        <div className="power-line"></div>
+        <div className="power-line"></div>
+        <div className="power-line"></div>
+      </div>
+      
+      {/* Wave Effect at Bottom */}
+      <div className="wave-effect z-10"></div>
+      
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white bg-opacity-5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white bg-opacity-5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
