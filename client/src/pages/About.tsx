@@ -110,10 +110,8 @@ export default function About() {
             
             {/* Header */}
             <div className="text-center mb-16 relative z-10">
-              <div className="inline-flex items-center justify-center mb-6">
-                <div className="w-3 h-3 bg-[var(--bright-coral)] rounded-full mr-2"></div>
-                <div className="w-8 h-1 bg-[var(--primary-blue)] rounded-full mr-2"></div>
-                <div className="w-3 h-3 bg-[var(--bright-coral)] rounded-full"></div>
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[var(--primary-blue)] to-transparent rounded-full"></div>
               </div>
               <h3 className="text-3xl font-bold text-[var(--primary-dark)] tracking-tight mb-4">Technical Coverage Areas</h3>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -131,7 +129,7 @@ export default function About() {
                 <div key={index} className="group relative">
                   <div className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl border border-gray-200 hover:border-[var(--primary-blue)] hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="flex items-center space-x-4">
-                      <div className="w-3 h-3 bg-gradient-to-br from-[var(--bright-coral)] to-red-500 rounded-full flex-shrink-0 shadow-sm group-hover:scale-125 transition-transform duration-300"></div>
+                      <div className="w-2 h-2 bg-gradient-to-br from-[var(--bright-coral)] to-red-500 rounded-full flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300"></div>
                       <span className="text-gray-700 font-medium text-sm leading-relaxed group-hover:text-[var(--primary-dark)] transition-colors duration-300">{item}</span>
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300"></div>
@@ -146,7 +144,7 @@ export default function About() {
               <div className="text-center">
                 <Link 
                   href="/products-services" 
-                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-[var(--bright-coral)] to-red-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
+                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-[var(--primary-blue)] to-blue-700 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <span>Explore Our Complete Service Portfolio</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
