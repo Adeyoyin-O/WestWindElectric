@@ -22,7 +22,7 @@ export default function About() {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 mx-4">
             <div className="px-4">
-              <div className="space-y-6 text-lg text-[var(--medium-gray)] leading-relaxed">
+              <div className="space-y-6 text-lg text-black leading-relaxed">
                 <p>
                   <strong className="text-[var(--bright-coral)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
                 </p>
