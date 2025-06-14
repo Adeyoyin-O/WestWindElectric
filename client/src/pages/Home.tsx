@@ -35,7 +35,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-slate-600 to-slate-700 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Trophy className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">10+ Years of Proven Delivery</h3>
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Workflow className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">EPIC Services, All in One Place</h3>
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Ship className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">Powering Land & Sea</h3>
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Cpu className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-base font-bold text-slate-800 mb-1">Smart Systems Integration</h3>
