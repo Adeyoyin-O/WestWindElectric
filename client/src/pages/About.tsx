@@ -155,7 +155,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-4 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50 relative overflow-hidden">
+      <section className="py-6 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-20 w-20 h-20 border-2 border-[var(--primary-blue)] rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 right-20 w-16 h-16 border-2 border-[var(--bright-coral)] rounded-full animate-pulse"></div>
@@ -191,13 +191,9 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Core Values */}
-      <section className="py-4 bg-white">
-        <div className="container mx-auto mx-4">
-          <div className="modern-card p-6 bg-gradient-to-br from-gray-50 to-white border border-gray-200 shadow-lg">
+          
+          {/* Core Values */}
+          <div className="modern-card p-6 bg-white border border-gray-200 shadow-lg mt-8 mx-4">
             <div className="text-center mb-8">
               <div className="w-12 h-12 bg-gray-100 rounded-2xl mx-auto mb-4 flex items-center justify-center">
                 <Award className="h-6 w-6 text-[var(--primary-blue)]" />
