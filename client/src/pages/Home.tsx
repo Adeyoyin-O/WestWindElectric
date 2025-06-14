@@ -211,6 +211,118 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Solutions Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
+        {/* Background Texture */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at 75% 75%, rgba(251, 146, 60, 0.04) 0%, transparent 40%),
+              linear-gradient(45deg, transparent 49%, rgba(148, 163, 184, 0.02) 49%, rgba(148, 163, 184, 0.02) 51%, transparent 51%)
+            `,
+            backgroundSize: '800px 800px, 600px 600px, 60px 60px'
+          }}></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
+              Our Solutions
+            </div>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+              Engineering Excellence in Every Solution
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Discover our comprehensive range of specialized services designed to power your success
+            </p>
+          </div>
+
+          {/* Creative Uneven Layout */}
+          <div className="grid grid-cols-12 gap-6 mb-12">
+            {/* Large Service Card - Spans 7 columns */}
+            <div className="col-span-12 lg:col-span-7 group">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
+                <img 
+                  src={serviceImage1} 
+                  alt="Power Distribution Systems"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
+                  <div className="inline-flex items-center justify-center px-3 py-1 bg-blue-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
+                    Power Systems
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3">Power Distribution & Control</h3>
+                  <p className="text-sm opacity-90 leading-relaxed">
+                    Advanced electrical switchgear, distribution panels, and high-voltage power systems engineered for industrial and maritime applications
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Two Smaller Cards - Each spans 5 columns, stacked vertically */}
+            <div className="col-span-12 lg:col-span-5 space-y-6">
+              <div className="group">
+                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                  <img 
+                    src={serviceImage2} 
+                    alt="Industrial Control Systems"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
+                    <div className="inline-flex items-center justify-center px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
+                      Automation
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">Industrial Control Systems</h3>
+                    <p className="text-xs opacity-90">
+                      Cutting-edge automation and process control solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                  <img 
+                    src={serviceImage6} 
+                    alt="Marine Electronics"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
+                    <div className="inline-flex items-center justify-center px-3 py-1 bg-cyan-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
+                      Maritime
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">Marine Electronics</h3>
+                    <p className="text-xs opacity-90">
+                      Specialized electronic systems for maritime vessels
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Stylish Explore Button */}
+          <div className="text-center">
+            <Link href="/products-services">
+              <Button 
+                className="group relative px-8 py-4 bg-gradient-to-r from-slate-800 to-slate-700 hover:from-slate-900 hover:to-slate-800 text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span className="relative flex items-center">
+                  Explore Full Services
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About Us Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
         {/* Background Pattern */}
