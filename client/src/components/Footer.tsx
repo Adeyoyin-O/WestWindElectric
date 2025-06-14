@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-4 mb-8">
+            <div className="flex items-center space-x-2 mb-8">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src={footerLogo} 
