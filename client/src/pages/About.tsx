@@ -219,32 +219,24 @@ export default function About() {
                 <p className="text-gray-600 leading-relaxed text-sm">Understanding and exceeding expectations through dedicated service and attention to detail</p>
               </div>
               
-              <div className="relative group">
-                <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Trophy className="w-5 h-5 text-[var(--primary-blue)]" />
-                    </div>
-                  </div>
-                  <div className="pt-8 text-center">
-                    <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Excellence</h4>
-                    <p className="text-gray-600 leading-relaxed">Delivering professional services beyond expectations with the highest quality standards</p>
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Trophy className="w-5 h-5 text-[var(--primary-blue)]" />
                   </div>
                 </div>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Excellence</h4>
+                <p className="text-gray-600 leading-relaxed text-sm">Delivering professional services beyond expectations with the highest quality standards</p>
               </div>
               
-              <div className="relative group">
-                <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="w-5 h-5 text-[var(--primary-blue)]" />
-                    </div>
-                  </div>
-                  <div className="pt-8 text-center">
-                    <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-4">Responsibility</h4>
-                    <p className="text-gray-600 leading-relaxed">Taking full accountability for our actions and maintaining ethical business practices</p>
+              <div className="text-center group">
+                <div className="relative">
+                  <div className="w-12 h-12 bg-gray-100 rounded-xl mx-auto mb-3 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <CheckCircle className="w-5 h-5 text-[var(--primary-blue)]" />
                   </div>
                 </div>
+                <h4 className="text-lg font-bold text-[var(--primary-dark)] mb-2">Responsibility</h4>
+                <p className="text-gray-600 leading-relaxed text-sm">Taking full accountability for our actions and maintaining ethical business practices</p>
               </div>
             </div>
           </div>
