@@ -144,17 +144,17 @@ export default function About() {
                 <div className="w-2 h-2 bg-[var(--accent-teal)] rounded-full flex-shrink-0"></div>
                 <span className="text-gray-600 text-sm font-medium">DC & AC Control Panels</span>
               </div>
-              
-              {/* Link to Products & Services */}
-              <div className="text-center mt-6 pt-4 border-t border-gray-200">
-                <Link 
-                  href="/products-services" 
-                  className="inline-flex items-center space-x-2 text-[var(--accent-teal)] hover:text-teal-700 font-medium transition-colors duration-200 group"
-                >
-                  <span>View Our Products & Services</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                </Link>
-              </div>
+            </div>
+            
+            {/* Link to Products & Services */}
+            <div className="w-full text-center mt-6 pt-4 border-t border-gray-200">
+              <Link 
+                href="/products-services" 
+                className="inline-flex items-center space-x-2 text-[var(--accent-teal)] hover:text-teal-700 font-medium transition-colors duration-200 group"
+              >
+                <span>View Our Products & Services</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
             </div>
           </div>
         </div>
