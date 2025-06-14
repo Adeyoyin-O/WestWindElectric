@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import logoImage from "@assets/2-removebg-preview_1749920119128.png";
 
 const navigation = [
@@ -50,6 +51,14 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <div className="flex items-center space-x-3 ml-4">
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+                <FaFacebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+                <FaWhatsapp className="h-5 w-5" />
+              </a>
+            </div>
             <Link href="/contact">
               <Button 
                 className="ml-4 blue-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
