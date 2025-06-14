@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--primary-dark)] text-white py-12 diagonal-pattern">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          <div>
-            <div className="flex items-center space-x-4 mb-6">
+        <div className="mb-12">
+          <div className="max-w-md">
+            <div className="flex items-center space-x-4 mb-8">
               <div className="w-12 h-12 teal-gradient rounded-xl flex items-center justify-center shadow-lg">
                 <Anchor className="text-white h-6 w-6" />
               </div>
@@ -15,10 +15,7 @@ export default function Footer() {
                 <h3 className="text-lg font-bold">West Wind Electric Power Ltd</h3>
               </div>
             </div>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-white">Contact Information</h4>
+            
             <div className="space-y-4 text-sm text-gray-300">
               <div>
                 <p className="font-bold text-white mb-1">Office Address</p>
