@@ -219,9 +219,24 @@
 
   .technical-grid {
     background-image: 
-      linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
+      linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .circuit-pattern {
+    background-image: 
+      radial-gradient(circle at 2px 2px, var(--accent-steel) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px),
+      linear-gradient(rgba(59, 130, 246, 0.02) 1px, transparent 1px);
+    background-size: 32px 32px, 16px 16px, 16px 16px;
+  }
+  
+  .industrial-texture {
+    background: 
+      linear-gradient(135deg, transparent 35%, rgba(59, 130, 246, 0.03) 35%, rgba(59, 130, 246, 0.03) 50%, transparent 50%),
+      linear-gradient(45deg, transparent 35%, rgba(71, 85, 105, 0.02) 35%, rgba(71, 85, 105, 0.02) 50%, transparent 50%);
+    background-size: 8px 8px, 12px 12px;
   }
 }
 
