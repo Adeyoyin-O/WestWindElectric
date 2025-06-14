@@ -281,7 +281,7 @@ export default function Home() {
               Our Solutions
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Engineering Excellence in Every Solution
+              Tailored Expertise for Every Project
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Discover our comprehensive range of specialized services designed to power your success
