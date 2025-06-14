@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoImage from "@assets/2_1749919249783.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -20,8 +21,8 @@ export default function Header() {
       <nav className="container mx-auto">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 primary-gradient rounded-xl flex items-center justify-center shadow-lg floating-element">
-              <Anchor className="text-white h-6 w-6" />
+            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg border border-gray-200">
+              <img src={logoImage} alt="West Wind Electric Power Ltd" className="h-8 w-8 object-contain" />
             </div>
             <div>
               <h1 className="text-lg font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
