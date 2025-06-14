@@ -2,53 +2,164 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animated Power Line Effect */
+/* Enhanced Animated Power Line Effects */
 @keyframes power-flow {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-300px);
     opacity: 0;
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
   }
-  50% {
+  20% {
     opacity: 1;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+  80% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(calc(100vw + 300px));
     opacity: 0;
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
   }
 }
 
-@keyframes wave-pulse {
+@keyframes energy-pulse {
   0%, 100% {
-    transform: scaleY(1);
-    opacity: 0.3;
+    transform: scaleX(1) scaleY(1);
+    opacity: 0.4;
   }
   50% {
-    transform: scaleY(1.2);
-    opacity: 0.6;
+    transform: scaleX(1.5) scaleY(1.8);
+    opacity: 0.8;
+  }
+}
+
+@keyframes circuit-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes spark-burst {
+  0%, 90%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  5%, 85% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
 .power-line {
   position: absolute;
-  top: 20%;
   left: 0;
-  width: 200px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #3b82f6, #1d4ed8, transparent);
-  animation: power-flow 4s infinite ease-in-out;
+  width: 300px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(59, 130, 246, 0.3) 20%, 
+    rgba(59, 130, 246, 1) 40%,
+    rgba(29, 78, 216, 1) 50%,
+    rgba(59, 130, 246, 1) 60%,
+    rgba(59, 130, 246, 0.3) 80%, 
+    transparent 100%);
+  animation: power-flow 6s infinite ease-in-out;
+}
+
+.power-line:nth-child(1) {
+  top: 15%;
   animation-delay: 0s;
 }
 
 .power-line:nth-child(2) {
-  top: 40%;
-  animation-delay: 1s;
-  background: linear-gradient(90deg, transparent, #0ea5e9, #0284c7, transparent);
+  top: 35%;
+  animation-delay: 2s;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(14, 165, 233, 0.3) 20%, 
+    rgba(14, 165, 233, 1) 40%,
+    rgba(2, 132, 199, 1) 50%,
+    rgba(14, 165, 233, 1) 60%,
+    rgba(14, 165, 233, 0.3) 80%, 
+    transparent 100%);
 }
 
 .power-line:nth-child(3) {
-  top: 60%;
-  animation-delay: 2s;
-  background: linear-gradient(90deg, transparent, #06b6d4, #0891b2, transparent);
+  top: 55%;
+  animation-delay: 4s;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(6, 182, 212, 0.3) 20%, 
+    rgba(6, 182, 212, 1) 40%,
+    rgba(8, 145, 178, 1) 50%,
+    rgba(6, 182, 212, 1) 60%,
+    rgba(6, 182, 212, 0.3) 80%, 
+    transparent 100%);
+}
+
+.power-line:nth-child(4) {
+  top: 75%;
+  animation-delay: 1s;
+  width: 250px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(34, 197, 94, 0.3) 20%, 
+    rgba(34, 197, 94, 1) 40%,
+    rgba(21, 128, 61, 1) 50%,
+    rgba(34, 197, 94, 1) 60%,
+    rgba(34, 197, 94, 0.3) 80%, 
+    transparent 100%);
+}
+
+.power-line:nth-child(5) {
+  top: 25%;
+  animation-delay: 3s;
+  width: 180px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(168, 85, 247, 0.3) 20%, 
+    rgba(168, 85, 247, 1) 40%,
+    rgba(126, 34, 206, 1) 50%,
+    rgba(168, 85, 247, 1) 60%,
+    rgba(168, 85, 247, 0.3) 80%, 
+    transparent 100%);
+}
+
+.energy-orb {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 1) 0%, rgba(59, 130, 246, 0.4) 70%, transparent 100%);
+  animation: energy-pulse 2s infinite ease-in-out;
+}
+
+.energy-orb:nth-child(6) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.energy-orb:nth-child(7) {
+  top: 40%;
+  right: 15%;
+  animation-delay: 1.5s;
+  background: radial-gradient(circle, rgba(14, 165, 233, 1) 0%, rgba(14, 165, 233, 0.4) 70%, transparent 100%);
+}
+
+.energy-orb:nth-child(8) {
+  top: 70%;
+  left: 20%;
+  animation-delay: 2.5s;
+  background: radial-gradient(circle, rgba(6, 182, 212, 1) 0%, rgba(6, 182, 212, 0.4) 70%, transparent 100%);
 }
 
 .wave-effect {
@@ -56,10 +167,43 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, 
+    rgba(30, 64, 175, 0.8) 0%, 
+    rgba(59, 130, 246, 1) 25%, 
+    rgba(96, 165, 250, 1) 50%, 
+    rgba(59, 130, 246, 1) 75%, 
+    rgba(30, 64, 175, 0.8) 100%);
+  background-size: 400% 100%;
+  animation: circuit-flow 4s infinite linear;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+}
+
+.spark-effect {
+  position: absolute;
+  width: 4px;
   height: 4px;
-  background: linear-gradient(90deg, #1e40af, #3b82f6, #60a5fa, #3b82f6, #1e40af);
-  background-size: 200% 100%;
-  animation: wave-pulse 3s infinite ease-in-out;
+  background: white;
+  border-radius: 50%;
+  animation: spark-burst 8s infinite;
+}
+
+.spark-effect:nth-child(9) {
+  top: 30%;
+  left: 25%;
+  animation-delay: 1s;
+}
+
+.spark-effect:nth-child(10) {
+  top: 60%;
+  right: 30%;
+  animation-delay: 3s;
+}
+
+.spark-effect:nth-child(11) {
+  top: 45%;
+  left: 60%;
+  animation-delay: 5s;
 }
 
 :root {

@@ -37,14 +37,22 @@ export default function Hero({
         />
       )}
       
-      {/* Animated Power Lines */}
+      {/* Enhanced Animated Power Lines */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="power-line"></div>
         <div className="power-line"></div>
         <div className="power-line"></div>
+        <div className="power-line"></div>
+        <div className="power-line"></div>
+        <div className="energy-orb"></div>
+        <div className="energy-orb"></div>
+        <div className="energy-orb"></div>
+        <div className="spark-effect"></div>
+        <div className="spark-effect"></div>
+        <div className="spark-effect"></div>
       </div>
       
-      {/* Wave Effect at Bottom */}
+      {/* Enhanced Wave Effect at Bottom */}
       <div className="wave-effect z-10"></div>
       
       {/* Decorative elements */}
