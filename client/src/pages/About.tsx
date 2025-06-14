@@ -189,35 +189,44 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center group">
-                <div className="relative">
-                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Heart className="w-6 h-6 text-white" />
+            <div className="grid lg:grid-cols-3 gap-8">
+              <div className="modern-card p-8 text-center bg-white border border-gray-200 group hover:border-[var(--bright-coral)] transition-all duration-300 hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[var(--bright-coral)] to-red-600 rounded-3xl mx-auto flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+                    <Heart className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white text-xs font-bold">1</span>
                   </div>
                 </div>
-                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Customer Focus</h4>
-                <p className="text-gray-600 leading-relaxed">Understanding and exceeding expectations</p>
+                <h4 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Customer Focus</h4>
+                <p className="text-gray-600 leading-relaxed text-lg">Understanding and exceeding expectations through personalized service and dedication</p>
               </div>
               
-              <div className="text-center group">
-                <div className="relative">
-                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Trophy className="w-6 h-6 text-white" />
+              <div className="modern-card p-8 text-center bg-white border border-gray-200 group hover:border-[var(--bright-coral)] transition-all duration-300 hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[var(--bright-coral)] to-red-600 rounded-3xl mx-auto flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+                    <Trophy className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white text-xs font-bold">2</span>
                   </div>
                 </div>
-                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Excellence</h4>
-                <p className="text-gray-600 leading-relaxed">Delivering professional services beyond expectations</p>
+                <h4 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Excellence</h4>
+                <p className="text-gray-600 leading-relaxed text-lg">Delivering professional services that consistently exceed industry standards</p>
               </div>
               
-              <div className="text-center group">
-                <div className="relative">
-                  <div className="w-16 h-16 bg-[var(--bright-coral)] rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <CheckCircle className="w-6 h-6 text-white" />
+              <div className="modern-card p-8 text-center bg-white border border-gray-200 group hover:border-[var(--bright-coral)] transition-all duration-300 hover:shadow-xl">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[var(--bright-coral)] to-red-600 rounded-3xl mx-auto flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+                    <CheckCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white text-xs font-bold">3</span>
                   </div>
                 </div>
-                <h4 className="text-xl font-bold text-[var(--primary-dark)] mb-3">Responsibility</h4>
-                <p className="text-gray-600 leading-relaxed">Taking full accountability for our actions</p>
+                <h4 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Responsibility</h4>
+                <p className="text-gray-600 leading-relaxed text-lg">Taking full accountability for our actions and their impact on our clients</p>
               </div>
             </div>
           </div>
