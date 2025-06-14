@@ -33,7 +33,7 @@ export default function Home() {
       {/* Stats Highlight Strip */}
       <section className="bg-gradient-to-r from-slate-50 to-blue-50 py-16 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Award className="w-6 h-6 text-white" />
