@@ -83,56 +83,56 @@ export default function About() {
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-8 bg-gradient-to-r from-white to-gray-50">
-            <h3 className="text-xl font-bold text-[var(--primary-dark)] mb-6 text-center">Technical Coverage Areas</h3>
+          <div className="elevated-card p-8 bg-white">
+            <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-6 text-center technical-heading">Technical Coverage Areas</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 teal-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Control Panels</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-steel)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Control Panels</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 purple-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Generators & Pumps</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-electric)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Generators & Pumps</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 primary-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Turbo Generators</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--primary-dark)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Turbo Generators</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 teal-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Medium & Low Voltage Panels</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-steel)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Medium & Low Voltage Panels</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 purple-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Transformers</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-electric)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Transformers</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 primary-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Ship Steering Systems</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--primary-dark)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Ship Steering Systems</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 teal-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Gyrocompass</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-steel)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Gyrocompass</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 purple-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Voyage Data Recorder</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-electric)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Voyage Data Recorder</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 primary-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Radio Survey on Ships & Rigs</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--primary-dark)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Radio Survey on Ships & Rigs</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 teal-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Bridge Equipment Installation</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-steel)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Bridge Equipment Installation</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 purple-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">Navigation Systems</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--accent-electric)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">Navigation Systems</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 primary-gradient rounded-full"></div>
-                <span className="text-[var(--medium-gray)] text-sm">DC & AC Control Panels</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 bg-[var(--primary-dark)] rounded-full"></div>
+                <span className="text-[var(--medium-gray)] text-sm professional-text">DC & AC Control Panels</span>
               </div>
             </div>
           </div>
@@ -147,8 +147,8 @@ export default function About() {
               <div className="w-16 h-16 steel-gradient rounded-sm flex items-center justify-center mb-6 shadow-sm">
                 <Server className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Vision</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Vision</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
                 To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
               </p>
             </div>
@@ -157,8 +157,8 @@ export default function About() {
               <div className="w-16 h-16 electric-gradient rounded-sm flex items-center justify-center mb-6 shadow-sm">
                 <Cpu className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Mission</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Mission</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
                 To provide solution-oriented services to our customers, shareholders and stakeholders.
               </p>
             </div>
@@ -174,8 +174,8 @@ export default function About() {
               <div className="w-16 h-16 primary-gradient rounded-sm flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <Shield className="text-white h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-[var(--primary-dark)] mb-4">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 technical-heading">Our Core Values</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed professional-text">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
               </p>
             </div>
