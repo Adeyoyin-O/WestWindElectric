@@ -148,7 +148,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-slate-200/60">
@@ -175,7 +175,7 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-12 bg-slate-50/30">
+      <section className="py-8 bg-slate-50/30">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-slate-200/60">
