@@ -143,7 +143,7 @@ export default function About() {
               <div className="text-center">
                 <Link 
                   href="/products-services" 
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
+                  className="inline-flex items-center space-x-2 bg-white border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <span>Explore Our Complete Service Portfolio</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
