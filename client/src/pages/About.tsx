@@ -148,25 +148,25 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-10 mx-4">
-            <div className="modern-card p-10 bg-white border border-slate-200/60">
-              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
-                <Server className="h-8 w-8 text-[var(--primary-blue)]" />
+          <div className="grid lg:grid-cols-2 gap-8 mx-4">
+            <div className="modern-card p-6 bg-white border border-slate-200/60">
+              <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
+                <Server className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Vision</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 To be a World Class Solutions Provider and Systems Integrator in the Power and Maritime Industries.
               </p>
             </div>
 
-            <div className="modern-card p-10 bg-white border border-slate-200/60">
-              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
-                <Cpu className="h-8 w-8 text-[var(--primary-blue)]" />
+            <div className="modern-card p-6 bg-white border border-slate-200/60">
+              <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
+                <Cpu className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Mission</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 To provide solution-oriented services to our customers, shareholders and stakeholders.
               </p>
             </div>
@@ -175,41 +175,41 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-slate-50/30">
+      <section className="py-16 bg-slate-50/30">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-10 mx-4">
-            <div className="modern-card p-10 bg-white border border-slate-200/60">
-              <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-8">
-                <Shield className="h-8 w-8 text-[var(--primary-blue)]" />
+          <div className="grid lg:grid-cols-2 gap-8 mx-4">
+            <div className="modern-card p-6 bg-white border border-slate-200/60">
+              <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
+                <Shield className="h-6 w-6 text-[var(--primary-blue)]" />
               </div>
-              <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-6 tracking-tight">Our Core Values</h3>
-              <p className="text-[var(--medium-gray)] leading-relaxed text-lg">
+              <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Core Values</h3>
+              <p className="text-[var(--medium-gray)] leading-relaxed">
                 Our core value is centered on understanding customers' needs, providing professional services beyond customers' expectations and taking full responsibility for our actions.
               </p>
             </div>
 
-            <div className="modern-card p-10 bg-white border border-slate-200/60">
-              <div className="grid grid-cols-1 gap-8">
+            <div className="modern-card p-6 bg-white border border-slate-200/60">
+              <div className="grid grid-cols-1 gap-6">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                  <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
-                  <p className="text-[var(--medium-gray)] text-sm">Understanding and exceeding expectations</p>
+                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Customer Focus</h4>
+                  <p className="text-[var(--medium-gray)] text-xs">Understanding and exceeding expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                  <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
-                  <p className="text-[var(--medium-gray)] text-sm">Delivering professional services beyond expectations</p>
+                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Excellence</h4>
+                  <p className="text-[var(--medium-gray)] text-xs">Delivering professional services beyond expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-[var(--primary-blue)] rounded-xl mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                  <div className="w-10 h-10 bg-[var(--primary-blue)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
-                  <p className="text-[var(--medium-gray)] text-sm">Taking full accountability for our actions</p>
+                  <h4 className="text-sm font-semibold text-[var(--primary-dark)] mb-1">Responsibility</h4>
+                  <p className="text-[var(--medium-gray)] text-xs">Taking full accountability for our actions</p>
                 </div>
               </div>
             </div>
