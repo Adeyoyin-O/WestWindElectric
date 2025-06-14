@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logoImage from "@assets/2_1749919921017.png";
+import logoImage from "@assets/2-removebg-preview_1749920119128.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,7 +21,7 @@ export default function Header() {
       <nav className="container mx-auto">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center shadow-sm">
+            <div className="w-16 h-16 flex items-center justify-center">
               <img 
                 src={logoImage} 
                 alt="West Wind Electric Power Ltd Logo" 
