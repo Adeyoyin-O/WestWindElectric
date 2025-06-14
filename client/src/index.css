@@ -44,6 +44,11 @@
   --burnt-teal: hsl(175, 85%, 40%);
   --accent-teal: hsl(175, 100%, 45%);
   --light-teal: hsl(175, 90%, 85%);
+  
+  /* Coral color palette */
+  --bright-coral: hsl(16, 100%, 66%);
+  --coral-accent: hsl(16, 95%, 70%);
+  --light-coral: hsl(16, 100%, 90%);
 }
 
 .dark {
@@ -94,6 +99,10 @@
   
   .hero-gradient {
     background: linear-gradient(135deg, var(--primary-dark), var(--secondary-gray), var(--primary-blue));
+  }
+  
+  .blue-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, hsl(220, 85%, 40%) 100%);
   }
   
   .burnt-teal-gradient {

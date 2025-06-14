@@ -24,32 +24,32 @@ export default function About() {
             <div className="px-4">
               <div className="space-y-6 text-lg text-[var(--medium-gray)] leading-relaxed">
                 <p>
-                  <strong className="text-[var(--primary-dark)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
+                  <strong className="text-[var(--bright-coral)]">WEST WIND ELECTRIC POWER LTD</strong> is an independent service provider offering a wide range of Electrical, Electronics and instrumentation services.
                 </p>
                 <p>
-                  We are a company registered under the Corporate Affairs Commission of Nigeria on <strong className="text-[var(--primary-dark)]">July 26th, 2011</strong> with RC number <strong className="text-[var(--primary-dark)]">968009</strong>.
+                  We are a company registered under the Corporate Affairs Commission of Nigeria on <strong className="text-[var(--bright-coral)]">July 26th, 2011</strong> with RC number <strong className="text-[var(--bright-coral)]">968009</strong>.
                 </p>
                 <p>
-                  We specialize in the <strong className="text-[var(--primary-dark)]">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
+                  We specialize in the <strong className="text-[var(--bright-coral)]">engineering, procurement, installation, and commissioning (EPIC)</strong> of electrical, electronics, instrumentation, and control systems, aiming to establish ourselves as a leading force in the industry.
                 </p>
               </div>
             </div>
             <div className="elevated-card p-10 bg-white border border-gray-200">
               <div className="grid grid-cols-2 gap-10 text-center">
                 <div className="group">
-                  <div className="text-4xl font-bold text-[var(--primary-blue)] mb-2">2011</div>
+                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">2011</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Established</div>
                 </div>
                 <div className="group">
-                  <div className="text-4xl font-bold text-[var(--primary-blue)] mb-2">13+</div>
+                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">13+</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Years Experience</div>
                 </div>
                 <div className="group">
-                  <div className="text-2xl font-bold text-[var(--primary-blue)] mb-2">EPIC</div>
+                  <div className="text-2xl font-bold text-[var(--bright-coral)] mb-2">EPIC</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Services</div>
                 </div>
                 <div className="group">
-                  <div className="text-lg font-bold text-[var(--primary-blue)] mb-2">968009</div>
+                  <div className="text-lg font-bold text-[var(--bright-coral)] mb-2">968009</div>
                   <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">RC Number</div>
                 </div>
               </div>
@@ -192,21 +192,21 @@ export default function About() {
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="grid grid-cols-1 gap-6">
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--burnt-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Users className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Customer Focus</h4>
                   <p className="text-gray-600 text-sm">Understanding and exceeding expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--burnt-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Star className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Excellence</h4>
                   <p className="text-gray-600 text-sm">Delivering professional services beyond expectations</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-10 h-10 bg-[var(--burnt-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[var(--accent-teal)] rounded-xl mx-auto mb-3 flex items-center justify-center">
                     <Shield className="w-4 h-4 text-white" />
                   </div>
                   <h4 className="text-base font-semibold text-[var(--primary-dark)] mb-2">Responsibility</h4>
