@@ -24,7 +24,7 @@ export default function Hero({
   onPrimaryClick,
   onSecondaryClick,
   primaryButtonText = "Explore Our Services",
-  secondaryButtonText = "Get Free Consultation"
+  secondaryButtonText = "Get a Quote"
 }: HeroProps) {
   return (
     <section className="relative hero-gradient text-white py-24 lg:py-40 overflow-hidden">
