@@ -91,7 +91,7 @@ export default function About() {
           </div>
 
           {/* Technical Coverage */}
-          <div className="elevated-card p-8 bg-gradient-to-br from-slate-50/50 to-blue-50/30 technical-grid border-l-2 border-blue-200/60">
+          <div className="elevated-card p-8 bg-gradient-to-br from-slate-50/50 to-blue-50/30 technical-grid border-l-4 border-blue-300/70">
             <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-6 text-center technical-heading">Technical Coverage Areas</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="flex items-center space-x-3 bg-white/60 p-3 rounded-md backdrop-blur-sm hover:bg-white/80 transition-all duration-200">
@@ -151,7 +151,7 @@ export default function About() {
       <section className="py-16 bg-gradient-to-r from-slate-100/50 via-blue-50/30 to-slate-100/50 industrial-texture">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
-            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l border-slate-200/80 hover:shadow-xl transition-all duration-300">
+            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l-3 border-slate-300/80 hover:shadow-xl transition-all duration-300">
               <div className="w-16 h-16 steel-gradient rounded-lg flex items-center justify-center mb-6 shadow-md relative">
                 <Server className="text-white h-8 w-8" />
                 <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent-steel)] to-[var(--dark-steel)] rounded-lg blur opacity-25"></div>
@@ -162,7 +162,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l border-slate-200/80 hover:shadow-xl transition-all duration-300">
+            <div className="modern-card p-8 bg-gradient-to-br from-white to-blue-50/20 border-l-3 border-slate-300/80 hover:shadow-xl transition-all duration-300">
               <div className="w-16 h-16 electric-gradient rounded-lg flex items-center justify-center mb-6 shadow-md relative">
                 <Cpu className="text-white h-8 w-8" />
                 <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent-electric)] to-[var(--primary-blue)] rounded-lg blur opacity-25"></div>
@@ -180,7 +180,7 @@ export default function About() {
       <section className="py-16 bg-gradient-to-br from-white to-slate-50/40 circuit-pattern">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
-            <div className="modern-card p-10 text-center bg-gradient-to-br from-white via-blue-50/10 to-white backdrop-blur-sm border-t border-blue-200/50 shadow-xl">
+            <div className="modern-card p-10 text-center bg-gradient-to-br from-white via-blue-50/10 to-white backdrop-blur-sm border-t-3 border-blue-300/70 shadow-xl">
               <div className="w-20 h-20 primary-gradient rounded-xl flex items-center justify-center mx-auto mb-8 shadow-lg relative">
                 <Shield className="text-white h-10 w-10" />
                 <div className="absolute -inset-2 bg-gradient-to-r from-[var(--primary-blue)] to-[var(--secondary-gray)] rounded-xl blur opacity-20"></div>
