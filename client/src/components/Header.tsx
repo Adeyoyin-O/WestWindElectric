@@ -51,14 +51,6 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="flex items-center space-x-3 ml-4">
-              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
-                <FaFacebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
-                <FaWhatsapp className="h-5 w-5" />
-              </a>
-            </div>
             <Link href="/contact">
               <Button 
                 className="ml-4 blue-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
@@ -66,6 +58,15 @@ export default function Header() {
                 Contact Us
               </Button>
             </Link>
+            <div className="flex items-center space-x-3 ml-4">
+              <div className="w-px h-6 bg-gray-300"></div>
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+                <FaFacebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+                <FaWhatsapp className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
