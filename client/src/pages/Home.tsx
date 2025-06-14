@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Activity, Zap, Settings, Monitor, Users, Globe, Clock } from "lucide-react";
+import heroBackground from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749921189527.jpg";
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero
         title="Leading EPIC Solutions Provider in Nigeria"
         subtitle="Specializing in engineering, procurement, installation, and commissioning of electrical, electronics, and instrumentation systems for power and maritime industries"
+        backgroundImage={heroBackground}
         showButtons
         onPrimaryClick={handleExploreServices}
         onSecondaryClick={handleGetConsultation}
