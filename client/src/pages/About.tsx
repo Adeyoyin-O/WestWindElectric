@@ -154,7 +154,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 mx-4">
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-                <Target className="h-6 w-6 text-[var(--primary-blue)]" />
+                <Target className="h-6 w-6 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Vision</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -164,7 +164,7 @@ export default function About() {
 
             <div className="modern-card p-6 bg-white border border-gray-200">
               <div className="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
-                <Compass className="h-6 w-6 text-[var(--primary-blue)]" />
+                <Compass className="h-6 w-6 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-[var(--primary-dark)] mb-4 tracking-tight">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
