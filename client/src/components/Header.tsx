@@ -9,7 +9,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Products & Services", href: "/products-services" },
   { name: "Partnerships", href: "/partnerships" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Get a Quote", href: "/contact" },
 ];
 
 export default function Header() {
@@ -46,11 +46,6 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button 
-              className="ml-4 burnt-teal-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
-            >
-              Get Quote
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,9 +78,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-6 burnt-teal-gradient text-white py-4 text-lg font-bold rounded-xl">
-                Get Quote
-              </Button>
             </div>
           </div>
         )}
