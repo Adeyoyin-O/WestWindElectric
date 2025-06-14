@@ -105,6 +105,11 @@ function ServiceCarousel() {
 
   return (
     <div className="relative w-full h-96 bg-white rounded-2xl overflow-hidden shadow-xl">
+      {/* Decorative corner elements */}
+      <div className="absolute top-3 right-3 w-5 h-5 border border-white/30 rounded-full z-20"></div>
+      <div className="absolute bottom-3 left-3 w-3 h-3 bg-orange-300/40 rounded-full z-20"></div>
+      <div className="absolute top-1/2 left-1 w-0.5 h-6 bg-gradient-to-b from-white/30 to-transparent z-20"></div>
+      
       {/* Slides Container */}
       <div 
         className="flex transition-transform duration-700 ease-in-out h-full"
@@ -122,7 +127,8 @@ function ServiceCarousel() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
             
             {/* Content Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white relative">
+              <div className="absolute top-2 right-2 w-2 h-2 bg-white/20 rounded-full"></div>
               <h3 className="text-xl font-bold mb-2">{slide.title}</h3>
               <p className="text-sm opacity-90">{slide.description}</p>
             </div>
@@ -145,7 +151,24 @@ function ServiceCarousel() {
         <ChevronRight className="w-5 h-5" />
       </button>
 
-
+      {/* Navigation dots with enhanced styling */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`relative w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentIndex 
+                ? 'bg-white shadow-lg' 
+                : 'bg-white/40 hover:bg-white/60'
+            }`}
+          >
+            {index === currentIndex && (
+              <div className="absolute -inset-1 border border-white/30 rounded-full animate-pulse"></div>
+            )}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
@@ -162,7 +185,20 @@ export default function Home() {
   };
 
   return (
-    <div className="page-transition">
+    <div className="page-transition relative overflow-hidden">
+      {/* Global Decorative Elements */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-200/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-16 w-1 h-8 bg-gradient-to-b from-orange-200/20 to-transparent rotate-45"></div>
+        <div className="absolute top-80 left-1/4 w-3 h-3 border border-slate-200/40 rounded-full"></div>
+        <div className="absolute top-96 right-1/3 w-1.5 h-1.5 bg-cyan-200/40 rounded-full"></div>
+        <div className="absolute bottom-80 left-20 w-4 h-1 bg-gradient-to-r from-blue-100/30 to-transparent rotate-12"></div>
+        <div className="absolute bottom-60 right-24 w-2 h-2 bg-orange-100/40 rounded-full"></div>
+        <div className="absolute bottom-40 left-1/3 w-6 h-6 border border-slate-100/50 rounded-lg rotate-45"></div>
+        <div className="absolute top-60 left-2/3 w-1 h-6 bg-gradient-to-b from-slate-200/30 to-transparent rotate-12"></div>
+        <div className="absolute bottom-32 right-1/4 w-2.5 h-2.5 border border-blue-100/40 rounded-full"></div>
+      </div>
+
       {/* Hero Section */}
       <Hero
         title="Your EPIC Partner in Engineering Excellence"
