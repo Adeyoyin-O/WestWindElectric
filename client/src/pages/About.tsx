@@ -62,7 +62,7 @@ export default function About() {
           </div>
 
           {/* Areas of Expertise */}
-          <div className="mb-20 mx-4">
+          <div className="mb-20 mx-4 mt-16">
             <h3 className="text-2xl font-semibold text-[var(--primary-dark)] mb-12 text-center tracking-tight">Technical Expertise</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="modern-card p-8 text-center bg-gray-50 border border-gray-200 group">
