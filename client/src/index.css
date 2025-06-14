@@ -24,20 +24,18 @@
   --ring: hsl(210, 100%, 45%);
   --radius: 0.5rem;
   
-  /* Premium professional engineering theme */
-  --primary-dark: hsl(215, 30%, 12%);
-  --primary-blue: hsl(215, 85%, 28%);
-  --secondary-gray: hsl(215, 20%, 22%);
-  --accent-steel: hsl(215, 25%, 35%);
-  --accent-electric: hsl(215, 90%, 32%);
-  --accent-gold: hsl(45, 95%, 50%);
-  --light-gray: hsl(215, 15%, 98%);
-  --light-steel: hsl(215, 20%, 96%);
-  --medium-gray: hsl(215, 12%, 42%);
-  --dark-steel: hsl(215, 25%, 18%);
-  --premium-navy: hsl(215, 40%, 8%);
-  --gradient-start: hsl(215, 30%, 12%);
-  --gradient-end: hsl(215, 85%, 28%);
+  /* Professional engineering theme colors */
+  --primary-dark: hsl(210, 25%, 15%);
+  --primary-blue: hsl(210, 100%, 25%);
+  --secondary-gray: hsl(210, 15%, 25%);
+  --accent-steel: hsl(210, 20%, 35%);
+  --accent-electric: hsl(210, 100%, 30%);
+  --light-gray: hsl(210, 10%, 97%);
+  --light-steel: hsl(210, 15%, 96%);
+  --medium-gray: hsl(210, 10%, 45%);
+  --dark-steel: hsl(210, 20%, 20%);
+  --gradient-start: hsl(210, 25%, 15%);
+  --gradient-end: hsl(210, 100%, 25%);
 }
 
 .dark {
@@ -98,70 +96,31 @@
   }
   
   .modern-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
-    border-radius: 0.75rem;
-    box-shadow: 
-      0 4px 20px rgba(0, 0, 0, 0.08),
-      0 1px 3px rgba(0, 0, 0, 0.06),
-      inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid hsl(210, 15%, 88%);
+    transition: all 0.2s ease-in-out;
     margin: 0.5rem;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .modern-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
   }
   
   .modern-card:hover {
-    box-shadow: 
-      0 8px 32px rgba(0, 0, 0, 0.12),
-      0 2px 8px rgba(0, 0, 0, 0.08),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
-    transform: translateY(-2px);
-    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-steel);
   }
   
   .elevated-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.95) 100%);
-    border-radius: 1rem;
-    box-shadow: 
-      0 8px 32px rgba(0, 0, 0, 0.1),
-      0 2px 8px rgba(0, 0, 0, 0.06),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(12px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid hsl(210, 15%, 85%);
+    transition: all 0.2s ease-in-out;
     margin: 0.75rem;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .elevated-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent-electric), var(--accent-gold), var(--accent-electric));
   }
   
   .elevated-card:hover {
-    box-shadow: 
-      0 12px 48px rgba(0, 0, 0, 0.15),
-      0 4px 16px rgba(0, 0, 0, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.95);
-    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-electric);
   }
   
   .nav-link.active {
@@ -244,36 +203,18 @@
   }
 
   .steel-gradient {
-    background: linear-gradient(135deg, var(--accent-steel) 0%, var(--dark-steel) 50%, var(--premium-navy) 100%);
+    background: linear-gradient(135deg, var(--accent-steel) 0%, var(--dark-steel) 100%);
     border: 1px solid var(--accent-steel);
-    box-shadow: 
-      0 4px 16px rgba(0, 0, 0, 0.2),
-      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
   
   .electric-gradient {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-electric) 50%, var(--accent-gold) 100%);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-electric) 100%);
     border: 1px solid var(--primary-blue);
-    box-shadow: 
-      0 4px 16px rgba(59, 130, 246, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
   
   .primary-gradient {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-gray) 50%, var(--accent-steel) 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-gray) 100%);
     border: 1px solid var(--primary-dark);
-    box-shadow: 
-      0 4px 16px rgba(0, 0, 0, 0.25),
-      inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  }
-  
-  .premium-gradient {
-    background: linear-gradient(135deg, var(--premium-navy) 0%, var(--primary-dark) 25%, var(--accent-electric) 75%, var(--accent-gold) 100%);
-    border: 1px solid var(--premium-navy);
-    box-shadow: 
-      0 6px 24px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.2),
-      0 0 20px rgba(59, 130, 246, 0.1);
   }
 
   .technical-grid {
@@ -285,29 +226,17 @@
   
   .circuit-pattern {
     background-image: 
-      radial-gradient(circle at 4px 4px, var(--accent-electric) 1.5px, transparent 1.5px),
-      radial-gradient(circle at 20px 20px, var(--accent-gold) 0.8px, transparent 0.8px),
-      linear-gradient(90deg, rgba(59, 130, 246, 0.04) 1px, transparent 1px),
-      linear-gradient(rgba(59, 130, 246, 0.04) 1px, transparent 1px),
-      linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(248, 250, 252, 0.4) 100%);
-    background-size: 40px 40px, 60px 60px, 20px 20px, 20px 20px, 100% 100%;
+      radial-gradient(circle at 2px 2px, var(--accent-steel) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px),
+      linear-gradient(rgba(59, 130, 246, 0.02) 1px, transparent 1px);
+    background-size: 32px 32px, 16px 16px, 16px 16px;
   }
   
   .industrial-texture {
     background: 
-      linear-gradient(135deg, transparent 30%, rgba(59, 130, 246, 0.06) 30%, rgba(59, 130, 246, 0.06) 50%, transparent 50%),
-      linear-gradient(45deg, transparent 30%, rgba(251, 191, 36, 0.04) 30%, rgba(251, 191, 36, 0.04) 50%, transparent 50%),
-      linear-gradient(-45deg, transparent 30%, rgba(71, 85, 105, 0.03) 30%, rgba(71, 85, 105, 0.03) 50%, transparent 50%),
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.6) 100%);
-    background-size: 12px 12px, 8px 8px, 16px 16px, 100% 100%;
-  }
-  
-  .premium-mesh {
-    background: 
-      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
-      linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.7) 50%, rgba(241, 245, 249, 0.8) 100%);
-    background-size: 200px 200px, 150px 150px, 100% 100%;
+      linear-gradient(135deg, transparent 35%, rgba(59, 130, 246, 0.03) 35%, rgba(59, 130, 246, 0.03) 50%, transparent 50%),
+      linear-gradient(45deg, transparent 35%, rgba(71, 85, 105, 0.02) 35%, rgba(71, 85, 105, 0.02) 50%, transparent 50%);
+    background-size: 8px 8px, 12px 12px;
   }
 }
 
