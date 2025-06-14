@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings, Heart, Trophy, CheckCircle } from "lucide-react";
+import { Target, Compass, Award, MonitorSpeaker, Zap, Building, Factory, Globe, Settings, Heart, Trophy, CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import aboutHeroImage from "@assets/alexander-kovalev-mIG_NqkYBoI-unsplash_1749906855750.jpg";
 
 export default function About() {
@@ -144,6 +145,17 @@ export default function About() {
                 <span className="text-gray-600 text-sm font-medium">DC & AC Control Panels</span>
               </div>
             </div>
+          </div>
+          
+          {/* Link to Products & Services */}
+          <div className="text-center mt-8">
+            <Link 
+              href="/products-services" 
+              className="inline-flex items-center space-x-2 text-[var(--accent-teal)] hover:text-teal-700 font-medium transition-colors duration-200 group"
+            >
+              <span>View Our Products & Services</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
           </div>
         </div>
       </section>
