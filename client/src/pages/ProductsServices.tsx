@@ -182,66 +182,97 @@ export default function ProductsServices() {
             </p>
           </div>
 
-          {/* Creative Grid Layout */}
+          {/* Modern Professional Grid Layout */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceCategories.map((category, index) => (
               <div key={category.title} 
                    className={`group relative ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
-                <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-slate-300 overflow-hidden relative group">
-                  {/* Subtle Top Border Accent */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800"></div>
-                  
-                  {/* Background Pattern */}
-                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
-                    <div className="w-full h-full bg-gradient-to-br from-slate-300 to-transparent rounded-full transform rotate-45 translate-x-8 -translate-y-8"></div>
-                  </div>
-                  
-                  <CardHeader className="relative z-10 pb-4 pt-6">
-                    <div className="flex items-start justify-between mb-6">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-3 h-12 bg-gradient-to-b from-slate-700 to-slate-900 rounded-full"></div>
-                        <div className="w-2 h-8 bg-gradient-to-b from-slate-400 to-slate-600 rounded-full opacity-60"></div>
+                <div className="h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 group-hover:border-slate-200">
+                  {/* Hero Image Section */}
+                  <div className="relative h-48 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-50 overflow-hidden">
+                    {/* Abstract geometric background */}
+                    <div className="absolute inset-0 opacity-40">
+                      <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full blur-2xl"></div>
+                      <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tl from-orange-400/15 to-transparent rounded-full blur-2xl"></div>
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-r from-slate-400/10 to-transparent rounded-full blur-xl"></div>
+                    </div>
+                    
+                    {/* Floating Tech Elements */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="relative">
+                        <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/50">
+                          <category.icon className="w-10 h-10 text-slate-700" />
+                        </div>
+                        
+                        {/* Floating dots around icon */}
+                        <div className="absolute -top-2 -right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                        <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-orange-500 rounded-full animate-pulse delay-300"></div>
+                        <div className="absolute top-1/2 -right-3 w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse delay-700"></div>
                       </div>
-                      <Badge className="bg-slate-100 text-slate-700 border-0 font-medium px-3 py-1 shadow-sm">
+                    </div>
+                    
+                    {/* Category Badge */}
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-white/90 backdrop-blur-sm text-slate-800 border-0 font-semibold px-3 py-1.5 shadow-sm">
                         {category.badge}
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-slate-700 transition-colors duration-300">
-                      {category.title}
-                    </CardTitle>
-                  </CardHeader>
-                  
-                  <CardContent className="relative z-10 pt-0">
-                    <p className="text-slate-600 mb-6 leading-relaxed">{category.description}</p>
                     
+                    {/* Index Number */}
+                    <div className="absolute bottom-4 left-4">
+                      <div className="w-8 h-8 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-sm">
+                        <span className="text-sm font-bold text-slate-700">0{index + 1}</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Content Section */}
+                  <div className="p-8">
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">
+                        {category.title}
+                      </h3>
+                      <p className="text-slate-600 leading-relaxed text-base">
+                        {category.description}
+                      </p>
+                    </div>
+                    
+                    {/* Solutions Grid */}
                     <div className="space-y-4">
-                      <h4 className="font-semibold text-slate-800 text-sm uppercase tracking-wide">Key Solutions</h4>
-                      <div className="space-y-3">
+                      <div className="flex items-center space-x-2 mb-4">
+                        <div className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full"></div>
+                        <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wider">Key Solutions</h4>
+                      </div>
+                      
+                      <div className="grid grid-cols-1 gap-3">
                         {category.solutions.map((solution, idx) => (
-                          <div key={solution} className="flex items-start group/item">
-                            <div className="flex items-center mr-3 mt-1">
-                              <div className="w-2 h-2 bg-slate-400 rounded-full group-hover/item:bg-slate-600 transition-colors duration-200"></div>
-                              <div className="w-8 h-px bg-slate-200 ml-1"></div>
+                          <div key={solution} className="group/item flex items-start space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors duration-200">
+                            <div className="flex-shrink-0 mt-1">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full group-hover/item:bg-orange-500 transition-colors duration-200"></div>
                             </div>
-                            <span className="text-sm text-slate-600 leading-relaxed group-hover/item:text-slate-800 transition-colors duration-200">{solution}</span>
+                            <span className="text-sm text-slate-700 leading-relaxed font-medium group-hover/item:text-slate-900 transition-colors duration-200">
+                              {solution}
+                            </span>
                           </div>
                         ))}
                       </div>
                     </div>
                     
-                    {/* Card Footer with Subtle Design Element */}
-                    <div className="mt-6 pt-4 border-t border-gray-100">
+                    {/* Action Area */}
+                    <div className="mt-8 pt-6 border-t border-slate-100">
                       <div className="flex items-center justify-between">
-                        <div className="flex space-x-1">
-                          <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
-                          <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
-                          <div className="w-2 h-2 bg-slate-500 rounded-full"></div>
+                        <div className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-slate-500 font-medium">Available Now</span>
                         </div>
-                        <span className="text-xs text-slate-400 font-medium">0{index + 1}</span>
+                        <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700 hover:bg-blue-50 font-semibold">
+                          Learn More
+                          <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                        </Button>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
