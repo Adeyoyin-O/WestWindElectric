@@ -188,12 +188,22 @@ export default function ProductsServices() {
             {serviceCategories.map((category, index) => (
               <div key={category.title} 
                    className={`group relative ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
-                <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-slate-300 overflow-hidden">
+                <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-slate-300 overflow-hidden relative group">
+                  {/* Subtle Top Border Accent */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800"></div>
                   
-                  <CardHeader className="relative z-10 pb-4">
+                  {/* Background Pattern */}
+                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                    <div className="w-full h-full bg-gradient-to-br from-slate-300 to-transparent rounded-full transform rotate-45 translate-x-8 -translate-y-8"></div>
+                  </div>
+                  
+                  <CardHeader className="relative z-10 pb-4 pt-6">
                     <div className="flex items-start justify-between mb-6">
-                      <div className="w-3 h-12 bg-gradient-to-b from-slate-700 to-slate-900 rounded-full"></div>
-                      <Badge className="bg-slate-100 text-slate-700 border-0 font-medium">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-12 bg-gradient-to-b from-slate-700 to-slate-900 rounded-full"></div>
+                        <div className="w-2 h-8 bg-gradient-to-b from-slate-400 to-slate-600 rounded-full opacity-60"></div>
+                      </div>
+                      <Badge className="bg-slate-100 text-slate-700 border-0 font-medium px-3 py-1 shadow-sm">
                         {category.badge}
                       </Badge>
                     </div>
@@ -205,15 +215,30 @@ export default function ProductsServices() {
                   <CardContent className="relative z-10 pt-0">
                     <p className="text-slate-600 mb-6 leading-relaxed">{category.description}</p>
                     
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-slate-800 text-sm">Key Solutions:</h4>
-                      <div className="space-y-2">
-                        {category.solutions.map((solution) => (
-                          <div key={solution} className="flex items-start">
-                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-sm text-slate-600 leading-relaxed">{solution}</span>
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-slate-800 text-sm uppercase tracking-wide">Key Solutions</h4>
+                      <div className="space-y-3">
+                        {category.solutions.map((solution, idx) => (
+                          <div key={solution} className="flex items-start group/item">
+                            <div className="flex items-center mr-3 mt-1">
+                              <div className="w-2 h-2 bg-slate-400 rounded-full group-hover/item:bg-slate-600 transition-colors duration-200"></div>
+                              <div className="w-8 h-px bg-slate-200 ml-1"></div>
+                            </div>
+                            <span className="text-sm text-slate-600 leading-relaxed group-hover/item:text-slate-800 transition-colors duration-200">{solution}</span>
                           </div>
                         ))}
+                      </div>
+                    </div>
+                    
+                    {/* Card Footer with Subtle Design Element */}
+                    <div className="mt-6 pt-4 border-t border-gray-100">
+                      <div className="flex items-center justify-between">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
+                          <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-slate-500 rounded-full"></div>
+                        </div>
+                        <span className="text-xs text-slate-400 font-medium">0{index + 1}</span>
                       </div>
                     </div>
                   </CardContent>
