@@ -200,74 +200,42 @@ export default function ProductsServices() {
                     {/* Floating Tech Elements */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="relative">
-                        <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/50">
+                        <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden group-hover:scale-110 transition-transform duration-500 border border-white/50">
                           {/* Service Category Images */}
                           {index === 0 && (
-                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                              <rect x="10" y="20" width="80" height="60" rx="8" fill="#64748b" stroke="#334155" strokeWidth="2"/>
-                              <circle cx="30" cy="40" r="8" fill="#3b82f6"/>
-                              <circle cx="50" cy="40" r="8" fill="#ef4444"/>
-                              <circle cx="70" cy="40" r="8" fill="#22c55e"/>
-                              <rect x="20" y="55" width="60" height="4" rx="2" fill="#94a3b8"/>
-                              <rect x="20" y="65" width="40" height="4" rx="2" fill="#94a3b8"/>
-                              <path d="M15 15 L25 5 L75 5 L85 15" stroke="#334155" strokeWidth="2" fill="none"/>
-                            </svg>
+                            <img 
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMF8xIiB4MT0iMCIgeTE9IjAiIHgyPSIyMDAiIHkyPSIyMDAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzMxNDc1NSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0NzVDNjkiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzBfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMjAwIiB5Mj0iMjAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMzNzNCNzQiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjM2NkY5Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPCEtLSBCYWNrZ3JvdW5kIC0tPgo8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0Y4RkFGQyIvPgo8IS0tIE1haW4gZWxlY3RyaWNhbCBwYW5lbCAtLT4KPHJlY3QgeD0iMzAiIHk9IjQwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjEyMCIgcng9IjEyIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIgc3Ryb2tlPSIjMUIxRTI4IiBzdHJva2Utd2lkdGg9IjMiLz4KPCEtLSBDb250cm9sIGxpZ2h0cyAtLT4KPGNpcmNsZSBjeD0iNzAiIGN5PSI4MCIgcj0iMTIiIGZpbGw9IiNGRjM0MzQiLz4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iODAiIHI9IjEyIiBmaWxsPSIjRkZBQzMzIi8+CjxjaXJjbGUgY3g9IjEzMCIgY3k9IjgwIiByPSIxMiIgZmlsbD0iIzIyQzU1RSIvPgo8IS0tIEluZGljYXRvciBsaWdodHMgLS0+CjxjaXJjbGUgY3g9IjcwIiBjeT0iODAiIHI9IjYiIGZpbGw9IiNGRkY3RUQiIG9wYWNpdHk9IjAuOCIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iNiIgZmlsbD0iI0ZGRjdFRCIgb3BhY2l0eT0iMC44Ii8+CjxjaXJjbGUgY3g9IjEzMCIgY3k9IjgwIiByPSI2IiBmaWxsPSIjRkZGN0VEIiBvcGFjaXR5PSIwLjgiLz4KPCEtLSBEaXNwbGF5IC0tPgo8cmVjdCB4PSI2MCIgeT0iMTEwIiB3aWR0aD0iODAiIGhlaWdodD0iMzAiIHJ4PSI0IiBmaWxsPSIjMUExQTFBIi8+CjxyZWN0IHg9IjY1IiB5PSIxMTUiIHdpZHRoPSI3MCIgaGVpZ2h0PSI4IiByeD0iMiIgZmlsbD0iIzIyQzU1RSIvPgo8cmVjdCB4PSI2NSIgeT0iMTI3IiB3aWR0aD0iNTAiIGhlaWdodD0iOCIgcng9IjIiIGZpbGw9IiMyMkM1NUUiLz4KPCEtLSBXaXJlcyAtLT4KPHBhdGggZD0iTTcwIDUwIFE3MCAzMCA5MCAzMCBRMTEwIDMwIDExMCA1MCIgc3Ryb2tlPSIjRkZBQzMzIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTEzMCA1MCBRMTMwIDMwIDE1MCAzMCBRMTcwIDMwIDE3MCA1MCIgc3Ryb2tlPSIjM0I4MkY2IiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiLz4KPCEtLSBTd2l0Y2hlcyAtLT4KPHJlY3QgeD0iNDUiIHk9IjE1MCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzM3NEY2NiIvPgo8cmVjdCB4PSI5MiIgeT0iMTUwIiB3aWR0aD0iMTUiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjMzc0RjY2Ii8+CjxyZWN0IHg9IjE0MCIgeT0iMTUwIiB3aWR0aD0iMTUiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjMzc0RjY2Ii8+CjwvZXZnPg=="
+                              alt="Electrical Equipment"
+                              className="w-full h-full object-cover"
+                            />
                           )}
                           {index === 1 && (
-                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                              <rect x="15" y="25" width="70" height="50" rx="6" fill="#64748b" stroke="#334155" strokeWidth="2"/>
-                              <rect x="20" y="30" width="20" height="15" rx="2" fill="#3b82f6"/>
-                              <rect x="45" y="30" width="20" height="15" rx="2" fill="#ef4444"/>
-                              <rect x="70" y="30" width="10" height="15" rx="2" fill="#22c55e"/>
-                              <rect x="20" y="50" width="60" height="3" rx="1" fill="#94a3b8"/>
-                              <rect x="20" y="57" width="45" height="3" rx="1" fill="#94a3b8"/>
-                              <rect x="20" y="64" width="35" height="3" rx="1" fill="#94a3b8"/>
-                              <circle cx="30" cy="15" r="8" fill="#f59e0b" stroke="#d97706" strokeWidth="2"/>
-                              <path d="M30 10 L35 20 L25 20 Z" fill="#ffffff"/>
-                            </svg>
+                            <img 
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMF8xIiB4MT0iMCIgeTE9IjAiIHgyPSIyMDAiIHkyPSIyMDAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFCMzI0NiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzNTQ5NjMiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhY2tncm91bmQgLS0+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkFGQkZDIi8+CjwhLS0gTWFpbiBjb250cm9sIGNhYmluZXQgLS0+CjxyZWN0IHg9IjI1IiB5PSIzMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzBfMSkiIHN0cm9rZT0iIzBGMTcyOSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjwhLS0gQ29udHJvbCBwYW5lbHMgLS0+CjxyZWN0IHg9IjQwIiB5PSI1MCIgd2lkdGg9IjM1IiBoZWlnaHQ9IjI1IiByeD0iNCIgZmlsbD0iIzNCODJGNiIvPgo8cmVjdCB4PSI4NSIgeT0iNTAiIHdpZHRoPSIzNSIgaGVpZ2h0PSIyNSIgcng9IjQiIGZpbGw9IiNFRjQ0NDQiLz4KPHJlY3QgeD0iMTMwIiB5PSI1MCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1IiByeD0iNCIgZmlsbD0iIzIyQzU1RSIvPgo8IS0tIERpc3BsYXkgc2NyZWVuIC0tPgo8cmVjdCB4PSI0MCIgeT0iOTAiIHdpZHRoPSIxMjAiIGhlaWdodD0iNDAiIHJ4PSI2IiBmaWxsPSIjMEYxNzI5Ii8+CjxyZWN0IHg9IjQ1IiB5PSI5NSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxMCIgcng9IjIiIGZpbGw9IiMyMkM1NUUiLz4KPHJlY3QgeD0iNDUiIHk9IjEwOCIgd2lkdGg9Ijc1IiBoZWlnaHQ9IjEwIiByeD0iMiIgZmlsbD0iIzIyQzU1RSIvPgo8cmVjdCB4PSI0NSIgeT0iMTIxIiB3aWR0aD0iOTAiIGhlaWdodD0iNCIgcng9IjIiIGZpbGw9IiM5NEEzQjgiLz4KPCEtLSBDb250cm9sIGtub2JzIC0tPgo8Y2lyY2xlIGN4PSI2MCIgY3k9IjE1NSIgcj0iMTAiIGZpbGw9IiMzNzRGNjYiIHN0cm9rZT0iIzFFMjkzQiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjE1NSIgcj0iMTAiIGZpbGw9IiMzNzRGNjYiIHN0cm9rZT0iIzFFMjkzQiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjE0MCIgY3k9IjE1NSIgcj0iMTAiIGZpbGw9IiMzNzRGNjYiIHN0cm9rZT0iIzFFMjkzQiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjwhLS0gS25vYiBpbmRpY2F0b3JzIC0tPgo8cGF0aCBkPSJNNjAgMTQ3IEw2MCA0OEwGNjAgMTYzIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMDAgMTQ3IEwxMDAgMTYzIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNDAgMTQ3IEwxNDAgMTYzIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjwhLS0gU3RhdHVzIExFRCAtLT4KPGNpcmNsZSBjeD0iMTcwIiBjeT0iNDAiIHI9IjgiIGZpbGw9IiNGRkFDMzMiLz4KPGNpcmNsZSBjeD0iMTcwIiBjeT0iNDAiIHI9IjQiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOCIvPgo8L3N2Zz4="
+                              alt="Control Panels & Systems"
+                              className="w-full h-full object-cover"
+                            />
                           )}
                           {index === 2 && (
-                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                              <circle cx="50" cy="50" r="35" fill="#64748b" stroke="#334155" strokeWidth="3"/>
-                              <circle cx="50" cy="50" r="25" fill="none" stroke="#3b82f6" strokeWidth="2"/>
-                              <circle cx="50" cy="50" r="15" fill="none" stroke="#ef4444" strokeWidth="2"/>
-                              <circle cx="50" cy="25" r="4" fill="#22c55e"/>
-                              <circle cx="75" cy="50" r="4" fill="#22c55e"/>
-                              <circle cx="50" cy="75" r="4" fill="#22c55e"/>
-                              <circle cx="25" cy="50" r="4" fill="#22c55e"/>
-                              <path d="M42 42 L58 58 M58 42 L42 58" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round"/>
-                              <rect x="45" y="10" width="10" height="8" rx="2" fill="#374151"/>
-                            </svg>
+                            <img 
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50MF9yYWRpYWxfMF8xIiBjeD0iMTAwIiBjeT0iMTAwIiByPSI3MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMzc0RjY2Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzFCMkM0NyIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8L2RlZnM+CjwhLS0gQmFja2dyb3VuZCAtLT4KPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGOUZBRkIiLz4KPCEtLSBNYWluIG1vdG9yIGNhc2luZyAtLT4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI3MCIgZmlsbD0idXJsKCNwYWludDBfcmFkaWFsXzBfMSkiIHN0cm9rZT0iIzBGMTcyOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjwhLS0gSW5uZXIgY2lyY2xlcyAtLT4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI1NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzQ5MUY5IiBzdHJva2Utd2lkdGg9IjMiLz4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkJCRjI0IiBzdHJva2Utd2lkdGg9IjMiLz4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkY0NDQ0IiBzdHJva2Utd2lkdGg9IjMiLz4KPCEtLSBDb25uZWN0aW9uIHBvaW50cyAtLT4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMzAiIHI9IjgiIGZpbGw9IiMyMkM1NUUiLz4KPGNpcmNsZSBjeD0iMTcwIiBjeT0iMTAwIiByPSI4IiBmaWxsPSIjMjJDNTVFIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjE3MCIgcj0iOCIgZmlsbD0iIzIyQzU1RSIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjEwMCIgcj0iOCIgZmlsbD0iIzIyQzU1RSIvPgo8IS0tIENlbnRlciBzaGFmdCAtLT4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSIxMCIgZmlsbD0iIzRBNTA2MSIgc3Ryb2tlPSIjMUYyOTM3IiBzdHJva2Utd2lkdGg9IjIiLz4KPCEtLSBDb250cm9sIGNhYmxlcyAtLT4KPHBhdGggZD0iTTEwMCAzMCBMMTAwIDEwIiBzdHJva2U9IiNGRkFDMzMiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNzAgMTAwIEwxOTAgMTAwIiBzdHJva2U9IiNGRkFDMzMiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMDAgMTcwIEwxMDAgMTkwIiBzdHJva2U9IiNGRkFDMzMiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0zMCAxMDAgTDEwIDEwMCIgc3Ryb2tlPSIjRkZBQzMzIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8IS0tIEZhbiBibGFkZXMgLS0+CjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1IDEwMCAxMDApIj4KPHBhdGggZD0iTTk1IDg1IEwxMDUgMTE1IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMTUgOTUgTDg1IDEwNSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjwvZXZnPg=="
+                              alt="Motor Controls & Drives"
+                              className="w-full h-full object-cover"
+                            />
                           )}
                           {index === 3 && (
-                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                              <rect x="20" y="30" width="60" height="40" rx="4" fill="#64748b" stroke="#334155" strokeWidth="2"/>
-                              <rect x="25" y="35" width="15" height="8" rx="1" fill="#3b82f6"/>
-                              <rect x="45" y="35" width="15" height="8" rx="1" fill="#ef4444"/>
-                              <rect x="65" y="35" width="10" height="8" rx="1" fill="#22c55e"/>
-                              <rect x="25" y="48" width="50" height="2" rx="1" fill="#94a3b8"/>
-                              <rect x="25" y="53" width="35" height="2" rx="1" fill="#94a3b8"/>
-                              <rect x="25" y="58" width="40" height="2" rx="1" fill="#94a3b8"/>
-                              <rect x="25" y="63" width="30" height="2" rx="1" fill="#94a3b8"/>
-                              <path d="M35 20 L35 30 M50 15 L50 30 M65 25 L65 30" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round"/>
-                              <circle cx="35" cy="15" r="3" fill="#f59e0b"/>
-                              <circle cx="50" cy="10" r="3" fill="#f59e0b"/>
-                              <circle cx="65" cy="20" r="3" fill="#f59e0b"/>
-                            </svg>
+                            <img 
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMF8xIiB4MT0iMCIgeTE9IjAiIHgyPSIyMDAiIHkyPSIyMDAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFCMzI0NiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzNzRGNjYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhY2tncm91bmQgLS0+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkNGREZGIi8+CjwhLS0gTWFpbiBVUFMgdW5pdCAtLT4KPHJlY3QgeD0iMzAiIHk9IjUwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjEwMCIgcng9IjEwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIgc3Ryb2tlPSIjMEYxNzI5IiBzdHJva2Utd2lkdGg9IjMiLz4KPCEtLSBCYXR0ZXJ5IGluZGljYXRvcnMgLS0+CjxyZWN0IHg9IjQ1IiB5PSI3MCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iIzIyQzU1RSIvPgo8cmVjdCB4PSI4MCIgeT0iNzAiIHdpZHRoPSIyNSIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiMyMkM1NUUiLz4KPHJlY3QgeD0iMTE1IiB5PSI3MCIgd2lkdGg9IjI1IiBoZWlnaHQ9IjE1IiByeD0iMyIgZmlsbD0iIzIyQzU1RSIvPgo8cmVjdCB4PSIxNTAiIHk9IjcwIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHJ4PSIzIiBmaWxsPSIjRkZBQzMzIi8+CjwhLS0gRGlzcGxheSBzY3JlZW4gLS0+CjxyZWN0IHg9IjQ1IiB5PSIxMDAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMzAiIHJ4PSI0IiBmaWxsPSIjMEYxNzI5Ii8+CjxyZWN0IHg9IjUwIiB5PSIxMDUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IiMyMkM1NUUiLz4KPHJlY3QgeD0iNTAiIHk9IjExNCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjYiIHJ4PSIyIiBmaWxsPSIjMjJDNTVFIi8+CjxyZWN0IHg9IjUwIiB5PSIxMjMiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzIiByeD0iMSIgZmlsbD0iIzk0QTNCOCIvPgo8IS0tIFBvd2VyIGNvbm5lY3Rpb25zIC0tPgo8cGF0aCBkPSJNNjAgMzAgTDYwIDUwIiBzdHJva2U9IiNGRkFDMzMiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMDAgMjAgTDEwMCA1MCIgc3Ryb2tlPSIjRkZBQzMzIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTQwIDQwIEwxNDAgNTAiIHN0cm9rZT0iI0ZGQUMzMyIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPCEtLSBQb3dlciBpbmRpY2F0b3JzIC0tPgo8Y2lyY2xlIGN4PSI2MCIgY3k9IjI1IiByPSI1IiBmaWxsPSIjRkZBQzMzIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjE1IiByPSI1IiBmaWxsPSIjRkZBQzMzIi8+CjxjaXJjbGUgY3g9IjE0MCIgY3k9IjM1IiByPSI1IiBmaWxsPSIjRkZBQzMzIi8+CjwhLS0gT3V0cHV0IGNvbm5lY3Rpb25zIC0tPgo8cGF0aCBkPSJNMzAgMTcwIEw1MCA1MDA1MCA1MCA4MCA1MDA1MCA1MCAxMTAgMTcwIiBzdHJva2U9IiMyMkM1NUUiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIvPgo8cGF0aCBkPSJNMTcwIDEwMCBMMTkwIDEwMCIgc3Ryb2tlPSIjMjJDNTVFIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4="
+                              alt="Power & Backup Systems"
+                              className="w-full h-full object-cover"
+                            />
                           )}
                           {index === 4 && (
-                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                              <rect x="25" y="35" width="50" height="30" rx="4" fill="#64748b" stroke="#334155" strokeWidth="2"/>
-                              <circle cx="40" cy="45" r="6" fill="#3b82f6"/>
-                              <circle cx="60" cy="45" r="6" fill="#ef4444"/>
-                              <rect x="35" y="55" width="30" height="3" rx="1" fill="#94a3b8"/>
-                              <path d="M30 25 Q50 15 70 25" stroke="#f59e0b" strokeWidth="3" fill="none"/>
-                              <circle cx="30" cy="25" r="3" fill="#f59e0b"/>
-                              <circle cx="50" cy="20" r="3" fill="#f59e0b"/>
-                              <circle cx="70" cy="25" r="3" fill="#f59e0b"/>
-                              <path d="M20 75 L35 65 L50 70 L65 65 L80 75" stroke="#22c55e" strokeWidth="3" fill="none"/>
-                              <rect x="45" y="30" width="10" height="5" rx="1" fill="#374151"/>
-                            </svg>
+                            <img 
+                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMF8xIiB4MT0iMCIgeTE9IjAiIHgyPSIyMDAiIHkyPSIyMDAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzNCODJGNiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxRDQxRDgiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhY2tncm91bmQgLS0+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRkNGREZGIi8+CjwhLS0gSW5zdGFsbGF0aW9uIHRvb2xib3ggLS0+CjxyZWN0IHg9IjQwIiB5PSI2MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI4MCIgcng9IjEwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIgc3Ryb2tlPSIjMEYxNzI5IiBzdHJva2Utd2lkdGg9IjIiLz4KPCEtLSBUb29scyAtLT4KPCEtLSBTY3Jld2RyaXZlciAtLT4KPHJlY3QgeD0iNjAiIHk9IjgwIiB3aWR0aD0iODAiIGhlaWdodD0iNiIgcng9IjMiIGZpbGw9IiNGRkFDMzMiLz4KPGNpcmNsZSBjeD0iNjAiIGN5PSI4MyIgcj0iNiIgZmlsbD0iIzM3NEY2NiIvPgo8IS0tIFdyZW5jaCAtLT4KPHJlY3QgeD0iNjAiIHk9IjEwMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSIjMzc0RjY2Ii8+CjxjaXJjbGUgY3g9IjYwIiBjeT0iMTAyIiByPSI4IiBmaWxsPSIjMzc0RjY2IiBzdHJva2U9IiMxRjI5MzciIHN0cm9rZS13aWR0aD0iMiIvPgo8IS0tIERyaWxsIC0tPgo8cmVjdCB4PSI2MCIgeT0iMTE4IiB3aWR0aD0iNjAiIGhlaWdodD0iNiIgcng9IjMiIGZpbGw9IiMxRjI5MzciLz4KPGNpcmNsZSBjeD0iNjAiIGN5PSIxMjEiIHI9IjgiIGZpbGw9IiMzNzRGNjYiIHN0cm9rZT0iIzFGMjkzNyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjYwIiBjeT0iMTIxIiByPSI0IiBmaWxsPSIjRkZBQzMzIi8+CjwhLS0gVm9sdG1ldGVyIC0tPgo8Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMDAiIHI9IjE4IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMzNzRGNjYiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMTMyIDEwMCBMMTQ4IDEwMCIgc3Ryb2tlPSIjRkY0NDQ0IiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTE0MCA5MiBMMTQwIDEwOCIgc3Ryb2tlPSIjRkY0NDQ0IiBzdHJva2Utd2lkdGg9IjMiLz4KPCEtLSBJbnN0YWxsYXRpb24gY2FibGVzIC0tPgo8cGF0aCBkPSJNNDAgNDAgUTcwIDIwIDEwMCA0MCBRMTMwIDIwIDE2MCA0MCIgc3Ryb2tlPSIjRkZBQzMzIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNCIgZmlsbD0iI0ZGQUMzMyIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSI0MCIgcj0iNCIgZmlsbD0iI0ZGQUMzMyIvPgo8Y2lyY2xlIGN4PSIxNjAiIGN5PSI0MCIgcj0iNCIgZmlsbD0iI0ZGQUMzMyIvPgo8IS0tIEdyb3VuZCBsaW5lcyAtLT4KPHBhdGggZD0iTTMwIDE2MCBMNTAgMTUwIEw4MCA1NTE2MCBMMTEwIDMwMTE1MCBMMTcwIDE2MCIgc3Ryb2tlPSIjMjJDNTVFIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiLz4KPCEtLSBTYWZldHkgZ2VhciAtLT4KPHJlY3QgeD0iODAiIHk9IjQ1IiB3aWR0aD0iNDAiIGhlaWdodD0iMTAiIHJ4PSIyIiBmaWxsPSIjRkZBQzMzIi8+Cjwvc3ZnPg=="
+                              alt="Installation Services"
+                              className="w-full h-full object-cover"
+                            />
                           )}
                         </div>
                         
