@@ -188,20 +188,16 @@ export default function ProductsServices() {
             {serviceCategories.map((category, index) => (
               <div key={category.title} 
                    className={`group relative ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
-                <Card className="h-full bg-gradient-to-br from-white to-gray-50/50 border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden">
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-slate-300 overflow-hidden">
                   
                   <CardHeader className="relative z-10 pb-4">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-500">
-                        <category.icon className="w-7 h-7 text-white" />
-                      </div>
-                      <Badge className={`${category.badgeColor} border-0 font-medium`}>
+                    <div className="flex items-start justify-between mb-6">
+                      <div className="w-3 h-12 bg-gradient-to-b from-slate-700 to-slate-900 rounded-full"></div>
+                      <Badge className="bg-slate-100 text-slate-700 border-0 font-medium">
                         {category.badge}
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-slate-700 transition-colors duration-300">
                       {category.title}
                     </CardTitle>
                   </CardHeader>
@@ -211,11 +207,11 @@ export default function ProductsServices() {
                     
                     <div className="space-y-3">
                       <h4 className="font-semibold text-slate-800 text-sm">Key Solutions:</h4>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="space-y-2">
                         {category.solutions.map((solution) => (
-                          <div key={solution} className="flex items-center">
-                            <ArrowRight className="w-3 h-3 text-blue-500 mr-2 flex-shrink-0" />
-                            <span className="text-xs text-slate-600">{solution}</span>
+                          <div key={solution} className="flex items-start">
+                            <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span className="text-sm text-slate-600 leading-relaxed">{solution}</span>
                           </div>
                         ))}
                       </div>
