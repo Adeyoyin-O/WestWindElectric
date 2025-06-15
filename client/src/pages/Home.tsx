@@ -293,73 +293,86 @@ export default function Home() {
       </section>
 
       {/* Our Solutions Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
-        {/* Background Texture */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 75% 75%, rgba(251, 146, 60, 0.04) 0%, transparent 40%),
-              linear-gradient(45deg, transparent 49%, rgba(148, 163, 184, 0.02) 49%, rgba(148, 163, 184, 0.02) 51%, transparent 51%)
-            `,
-            backgroundSize: '800px 800px, 600px 600px, 60px 60px'
-          }}></div>
-        </div>
+      <section className="relative py-28 overflow-hidden">
+        {/* Premium Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900"></div>
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            radial-gradient(circle 1000px at 25% 25%, hsla(210, 100%, 50%, 0.08), transparent),
+            radial-gradient(circle 800px at 75% 75%, hsla(189, 100%, 42%, 0.06), transparent),
+            linear-gradient(45deg, hsla(255, 255, 255, 0.005) 1px, transparent 1px),
+            linear-gradient(-45deg, hsla(255, 255, 255, 0.005) 1px, transparent 1px)
+          `,
+          backgroundSize: '100% 100%, 100% 100%, 100px 100px, 100px 100px'
+        }}></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
-              <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
-              Our Solutions
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center px-8 py-4 maritime-glass rounded-full text-sm font-semibold mb-8">
+              <div className="w-3 h-3 maritime-sunset rounded-full mr-3"></div>
+              <span className="text-slate-700">Our Engineering Solutions</span>
             </div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Tailored Expertise for Every Project
+            <h2 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Precision-Engineered
+              <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Maritime Systems</span>
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Discover our comprehensive range of specialized services designed to power your success
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive solutions spanning power distribution, automation control, and maritime electronics—engineered for mission-critical performance
             </p>
           </div>
 
-          {/* Creative Uneven Layout */}
-          <div className="grid grid-cols-12 gap-6 mb-12">
-            {/* Large Service Card - Spans 7 columns */}
-            <div className="col-span-12 lg:col-span-7 group">
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
+          {/* Premium Service Layout */}
+          <div className="grid grid-cols-12 gap-8 mb-16">
+            {/* Featured Service Card */}
+            <div className="col-span-12 lg:col-span-8 group">
+              <div className="relative h-[500px] maritime-elevated overflow-hidden transform transition-all duration-700 hover:scale-[1.02]">
                 <img 
                   src={electricalPanelImage}
-                  alt="Technician working on electrical distribution panel"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Advanced electrical distribution panel systems"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
-                  <div className="inline-flex items-center justify-center px-3 py-1 bg-orange-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
-                    Power Systems
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-10 text-white">
+                  <div className="inline-flex items-center px-4 py-2 maritime-sunset rounded-full text-sm font-semibold mb-4">
+                    Power Systems Engineering
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Power Distribution & Control</h3>
-                  <p className="text-sm opacity-90 leading-relaxed">
-                    Advanced electrical switchgear, distribution panels, and high-voltage power systems engineered for industrial and maritime applications
+                  <h3 className="text-3xl font-bold mb-4 maritime-heading text-white">
+                    Electrical Distribution & Control Systems
+                  </h3>
+                  <p className="text-lg text-slate-200 leading-relaxed mb-6">
+                    Advanced switchgear, distribution panels, and high-voltage power systems engineered for industrial facilities and maritime vessels with uncompromising safety and reliability standards.
                   </p>
+                  <div className="flex items-center space-x-6">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span className="text-sm text-slate-300">High-Voltage Systems</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span className="text-sm text-slate-300">Marine Certified</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Two Smaller Cards - Each spans 5 columns, stacked vertically */}
-            <div className="col-span-12 lg:col-span-5 space-y-6">
+            {/* Secondary Service Cards */}
+            <div className="col-span-12 lg:col-span-4 space-y-8">
               <div className="group">
-                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="relative h-[240px] maritime-elevated overflow-hidden transform transition-all duration-700 hover:scale-[1.02]">
                   <img 
                     src={controlPanelImage}
-                    alt="Female engineer operating CNC machinery in modern factory"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    alt="Industrial automation and control systems"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
-                    <div className="inline-flex items-center justify-center px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
-                      Automation
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="inline-flex items-center px-3 py-1 bg-purple-500/80 backdrop-blur-sm rounded-full text-xs font-semibold mb-3">
+                      Automation Systems
                     </div>
-                    <h3 className="text-lg font-bold mb-2">Industrial Control Systems</h3>
-                    <p className="text-xs opacity-90">
+                    <h3 className="text-xl font-bold mb-2">Industrial Control</h3>
+                    <p className="text-sm text-slate-200 leading-relaxed">
                       Cutting-edge automation and process control solutions
                     </p>
                   </div>
@@ -367,19 +380,19 @@ export default function Home() {
               </div>
 
               <div className="group">
-                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="relative h-[240px] maritime-elevated overflow-hidden transform transition-all duration-700 hover:scale-[1.02]">
                   <img 
                     src={marineControlImage}
-                    alt="Marine control room with navigation and monitoring systems"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    alt="Marine navigation and control systems"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
-                    <div className="inline-flex items-center justify-center px-3 py-1 bg-cyan-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
-                      Maritime
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="inline-flex items-center px-3 py-1 bg-cyan-500/80 backdrop-blur-sm rounded-full text-xs font-semibold mb-3">
+                      Maritime Electronics
                     </div>
-                    <h3 className="text-lg font-bold mb-2">Marine Electronics</h3>
-                    <p className="text-xs opacity-90">
+                    <h3 className="text-xl font-bold mb-2">Marine Systems</h3>
+                    <p className="text-sm text-slate-200 leading-relaxed">
                       Specialized electronic systems for maritime vessels
                     </p>
                   </div>
@@ -388,16 +401,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stylish Explore Button */}
+          {/* Call to Action */}
           <div className="text-center">
             <Link href="/products-services">
               <Button 
-                className="group relative px-8 py-4 bg-white border-2 border-blue-600 hover:border-blue-700 text-blue-600 hover:text-blue-700 font-semibold rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden"
+                className="group relative px-12 py-6 maritime-glass hover:shadow-2xl transform transition-all duration-500 hover:scale-105 text-lg font-semibold overflow-hidden"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
-                <span className="relative flex items-center">
-                  Explore Full Services
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+                <span className="relative flex items-center maritime-subheading">
+                  Explore Complete Solutions
+                  <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300 text-blue-600" />
                 </span>
               </Button>
             </Link>
