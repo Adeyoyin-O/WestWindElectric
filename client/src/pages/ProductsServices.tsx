@@ -155,10 +155,7 @@ export default function ProductsServices() {
                     <span className="text-2xl font-bold text-white">{service.letter}</span>
                   </div>
                   
-                  {/* Icon */}
-                  <div className={`inline-flex items-center justify-center w-14 h-14 bg-gradient-to-r ${service.color} rounded-xl mb-4 shadow-lg`}>
-                    <service.icon className="w-7 h-7 text-white" />
-                  </div>
+
                   
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
                   <p className="text-slate-600 mb-4 text-sm leading-relaxed">{service.description}</p>
