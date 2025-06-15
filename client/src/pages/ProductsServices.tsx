@@ -143,12 +143,7 @@ export default function ProductsServices() {
                 <div className="relative bg-white rounded-xl p-8 shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   {/* Large Letter */}
                   <div className="absolute -top-3 -right-3 w-12 h-12 bg-white border-2 border-slate-300 rounded-lg flex items-center justify-center shadow-sm">
-                    <span className={`text-xl font-bold ${
-                      service.letter === 'E' ? 'text-blue-600' :
-                      service.letter === 'P' ? 'text-green-600' :
-                      service.letter === 'I' ? 'text-orange-600' :
-                      service.letter === 'C' ? 'text-purple-600' : 'text-slate-800'
-                    }`}>{service.letter}</span>
+                    <span className="text-xl font-bold text-slate-800">{service.letter}</span>
                   </div>
 
                   
