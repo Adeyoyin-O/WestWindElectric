@@ -243,29 +243,29 @@ export default function ProductsServices() {
                     <p className="text-slate-700 mb-6 leading-relaxed font-medium">{category.description}</p>
                     
                     <div className="space-y-4">
-                      <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wide">Key Solutions</h4>
+                      <h4 className="font-semibold text-slate-800 text-sm uppercase tracking-wide">Key Solutions</h4>
                       <div className="space-y-3">
                         {category.solutions.map((solution, idx) => (
                           <div key={solution} className="flex items-start group/item">
                             <div className="flex items-center mr-3 mt-1">
-                              <div className="w-2 h-2 bg-blue-500 rounded-full group-hover/item:bg-orange-500 transition-colors duration-300 shadow-sm"></div>
-                              <div className="w-8 h-px bg-gradient-to-r from-blue-300 to-transparent ml-1"></div>
+                              <div className="w-2 h-2 bg-slate-400 rounded-full group-hover/item:bg-slate-600 transition-colors duration-200"></div>
+                              <div className="w-8 h-px bg-slate-200 ml-1"></div>
                             </div>
-                            <span className="text-sm text-slate-700 leading-relaxed group-hover/item:text-slate-900 transition-colors duration-200 font-medium">{solution}</span>
+                            <span className="text-sm text-slate-600 leading-relaxed group-hover/item:text-slate-800 transition-colors duration-200">{solution}</span>
                           </div>
                         ))}
                       </div>
                     </div>
                     
-                    {/* Enhanced Card Footer */}
-                    <div className="mt-6 pt-4 border-t border-gradient-to-r from-slate-200/60 via-blue-200/40 to-slate-200/60">
+                    {/* Card Footer with Subtle Design Element */}
+                    <div className="mt-6 pt-4 border-t border-gray-100">
                       <div className="flex items-center justify-between">
                         <div className="flex space-x-1">
-                          <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full shadow-sm"></div>
-                          <div className="w-2 h-2 bg-gradient-to-r from-slate-400 to-slate-600 rounded-full shadow-sm"></div>
-                          <div className="w-2 h-2 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full shadow-sm"></div>
+                          <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
+                          <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
+                          <div className="w-2 h-2 bg-slate-500 rounded-full"></div>
                         </div>
-                        <span className="text-xs text-slate-500 font-bold bg-slate-100/50 px-2 py-1 rounded-full">0{index + 1}</span>
+                        <span className="text-xs text-slate-400 font-medium">0{index + 1}</span>
                       </div>
                     </div>
                   </CardContent>
