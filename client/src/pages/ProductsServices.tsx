@@ -142,8 +142,8 @@ export default function ProductsServices() {
               <div key={service.letter} className="group relative">
                 <div className="relative bg-white rounded-xl p-8 shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   {/* Large Letter */}
-                  <div className="absolute -top-3 -right-3 w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center shadow-md">
-                    <span className="text-xl font-bold text-white">{service.letter}</span>
+                  <div className="absolute -top-3 -right-3 w-12 h-12 bg-white border-2 border-slate-300 rounded-lg flex items-center justify-center shadow-sm">
+                    <span className="text-xl font-bold text-slate-800">{service.letter}</span>
                   </div>
 
                   
