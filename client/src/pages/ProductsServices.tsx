@@ -66,52 +66,44 @@ export default function ProductsServices() {
 
   const serviceCategories = [
     {
-      icon: Compass,
-      title: "Navigation Systems",
-      description: "Advanced navigation equipment for safe and efficient maritime operations",
-      badge: "Navigation",
-      badgeColor: "bg-blue-100 text-blue-700",
-      solutions: ["GPS & GNSS Systems", "Radar Technology", "Electronic Chart Systems", "Autopilot Solutions"]
-    },
-    {
-      icon: Radio,
-      title: "Communication Systems", 
-      description: "Reliable communication solutions ensuring safety and connectivity at sea",
-      badge: "Communication",
-      badgeColor: "bg-green-100 text-green-700",
-      solutions: ["VHF Radio Systems", "Satellite Communication", "Emergency Beacons", "Intercom Networks"]
-    },
-    {
       icon: Zap,
-      title: "Electrical Systems",
-      description: "Complete electrical infrastructure for marine and industrial applications",
-      badge: "Power Systems",
-      badgeColor: "bg-orange-100 text-orange-700", 
-      solutions: ["Power Distribution", "Control Panels", "Emergency Systems", "Lighting Solutions"]
+      title: "Electrical Equipment",
+      description: "Complete range of electrical components and systems for industrial applications",
+      badge: "Electrical",
+      badgeColor: "bg-blue-100 text-blue-700",
+      solutions: ["Pumps and Motors", "Electrical and Lighting Fittings", "Circuit Breakers", "Transformers"]
     },
     {
       icon: ServerCog,
-      title: "Automation & Control",
-      description: "Smart automation systems for enhanced operational efficiency",
-      badge: "Automation",
+      title: "Control Panels & Systems", 
+      description: "Advanced control solutions for industrial automation and power management",
+      badge: "Control Systems",
+      badgeColor: "bg-green-100 text-green-700",
+      solutions: ["Medium and Low Voltage Panels", "DC Panels, Battery Chargers and Batteries", "Control Consoles", "Motor Control Centers (MCC)"]
+    },
+    {
+      icon: Settings,
+      title: "Motor Controls & Drives",
+      description: "Comprehensive motor control solutions for optimal performance and efficiency",
+      badge: "Motor Control",
+      badgeColor: "bg-orange-100 text-orange-700", 
+      solutions: ["Starters (DOL, Star-Delta, Auto Transformer)", "Variable Frequency Drives (VFD)", "Rewinding of Motors and Generator Spare Parts"]
+    },
+    {
+      icon: Activity,
+      title: "Power & Backup Systems",
+      description: "Reliable power solutions and backup systems for continuous operations",
+      badge: "Power Systems",
       badgeColor: "bg-purple-100 text-purple-700",
-      solutions: ["Engine Room Automation", "Bridge Systems", "SCADA Solutions", "Process Control"]
+      solutions: ["Inverters and UPS Systems", "DC Panels, Battery Chargers and Batteries"]
     },
     {
-      icon: Anchor,
-      title: "Maritime Electronics",
-      description: "Specialized marine electronics for vessel operations and safety",
-      badge: "Marine Tech",
+      icon: Wrench,
+      title: "Installation Services",
+      description: "Professional installation and maintenance services for all electrical systems",
+      badge: "Installation",
       badgeColor: "bg-cyan-100 text-cyan-700",
-      solutions: ["Navigation Aids", "Safety Equipment", "Monitoring Systems", "Hull Instrumentation"]
-    },
-    {
-      icon: Users,
-      title: "Training & Support",
-      description: "Comprehensive training programs and ongoing technical support",
-      badge: "Support",
-      badgeColor: "bg-indigo-100 text-indigo-700",
-      solutions: ["Equipment Training", "Technical Support", "Documentation", "Remote Diagnostics"]
+      solutions: ["Electric Installations", "System Integration", "Maintenance Services", "Technical Support"]
     }
   ];
 
@@ -192,10 +184,10 @@ export default function ProductsServices() {
           </div>
 
           {/* Creative Grid Layout */}
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceCategories.map((category, index) => (
               <div key={category.title} 
-                   className={`group relative ${index === 2 ? 'lg:col-span-1 lg:row-span-2' : ''} ${index === 5 ? 'lg:col-span-2' : ''}`}>
+                   className={`group relative ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
                 <Card className="h-full bg-gradient-to-br from-white to-gray-50/50 border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] overflow-hidden">
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
