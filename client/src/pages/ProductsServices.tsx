@@ -166,7 +166,102 @@ export default function ProductsServices() {
         </div>
       </section>
 
+      {/* Professional Services Section */}
+      <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 relative">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center px-6 py-3 bg-amber-100/80 backdrop-blur-sm rounded-full text-amber-800 font-semibold mb-6 border border-amber-200/50">
+              <Settings className="w-5 h-5 mr-2" />
+              Professional Services
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+              Comprehensive Solutions for{" "}
+              <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 bg-clip-text text-transparent">
+                Every Need
+              </span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              From electrical installations to advanced control systems, we deliver excellence across all domains of electrical and marine engineering
+            </p>
+          </div>
 
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[
+              "Pumps and Motors",
+              "Electrical and Lighting Fittings", 
+              "Circuit Breakers",
+              "Transformers",
+              "Medium and Low Voltage Panels",
+              "DC Panels, Battery Chargers and Batteries",
+              "Starters (DOL, Star-Delta, Auto Transformer)",
+              "Variable Frequency Drives (VFD)",
+              "Control Consoles",
+              "Electric Installations",
+              "Rewinding of Motors and Generator Spare Parts",
+              "Inverters and UPS Systems",
+              "Motor Control Centers (MCC)"
+            ].map((service, index) => (
+              <div key={service} className="group relative">
+                <div className="h-full bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100/50 hover:border-amber-200/80 hover:-translate-y-1">
+                  {/* Service Number */}
+                  <div className="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-sm font-bold text-white">{String(index + 1).padStart(2, '0')}</span>
+                  </div>
+                  
+                  {/* Background Pattern */}
+                  <div className="absolute top-0 right-0 w-16 h-16 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                    <div className="w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 rounded-full transform rotate-12 translate-x-4 -translate-y-4"></div>
+                  </div>
+                  
+                  {/* Service Content */}
+                  <div className="relative z-10">
+                    <div className="mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-100 rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow duration-300 border border-amber-200/50">
+                        <Zap className="w-6 h-6 text-amber-700" />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 leading-tight group-hover:text-amber-800 transition-colors duration-300">
+                      {service}
+                    </h3>
+                    
+                    {/* Status Indicator */}
+                    <div className="flex items-center justify-between mt-4 pt-4 border-t border-amber-100/50">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span className="text-xs text-slate-500 font-medium">Available</span>
+                      </div>
+                      <div className="w-6 h-6 bg-amber-50 rounded-full flex items-center justify-center group-hover:bg-amber-100 transition-colors duration-300">
+                        <ArrowRight className="w-3 h-3 text-amber-600 group-hover:translate-x-0.5 transition-transform duration-200" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="inline-flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-amber-200/50">
+              <div className="text-center sm:text-left">
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Ready to Get Started?</h3>
+                <p className="text-slate-600">Contact us today to discuss your specific requirements</p>
+              </div>
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                onClick={() => setLocation("/contact")}
+              >
+                Get Quote Today
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
