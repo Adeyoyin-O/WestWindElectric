@@ -141,22 +141,41 @@ export default function ProductsServices() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {epicServices.map((service, index) => (
               <div key={service.letter} className="group relative">
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="relative bg-gradient-to-br from-white via-slate-50/90 to-blue-50/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/60 hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 overflow-hidden">
+                  {/* Background texture and patterns */}
+                  <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                    {/* Circuit-like pattern for tech feel */}
+                    <div className="absolute inset-0 bg-[linear-gradient(45deg,_transparent_35%,_rgba(59,130,246,0.1)_35%,_rgba(59,130,246,0.1)_65%,_transparent_65%)] bg-[length:20px_20px]"></div>
+                    {/* Subtle dots pattern */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,_rgba(71,85,105,0.15)_1px,_transparent_1px)] bg-[length:24px_24px]"></div>
+                  </div>
+                  
+                  {/* Gradient accent corners */}
+                  <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-blue-100/40 via-transparent to-transparent rounded-full blur-xl transform -translate-x-8 -translate-y-8"></div>
+                  <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-orange-100/30 via-transparent to-transparent rounded-full blur-lg transform translate-x-6 translate-y-6"></div>
+                  
                   {/* Large Letter */}
-                  <div className={`absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center shadow-lg rotate-12 group-hover:rotate-0 transition-transform duration-500`}>
+                  <div className={`absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center shadow-lg rotate-12 group-hover:rotate-0 transition-transform duration-500 relative z-10`}>
                     <span className="text-2xl font-bold text-white">{service.letter}</span>
+                  </div>
+                  
+                  {/* Service icon with enhanced styling */}
+                  <div className="relative z-10 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow duration-300">
+                      <service.icon className="w-6 h-6 text-slate-600" />
+                    </div>
                   </div>
                   
 
                   
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                  <p className="text-slate-600 mb-4 text-sm leading-relaxed">{service.description}</p>
+                  <h3 className="relative z-10 text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
+                  <p className="relative z-10 text-slate-700 mb-4 text-sm leading-relaxed font-medium">{service.description}</p>
                   
-                  <div className="space-y-2">
+                  <div className="relative z-10 space-y-2">
                     {service.features.map((feature) => (
                       <div key={feature} className="flex items-start">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-xs text-slate-600">{feature}</span>
+                        <span className="text-xs text-slate-700 font-medium">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -188,32 +207,40 @@ export default function ProductsServices() {
             {serviceCategories.map((category, index) => (
               <div key={category.title} 
                    className={`group relative ${index === 4 ? 'md:col-span-2 lg:col-span-3' : ''}`}>
-                <Card className="h-full bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-slate-300 overflow-hidden relative group">
-                  {/* Subtle Top Border Accent */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800"></div>
+                <Card className="h-full bg-gradient-to-br from-slate-50 via-white to-blue-50/30 border border-slate-200/50 shadow-lg hover:shadow-xl transition-all duration-500 hover:border-slate-300 overflow-hidden relative group backdrop-blur-sm">
+                  {/* Animated Top Border Accent */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-slate-600 to-orange-500 group-hover:h-2 transition-all duration-300"></div>
                   
-                  {/* Background Pattern */}
-                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
-                    <div className="w-full h-full bg-gradient-to-br from-slate-300 to-transparent rounded-full transform rotate-45 translate-x-8 -translate-y-8"></div>
+                  {/* Enhanced Background Patterns */}
+                  <div className="absolute inset-0 opacity-30 group-hover:opacity-40 transition-opacity duration-300">
+                    {/* Subtle mesh pattern */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20px_20px,_rgba(120,119,198,0.15)_1px,_transparent_1px)] bg-[length:40px_40px]"></div>
+                    {/* Gradient overlays */}
+                    <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-blue-100/40 via-transparent to-transparent rounded-full blur-2xl transform translate-x-12 -translate-y-12"></div>
+                    <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-orange-100/30 via-transparent to-transparent rounded-full blur-xl transform -translate-x-8 translate-y-8"></div>
                   </div>
+                  
+                  {/* Floating geometric elements */}
+                  <div className="absolute top-6 right-6 w-3 h-3 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                  <div className="absolute top-12 right-12 w-2 h-2 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full opacity-15 group-hover:opacity-30 transition-opacity duration-300"></div>
                   
                   <CardHeader className="relative z-10 pb-4 pt-6">
                     <div className="flex items-start justify-between mb-6">
                       <div className="flex items-center space-x-3">
-                        <div className="w-3 h-12 bg-gradient-to-b from-slate-700 to-slate-900 rounded-full"></div>
-                        <div className="w-2 h-8 bg-gradient-to-b from-slate-400 to-slate-600 rounded-full opacity-60"></div>
+                        <div className="w-3 h-12 bg-gradient-to-b from-blue-600 to-blue-800 rounded-full shadow-sm"></div>
+                        <div className="w-2 h-8 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full opacity-70 shadow-sm"></div>
                       </div>
-                      <Badge className="bg-slate-100 text-slate-700 border-0 font-medium px-3 py-1 shadow-sm">
+                      <Badge className="bg-white/80 backdrop-blur-sm text-slate-800 border border-slate-200/50 font-semibold px-3 py-1 shadow-sm">
                         {category.badge}
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-slate-700 transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold text-slate-900 group-hover:text-slate-800 transition-colors duration-300">
                       {category.title}
                     </CardTitle>
                   </CardHeader>
                   
                   <CardContent className="relative z-10 pt-0">
-                    <p className="text-slate-600 mb-6 leading-relaxed">{category.description}</p>
+                    <p className="text-slate-700 mb-6 leading-relaxed font-medium">{category.description}</p>
                     
                     <div className="space-y-4">
                       <h4 className="font-semibold text-slate-800 text-sm uppercase tracking-wide">Key Solutions</h4>
