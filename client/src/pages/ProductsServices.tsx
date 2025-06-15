@@ -201,7 +201,74 @@ export default function ProductsServices() {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="relative">
                         <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/50">
-                          <category.icon className="w-10 h-10 text-slate-700" />
+                          {/* Service Category Images */}
+                          {index === 0 && (
+                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
+                              <rect x="10" y="20" width="80" height="60" rx="8" fill="#64748b" stroke="#334155" strokeWidth="2"/>
+                              <circle cx="30" cy="40" r="8" fill="#3b82f6"/>
+                              <circle cx="50" cy="40" r="8" fill="#ef4444"/>
+                              <circle cx="70" cy="40" r="8" fill="#22c55e"/>
+                              <rect x="20" y="55" width="60" height="4" rx="2" fill="#94a3b8"/>
+                              <rect x="20" y="65" width="40" height="4" rx="2" fill="#94a3b8"/>
+                              <path d="M15 15 L25 5 L75 5 L85 15" stroke="#334155" strokeWidth="2" fill="none"/>
+                            </svg>
+                          )}
+                          {index === 1 && (
+                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
+                              <rect x="15" y="25" width="70" height="50" rx="6" fill="#64748b" stroke="#334155" strokeWidth="2"/>
+                              <rect x="20" y="30" width="20" height="15" rx="2" fill="#3b82f6"/>
+                              <rect x="45" y="30" width="20" height="15" rx="2" fill="#ef4444"/>
+                              <rect x="70" y="30" width="10" height="15" rx="2" fill="#22c55e"/>
+                              <rect x="20" y="50" width="60" height="3" rx="1" fill="#94a3b8"/>
+                              <rect x="20" y="57" width="45" height="3" rx="1" fill="#94a3b8"/>
+                              <rect x="20" y="64" width="35" height="3" rx="1" fill="#94a3b8"/>
+                              <circle cx="30" cy="15" r="8" fill="#f59e0b" stroke="#d97706" strokeWidth="2"/>
+                              <path d="M30 10 L35 20 L25 20 Z" fill="#ffffff"/>
+                            </svg>
+                          )}
+                          {index === 2 && (
+                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
+                              <circle cx="50" cy="50" r="35" fill="#64748b" stroke="#334155" strokeWidth="3"/>
+                              <circle cx="50" cy="50" r="25" fill="none" stroke="#3b82f6" strokeWidth="2"/>
+                              <circle cx="50" cy="50" r="15" fill="none" stroke="#ef4444" strokeWidth="2"/>
+                              <circle cx="50" cy="25" r="4" fill="#22c55e"/>
+                              <circle cx="75" cy="50" r="4" fill="#22c55e"/>
+                              <circle cx="50" cy="75" r="4" fill="#22c55e"/>
+                              <circle cx="25" cy="50" r="4" fill="#22c55e"/>
+                              <path d="M42 42 L58 58 M58 42 L42 58" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round"/>
+                              <rect x="45" y="10" width="10" height="8" rx="2" fill="#374151"/>
+                            </svg>
+                          )}
+                          {index === 3 && (
+                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
+                              <rect x="20" y="30" width="60" height="40" rx="4" fill="#64748b" stroke="#334155" strokeWidth="2"/>
+                              <rect x="25" y="35" width="15" height="8" rx="1" fill="#3b82f6"/>
+                              <rect x="45" y="35" width="15" height="8" rx="1" fill="#ef4444"/>
+                              <rect x="65" y="35" width="10" height="8" rx="1" fill="#22c55e"/>
+                              <rect x="25" y="48" width="50" height="2" rx="1" fill="#94a3b8"/>
+                              <rect x="25" y="53" width="35" height="2" rx="1" fill="#94a3b8"/>
+                              <rect x="25" y="58" width="40" height="2" rx="1" fill="#94a3b8"/>
+                              <rect x="25" y="63" width="30" height="2" rx="1" fill="#94a3b8"/>
+                              <path d="M35 20 L35 30 M50 15 L50 30 M65 25 L65 30" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round"/>
+                              <circle cx="35" cy="15" r="3" fill="#f59e0b"/>
+                              <circle cx="50" cy="10" r="3" fill="#f59e0b"/>
+                              <circle cx="65" cy="20" r="3" fill="#f59e0b"/>
+                            </svg>
+                          )}
+                          {index === 4 && (
+                            <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none">
+                              <rect x="25" y="35" width="50" height="30" rx="4" fill="#64748b" stroke="#334155" strokeWidth="2"/>
+                              <circle cx="40" cy="45" r="6" fill="#3b82f6"/>
+                              <circle cx="60" cy="45" r="6" fill="#ef4444"/>
+                              <rect x="35" y="55" width="30" height="3" rx="1" fill="#94a3b8"/>
+                              <path d="M30 25 Q50 15 70 25" stroke="#f59e0b" strokeWidth="3" fill="none"/>
+                              <circle cx="30" cy="25" r="3" fill="#f59e0b"/>
+                              <circle cx="50" cy="20" r="3" fill="#f59e0b"/>
+                              <circle cx="70" cy="25" r="3" fill="#f59e0b"/>
+                              <path d="M20 75 L35 65 L50 70 L65 65 L80 75" stroke="#22c55e" strokeWidth="3" fill="none"/>
+                              <rect x="45" y="30" width="10" height="5" rx="1" fill="#374151"/>
+                            </svg>
+                          )}
                         </div>
                         
                         {/* Floating dots around icon */}
