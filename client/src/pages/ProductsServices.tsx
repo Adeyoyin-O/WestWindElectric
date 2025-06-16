@@ -181,17 +181,9 @@ export default function ProductsServices() {
               <div className="absolute top-16 right-16 w-24 h-24 bg-orange-500/10 rounded-lg rotate-12"></div>
             </div>
 
-            {/* Center Technical Elements */}
-            <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2">
-              <div className="w-4 h-4 bg-blue-500/20 rounded-full"></div>
-              <div className="absolute top-8 left-8 w-3 h-3 bg-orange-500/20 rounded-full"></div>
-              <div className="absolute -top-4 left-12 w-2 h-2 bg-purple-500/20 rounded-full"></div>
-            </div>
-            
-            <div className="absolute top-1/3 right-1/3">
-              <div className="w-6 h-6 bg-blue-500/15 rotate-45"></div>
-              <div className="absolute top-6 -left-6 w-4 h-4 bg-orange-500/15 rotate-12"></div>
-            </div>
+            {/* Simplified accent elements */}
+            <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-blue-500/10 rounded-full"></div>
+            <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-blue-500/10 rotate-45"></div>
           </div>
 
 
@@ -219,7 +211,7 @@ export default function ProductsServices() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {epicServices.map((service, index) => (
               <div key={service.letter} className="group relative">
-                <div className="relative bg-white rounded shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <div className="relative bg-white rounded shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden will-change-transform">
                   {/* Service Image Header */}
                   <div className="relative h-32 bg-gradient-to-br from-slate-100 to-slate-50">
                     <img 
@@ -282,7 +274,7 @@ export default function ProductsServices() {
                         <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
                       )}
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    <div className={`overflow-hidden dropdown-content ${
                       expandedServices.has(index) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                     }`}>
                       <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
