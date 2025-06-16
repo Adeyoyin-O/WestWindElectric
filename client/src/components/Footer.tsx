@@ -11,9 +11,9 @@ export default function Footer() {
           backgroundImage: `repeating-linear-gradient(
             45deg,
             #000000 0px,
-            #000000 10px,
-            #333333 10px,
-            #333333 20px
+            #000000 15px,
+            #333333 15px,
+            #333333 18px
           )`
         }}></div>
       </div>
