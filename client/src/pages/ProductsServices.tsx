@@ -251,35 +251,24 @@ export default function ProductsServices() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Why Choose West Wind?</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              13+ years of proven excellence in delivering comprehensive maritime solutions
-            </p>
+            <h2 className="text-4xl font-bold mb-6">Why Choose Us</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Proven Excellence</h3>
-              <p className="text-blue-100">Over a decade of successful project deliveries across Nigeria and West Africa</p>
+              <h3 className="text-2xl font-bold mb-4">Proven Industry Expertise</h3>
+              <p className="text-blue-100 text-lg">Over a decade of hands-on experience delivering trusted solutions across power and maritime sectors.</p>
             </div>
             
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <Ship className="w-10 h-10 text-white" />
+                <Settings className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Maritime Expertise</h3>
-              <p className="text-blue-100">Specialized knowledge in marine electronics and maritime industry requirements</p>
-            </div>
-            
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Complete Support</h3>
-              <p className="text-blue-100">End-to-end service from design and installation to training and maintenance</p>
+              <h3 className="text-2xl font-bold mb-4">Full-Service Capability</h3>
+              <p className="text-blue-100 text-lg">From concept to commissioning, we provide complete EPIC solutions tailored to your project needs.</p>
             </div>
           </div>
 
