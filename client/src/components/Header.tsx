@@ -18,56 +18,51 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="maritime-glass border-b border-slate-200/50 sticky top-0 z-50">
-      <nav className="container mx-auto px-6">
-        <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-14 h-14 maritime-card p-2 group-hover:shadow-lg transition-all duration-300">
+    <header className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+      <nav className="container mx-auto">
+        <div className="flex justify-between items-center py-3">
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="w-12 h-12 flex items-center justify-center">
               <img 
                 src={logoImage} 
                 alt="West Wind Electric Power Ltd Logo" 
-                className="w-full h-full object-contain"
+                className="w-10 h-10 object-contain"
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold maritime-heading">West Wind Electric Power Ltd</h1>
-              <p className="text-xs maritime-text mt-0.5">Maritime Engineering Excellence</p>
+            <div>
+              <h1 className="text-lg font-bold text-slate-800 leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "maritime-nav-link text-sm font-medium",
-                  location === item.href ? "active" : ""
+                  "px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl",
+                  location === item.href
+                    ? "text-blue-600 bg-gradient-to-r from-blue-50 to-cyan-50"
+                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
                 )}
               >
                 {item.name}
               </Link>
             ))}
-            <Link href="/contact" className="ml-4">
+            <Link href="/contact">
               <Button 
-                className="maritime-ocean text-white hover:shadow-xl transition-all duration-300 px-8 py-3 text-sm font-semibold rounded-xl shadow-lg"
+                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-700 hover:to-cyan-700 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
               >
-                Get Quote
+                Contact Us
               </Button>
             </Link>
-            <div className="flex items-center space-x-3 ml-6">
+            <div className="flex items-center space-x-4 ml-4">
               <div className="w-px h-6 bg-slate-300"></div>
-              <a 
-                href="#" 
-                className="text-slate-500 hover:text-blue-600 transition-colors duration-300 p-2 rounded-lg hover:bg-blue-50"
-              >
+              <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors">
                 <FaFacebook className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
-                className="text-slate-500 hover:text-green-600 transition-colors duration-300 p-2 rounded-lg hover:bg-green-50"
-              >
+              <a href="#" className="text-slate-500 hover:text-cyan-600 transition-colors">
                 <FaWhatsapp className="h-5 w-5" />
               </a>
             </div>
@@ -77,7 +72,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden maritime-card hover:shadow-lg"
+            className="lg:hidden text-slate-800"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -86,15 +81,17 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden maritime-glass border-t border-slate-200/50 rounded-b-2xl shadow-2xl">
-            <div className="p-6 space-y-2">
+          <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200">
+            <div className="p-6 space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "block py-4 px-6 font-medium rounded-xl transition-all duration-300 maritime-nav-link",
-                    location === item.href ? "active" : ""
+                    "block py-4 px-6 font-semibold rounded-xl transition-all duration-300",
+                    location === item.href
+                      ? "text-blue-600 bg-gradient-to-r from-blue-50 to-cyan-50"
+                      : "text-slate-600 hover:bg-slate-50"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -102,19 +99,10 @@ export default function Header() {
                 </Link>
               ))}
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full mt-6 maritime-ocean text-white py-4 text-lg font-semibold rounded-xl shadow-lg">
-                  Get Quote
+                <Button className="w-full mt-6 bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 text-lg font-bold rounded-xl">
+                  Contact Us
                 </Button>
               </Link>
-              
-              <div className="flex justify-center items-center space-x-6 pt-6 border-t border-slate-200/50 mt-6">
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors duration-300">
-                  <FaFacebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-slate-500 hover:text-green-600 transition-colors duration-300">
-                  <FaWhatsapp className="h-6 w-6" />
-                </a>
-              </div>
             </div>
           </div>
         )}
