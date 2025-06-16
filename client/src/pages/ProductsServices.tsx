@@ -240,7 +240,39 @@ export default function ProductsServices() {
         </div>
       </section>
 
+      {/* Services Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Services</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-600 mx-auto"></div>
+            </div>
 
+            {/* Two Column Service List */}
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-4">
+              <div className="space-y-4">
+                <div className="text-slate-700 font-medium">Pumps and Motors</div>
+                <div className="text-slate-700 font-medium">Electrical and Lighting Fittings</div>
+                <div className="text-slate-700 font-medium">Circuit Breakers</div>
+                <div className="text-slate-700 font-medium">Transformers</div>
+                <div className="text-slate-700 font-medium">Medium and Low Voltage Panels</div>
+                <div className="text-slate-700 font-medium">DC Panels, Battery Chargers and Batteries</div>
+                <div className="text-slate-700 font-medium">Starters (DOL, Star-Delta, Auto Transformer)</div>
+              </div>
+              <div className="space-y-4">
+                <div className="text-slate-700 font-medium">Variable Frequency Drives (VFD)</div>
+                <div className="text-slate-700 font-medium">Control Consoles</div>
+                <div className="text-slate-700 font-medium">Electric Installations</div>
+                <div className="text-slate-700 font-medium">Rewinding of Motors and Generator Spare Parts</div>
+                <div className="text-slate-700 font-medium">Inverters and UPS Systems</div>
+                <div className="text-slate-700 font-medium">Motor Control Centers (MCC)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
