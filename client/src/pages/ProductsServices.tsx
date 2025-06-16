@@ -1,5 +1,5 @@
 import { useLocation } from "wouter";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +49,26 @@ export default function ProductsServices() {
       }
       return newExpanded;
     });
+  }, []);
+
+  // Handle anchor links from footer
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash && hash.startsWith('#service-')) {
+      const serviceIndex = parseInt(hash.replace('#service-', ''));
+      if (!isNaN(serviceIndex)) {
+        // Expand the service
+        setExpandedServices(prev => new Set(prev).add(serviceIndex));
+        
+        // Scroll to the service after a brief delay
+        setTimeout(() => {
+          const element = document.getElementById(`service-${serviceIndex}`);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      }
+    }
   }, []);
 
   const services = useMemo(() => [
@@ -286,7 +306,7 @@ export default function ProductsServices() {
             <div className="grid md:grid-cols-2 gap-x-12 gap-y-2">
               <div className="space-y-2">
                 {services.slice(0, 6).map((service, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                  <div key={index} id={`service-${index}`} className="border border-gray-200 rounded-lg overflow-hidden">
                     <button
                       onClick={() => toggleService(index)}
                       className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
@@ -312,7 +332,7 @@ export default function ProductsServices() {
                 {services.slice(7).map((service, index) => {
                   const actualIndex = index + 7;
                   return (
-                    <div key={actualIndex} className="border border-gray-200 rounded-lg overflow-hidden">
+                    <div key={actualIndex} id={`service-${actualIndex}`} className="border border-gray-200 rounded-lg overflow-hidden">
                       <button
                         onClick={() => toggleService(actualIndex)}
                         className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
