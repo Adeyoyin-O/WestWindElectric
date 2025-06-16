@@ -32,63 +32,30 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 relative overflow-hidden">
-              {/* Modern geometric background pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-4 right-4 w-20 h-20 border-2 border-blue-600 rounded-lg rotate-12"></div>
-                <div className="absolute bottom-6 left-6 w-16 h-16 bg-cyan-600 rounded-full"></div>
-                <div className="absolute top-1/2 left-1/4 w-12 h-12 border-2 border-slate-400 rounded-lg rotate-45"></div>
-              </div>
+            <div className="elevated-card p-10 bg-gradient-to-br from-white via-blue-50 to-white border border-gray-200 shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-10 rounded-bl-full"></div>
+              <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-[var(--bright-coral)] to-transparent opacity-10 rounded-tr-full"></div>
               
-              {/* Header with company info */}
-              <div className="text-center mb-8 relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full mb-4 shadow-lg">
-                  <Building className="w-8 h-8 text-white" />
+              <div className="grid grid-cols-2 gap-10 text-center relative z-10">
+                <div className="group transform transition-transform duration-300 hover:scale-105">
+                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">2011</div>
+                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Established</div>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-800 mb-2">Company Highlights</h3>
-                <div className="w-12 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto rounded-full"></div>
-              </div>
-
-              {/* Stats grid with modern cards */}
-              <div className="grid grid-cols-2 gap-6 relative z-10">
-                <div className="group">
-                  <div className="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-3xl font-bold text-slate-800 mb-1">2011</div>
-                    <div className="text-sm text-slate-600 font-medium">Year Established</div>
-                  </div>
+                <div className="group transform transition-transform duration-300 hover:scale-105">
+                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">13+</div>
+                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Years Experience</div>
                 </div>
-                
-                <div className="group">
-                  <div className="bg-gradient-to-br from-slate-50 to-cyan-50 p-6 rounded-xl border border-slate-200 hover:border-cyan-300 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Trophy className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-3xl font-bold text-slate-800 mb-1">13+</div>
-                    <div className="text-sm text-slate-600 font-medium">Years Experience</div>
-                  </div>
+                <div className="group transform transition-transform duration-300 hover:scale-105">
+                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-2xl font-bold text-[var(--bright-coral)] mb-2">EPIC</div>
+                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Services</div>
                 </div>
-                
-                <div className="group">
-                  <div className="bg-gradient-to-br from-slate-50 to-orange-50 p-6 rounded-xl border border-slate-200 hover:border-orange-300 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-2xl font-bold text-slate-800 mb-1">EPIC</div>
-                    <div className="text-sm text-slate-600 font-medium">Service Model</div>
-                  </div>
-                </div>
-                
-                <div className="group">
-                  <div className="bg-gradient-to-br from-slate-50 to-green-50 p-6 rounded-xl border border-slate-200 hover:border-green-300 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-lg font-bold text-slate-800 mb-1">968009</div>
-                    <div className="text-sm text-slate-600 font-medium">RC Number</div>
-                  </div>
+                <div className="group transform transition-transform duration-300 hover:scale-105">
+                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-lg font-bold text-[var(--bright-coral)] mb-2">968009</div>
+                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">RC Number</div>
                 </div>
               </div>
             </div>
