@@ -62,7 +62,15 @@ export default function Contact() {
   return (
     <div className="page-transition">
       {/* Main Content */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 relative">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-[0.02]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.4) 2px, transparent 0),
+                             radial-gradient(circle at 75px 75px, rgba(71, 85, 105, 0.3) 1px, transparent 0)`,
+            backgroundSize: '100px 100px'
+          }}></div>
+        </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
             
