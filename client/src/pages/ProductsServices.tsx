@@ -283,7 +283,7 @@ export default function ProductsServices() {
             {/* Interactive Service List */}
             <div className="grid md:grid-cols-2 gap-x-12 gap-y-2">
               <div className="space-y-2">
-                {services.slice(0, 7).map((service, index) => (
+                {services.slice(0, 6).map((service, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
                     <button
                       onClick={() => toggleService(index)}
@@ -305,6 +305,29 @@ export default function ProductsServices() {
                     </div>
                   </div>
                 ))}
+                {/* Centered last item */}
+                <div className="flex justify-center">
+                  <div className="border border-gray-200 rounded-lg overflow-hidden w-full max-w-md">
+                    <button
+                      onClick={() => toggleService(6)}
+                      className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <span className="text-slate-700 font-medium">{services[6].name}</span>
+                      {expandedServices.has(6) ? (
+                        <ChevronUp className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                      )}
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedServices.has(6) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
+                        {services[6].description}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="space-y-2">
                 {services.slice(7).map((service, index) => {
