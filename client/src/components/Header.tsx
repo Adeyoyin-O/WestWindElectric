@@ -18,7 +18,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <header className="modern-glass border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto">
         <div className="flex justify-between items-center py-3">
           <Link href="/" className="flex items-center space-x-2">
@@ -30,7 +30,7 @@ export default function Header() {
               />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-slate-800 leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
+              <h1 className="text-lg font-bold text-[var(--primary-dark)] leading-tight tracking-tight">West Wind Electric Power Ltd</h1>
             </div>
           </Link>
 
@@ -43,8 +43,8 @@ export default function Header() {
                 className={cn(
                   "px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl",
                   location === item.href
-                    ? "text-blue-600 bg-gradient-to-r from-blue-50 to-cyan-50"
-                    : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                    ? "text-[var(--primary-blue)] nav-link active bg-gradient-to-r from-blue-50 to-teal-50"
+                    : "text-[var(--medium-gray)] hover:text-[var(--primary-blue)] hover:bg-gray-50"
                 )}
               >
                 {item.name}
@@ -52,17 +52,17 @@ export default function Header() {
             ))}
             <Link href="/contact">
               <Button 
-                className="ml-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-700 hover:to-cyan-700 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
+                className="ml-4 blue-gradient text-white hover:opacity-90 shadow-lg px-6 py-2 text-sm font-bold rounded-lg"
               >
                 Contact Us
               </Button>
             </Link>
             <div className="flex items-center space-x-4 ml-4">
-              <div className="w-px h-6 bg-slate-300"></div>
-              <a href="#" className="text-slate-500 hover:text-blue-600 transition-colors">
+              <div className="w-px h-6 bg-gray-300"></div>
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
                 <FaFacebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-500 hover:text-cyan-600 transition-colors">
+              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
                 <FaWhatsapp className="h-5 w-5" />
               </a>
             </div>
@@ -72,7 +72,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden text-slate-800"
+            className="lg:hidden text-[var(--primary-dark)]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -81,7 +81,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200">
+          <div className="lg:hidden modern-glass border-t border-gray-100">
             <div className="p-6 space-y-4">
               {navigation.map((item) => (
                 <Link
@@ -90,8 +90,8 @@ export default function Header() {
                   className={cn(
                     "block py-4 px-6 font-semibold rounded-xl transition-all duration-300",
                     location === item.href
-                      ? "text-blue-600 bg-gradient-to-r from-blue-50 to-cyan-50"
-                      : "text-slate-600 hover:bg-slate-50"
+                      ? "text-[var(--primary-blue)] bg-gradient-to-r from-blue-50 to-teal-50"
+                      : "text-[var(--medium-gray)] hover:bg-gray-50"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -99,7 +99,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full mt-6 bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 text-lg font-bold rounded-xl">
+                <Button className="w-full mt-6 blue-gradient text-white py-4 text-lg font-bold rounded-xl">
                   Contact Us
                 </Button>
               </Link>

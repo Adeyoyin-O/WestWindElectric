@@ -28,7 +28,7 @@ export default function Hero({
   secondaryButtonText = "Get a Quote"
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-24 lg:py-40 overflow-hidden">
+    <section className="relative hero-gradient text-white py-24 lg:py-40 overflow-hidden">
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       {backgroundImage && (
         <div 
@@ -61,7 +61,7 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-6 justify-center mt-8">
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-base w-full sm:w-48 flex items-center justify-center gap-2"
+                className="blue-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-base w-full sm:w-48 flex items-center justify-center gap-2"
                 onClick={onPrimaryClick}
               >
                 {primaryButtonText}
@@ -73,7 +73,7 @@ export default function Hero({
                 className="border-2 border-white text-white hover:text-black font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-base backdrop-blur-sm bg-transparent w-full sm:w-48 flex items-center justify-center gap-2"
                 onClick={onSecondaryClick}
               >
-                {secondaryButtonText}
+                Get a Quote
                 <ArrowUpRight className="w-4 h-4" />
               </Button>
             </div>
