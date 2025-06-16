@@ -85,8 +85,8 @@ export default function Contact() {
 
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Building2 className="text-white h-6 w-6" />
+                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Building2 className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
@@ -99,8 +99,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <PhoneCall className="text-white h-6 w-6" />
+                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <PhoneCall className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Phone Numbers</h3>
@@ -112,8 +112,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MailOpen className="text-white h-6 w-6" />
+                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MailOpen className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Email Address</h3>
