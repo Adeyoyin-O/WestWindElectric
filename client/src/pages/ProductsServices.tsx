@@ -300,7 +300,7 @@ export default function ProductsServices() {
                           <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
                         )}
                       </button>
-                      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      <div className={`overflow-hidden dropdown-content ${
                         expandedServices.has(actualIndex) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                       }`}>
                         <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
@@ -327,7 +327,7 @@ export default function ProductsServices() {
                     <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
                   )}
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                <div className={`overflow-hidden dropdown-content ${
                   expandedServices.has(6) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
