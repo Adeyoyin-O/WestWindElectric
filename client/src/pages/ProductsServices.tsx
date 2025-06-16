@@ -1,4 +1,5 @@
 import { useLocation } from "wouter";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -19,7 +20,9 @@ import {
   Users,
   Award,
   Target,
-  Layers
+  Layers,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react";
 
 // Import service images
@@ -30,10 +33,37 @@ import commissioningImg from "@assets/ricardo-gomez-angel-MagdWoazARo-unsplash_1
 
 export default function ProductsServices() {
   const [, setLocation] = useLocation();
+  const [expandedServices, setExpandedServices] = useState<Set<number>>(new Set());
 
   const handleRequestQuote = () => {
     setLocation("/contact");
   };
+
+  const toggleService = (index: number) => {
+    const newExpanded = new Set(expandedServices);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedServices(newExpanded);
+  };
+
+  const services = [
+    { name: "Pumps and Motors", description: "High-performance pumps and electric motors for industrial and marine applications, ensuring reliable fluid handling and mechanical drive solutions." },
+    { name: "Electrical and Lighting Fittings", description: "Comprehensive range of electrical components and LED lighting systems designed for harsh marine and industrial environments." },
+    { name: "Circuit Breakers", description: "Advanced circuit protection devices including MCBs, MCCBs, and ACBs for reliable electrical system safety and fault isolation." },
+    { name: "Transformers", description: "Power and distribution transformers engineered for marine and industrial applications with superior efficiency and durability." },
+    { name: "Medium and Low Voltage Panels", description: "Custom-designed switchgear panels for voltage distribution, control, and protection in complex electrical systems." },
+    { name: "DC Panels, Battery Chargers and Batteries", description: "Complete DC power solutions including marine-grade batteries, intelligent chargers, and distribution panels for critical systems." },
+    { name: "Starters (DOL, Star-Delta, Auto Transformer)", description: "Motor starting solutions including direct-on-line, star-delta, and soft-start systems for optimal motor performance and protection." },
+    { name: "Variable Frequency Drives (VFD)", description: "Advanced motor control systems providing precise speed control, energy efficiency, and enhanced motor protection capabilities." },
+    { name: "Control Consoles", description: "Ergonomic control stations and operator interfaces designed for marine bridge systems and industrial automation applications." },
+    { name: "Electric Installations", description: "Complete electrical installation services including design, implementation, testing, and commissioning of electrical systems." },
+    { name: "Rewinding of Motors and Generator Spare Parts", description: "Professional motor and generator refurbishment services including rewinding, balancing, and supply of genuine spare parts." },
+    { name: "Inverters and UPS Systems", description: "Uninterruptible power supplies and power inverters ensuring continuous operation of critical systems and equipment." },
+    { name: "Motor Control Centers (MCC)", description: "Centralized motor control solutions with intelligent protection, monitoring, and remote operation capabilities for industrial applications." }
+  ];
 
   const epicServices = [
     {
@@ -250,24 +280,58 @@ export default function ProductsServices() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-600 mx-auto"></div>
             </div>
 
-            {/* Two Column Service List */}
-            <div className="grid md:grid-cols-2 gap-x-12 gap-y-4">
-              <div className="space-y-4">
-                <div className="text-slate-700 font-medium">Pumps and Motors</div>
-                <div className="text-slate-700 font-medium">Electrical and Lighting Fittings</div>
-                <div className="text-slate-700 font-medium">Circuit Breakers</div>
-                <div className="text-slate-700 font-medium">Transformers</div>
-                <div className="text-slate-700 font-medium">Medium and Low Voltage Panels</div>
-                <div className="text-slate-700 font-medium">DC Panels, Battery Chargers and Batteries</div>
-                <div className="text-slate-700 font-medium">Starters (DOL, Star-Delta, Auto Transformer)</div>
+            {/* Interactive Service List */}
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-2">
+              <div className="space-y-2">
+                {services.slice(0, 7).map((service, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                    <button
+                      onClick={() => toggleService(index)}
+                      className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <span className="text-slate-700 font-medium">{service.name}</span>
+                      {expandedServices.has(index) ? (
+                        <ChevronUp className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                      )}
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedServices.has(index) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
+                        {service.description}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="space-y-4">
-                <div className="text-slate-700 font-medium">Variable Frequency Drives (VFD)</div>
-                <div className="text-slate-700 font-medium">Control Consoles</div>
-                <div className="text-slate-700 font-medium">Electric Installations</div>
-                <div className="text-slate-700 font-medium">Rewinding of Motors and Generator Spare Parts</div>
-                <div className="text-slate-700 font-medium">Inverters and UPS Systems</div>
-                <div className="text-slate-700 font-medium">Motor Control Centers (MCC)</div>
+              <div className="space-y-2">
+                {services.slice(7).map((service, index) => {
+                  const actualIndex = index + 7;
+                  return (
+                    <div key={actualIndex} className="border border-gray-200 rounded-lg overflow-hidden">
+                      <button
+                        onClick={() => toggleService(actualIndex)}
+                        className="w-full px-4 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                      >
+                        <span className="text-slate-700 font-medium">{service.name}</span>
+                        {expandedServices.has(actualIndex) ? (
+                          <ChevronUp className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                        ) : (
+                          <ChevronDown className="w-4 h-4 text-gray-500 transition-transform duration-200" />
+                        )}
+                      </button>
+                      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        expandedServices.has(actualIndex) ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        <div className="px-4 pb-3 text-sm text-slate-600 leading-relaxed bg-gray-50">
+                          {service.description}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
