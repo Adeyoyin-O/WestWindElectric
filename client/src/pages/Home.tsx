@@ -179,35 +179,35 @@ export default function Home() {
       <section className="bg-gradient-to-r from-slate-50 to-blue-50 py-16 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            <div className="text-center group p-6 rounded-3xl bg-white/80 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/90 hover:shadow-2xl hover:scale-105 border border-white/20">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+            <div className="text-center group p-6 rounded-3xl bg-white/85 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl hover:scale-105 border border-white/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Trophy className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">13+ Years of Proven Delivery</h3>
+              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-amber-700 transition-colors duration-300">13+ Years of Proven Delivery</h3>
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Trusted expertise in<br />complex engineering projects</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/80 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/90 hover:shadow-2xl hover:scale-105 border border-white/20">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+            <div className="text-center group p-6 rounded-3xl bg-white/85 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl hover:scale-105 border border-white/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Workflow className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">EPIC Services, All in One Place</h3>
+              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors duration-300">EPIC Services, All in One Place</h3>
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Complete engineering, procurement, installation & commissioning</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/80 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/90 hover:shadow-2xl hover:scale-105 border border-white/20">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+            <div className="text-center group p-6 rounded-3xl bg-white/85 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl hover:scale-105 border border-white/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Ship className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">Powering Land & Sea</h3>
+              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-cyan-700 transition-colors duration-300">Powering Land & Sea</h3>
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Specialized solutions for<br />power and maritime industries</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/80 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/90 hover:shadow-2xl hover:scale-105 border border-white/20">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+            <div className="text-center group p-6 rounded-3xl bg-white/85 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl hover:scale-105 border border-white/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Cpu className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-slate-700 transition-colors duration-300">Smart Systems Integration</h3>
+              <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-emerald-700 transition-colors duration-300">Smart Systems Integration</h3>
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Advanced automation and<br />control system solutions</p>
             </div>
           </div>
@@ -216,44 +216,55 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-32 h-32 border-2 border-slate-300 rounded-full"></div>
-          <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-blue-300 rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-slate-200 rounded-lg rotate-45"></div>
-          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-blue-200 rounded-lg rotate-12"></div>
+        {/* Enhanced Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute top-20 left-10 w-32 h-32 border-2 border-blue-400 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-cyan-400 rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-lg rotate-45"></div>
+          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-br from-slate-200 to-blue-200 rounded-lg rotate-12"></div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Side - Company Intro */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
-                About West Wind
+            <div className="space-y-8">
+              <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 text-orange-800 rounded-full text-sm font-semibold shadow-sm">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 animate-pulse"></span>
+                About West Wind Electric
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                Engineering Excellence
-                <span className="block text-blue-700">Since 2011</span>
-              </h2>
+              <div className="space-y-4">
+                <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                  Engineering Excellence
+                  <span className="block text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text">Since 2011</span>
+                </h2>
+                
+                <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
+              </div>
               
               <p className="text-lg text-slate-700 leading-relaxed">
-                West Wind Electric Power Ltd is a leading Nigerian engineering company specializing in comprehensive EPIC services. We deliver cutting-edge electrical, electronics, instrumentation, and maritime control systems that power industries across land and sea...
+                West Wind Electric Power Ltd is a leading Nigerian engineering company specializing in comprehensive EPIC services. We deliver cutting-edge electrical, electronics, instrumentation, and maritime control systems that power industries across land and sea.
               </p>
               
-              <div className="pt-4">
-                <Link href="/about" className="group inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-base transition-colors duration-300">
+              <div className="pt-6">
+                <Link href="/about" className="group inline-flex items-center bg-white hover:bg-slate-50 text-blue-600 hover:text-blue-700 font-semibold text-base px-6 py-3 rounded-xl border border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all duration-300">
                   Learn More About Us
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
             </div>
             
-            {/* Right Side - Services Carousel */}
+            {/* Right Side - Enhanced Services Carousel */}
             <div className="relative">
-              <ServiceCarousel />
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-100/20 to-cyan-100/20 rounded-3xl blur-xl"></div>
+              <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-white/50">
+                <ServiceCarousel />
+              </div>
+              
+              {/* Floating accent elements */}
+              <div className="absolute -top-3 -right-3 w-6 h-6 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full opacity-60 animate-bounce"></div>
+              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full opacity-60"></div>
             </div>
             
           </div>
@@ -261,39 +272,42 @@ export default function Home() {
       </section>
 
       {/* Our Solutions Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
-        {/* Background Texture */}
-        <div className="absolute inset-0 opacity-30">
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 relative overflow-hidden">
+        {/* Enhanced Background Texture */}
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 75% 75%, rgba(251, 146, 60, 0.04) 0%, transparent 40%),
-              linear-gradient(45deg, transparent 49%, rgba(148, 163, 184, 0.02) 49%, rgba(148, 163, 184, 0.02) 51%, transparent 51%)
+              radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.06) 0%, transparent 40%),
+              linear-gradient(45deg, transparent 49%, rgba(148, 163, 184, 0.03) 49%, rgba(148, 163, 184, 0.03) 51%, transparent 51%)
             `,
             backgroundSize: '800px 800px, 600px 600px, 60px 60px'
           }}></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
-              <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
-              Our Solutions
+          {/* Enhanced Section Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 text-orange-700 rounded-full text-sm font-semibold mb-6 shadow-sm">
+              <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 animate-pulse"></span>
+              Our Engineering Solutions
             </div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Tailored Expertise for Every Project
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Discover our comprehensive range of specialized services designed to power your success
+            <div className="space-y-4">
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+                Tailored Expertise for Every Project
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mx-auto mb-6"></div>
+            </div>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Discover our comprehensive range of specialized services designed to power your success across maritime and industrial sectors
             </p>
           </div>
 
-          {/* Creative Uneven Layout */}
-          <div className="grid grid-cols-12 gap-6 mb-12">
-            {/* Large Service Card - Spans 7 columns */}
+          {/* Enhanced Service Layout */}
+          <div className="grid grid-cols-12 gap-8 mb-16">
+            {/* Featured Service Card */}
             <div className="col-span-12 lg:col-span-7 group">
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl">
+              <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-3xl border border-white/20">
                 <img 
                   src={electricalPanelImage}
                   alt="Technician working on electrical distribution panel"
@@ -301,21 +315,32 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
-                  <div className="inline-flex items-center justify-center px-3 py-1 bg-orange-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-3">
-                    Power Systems
+                  <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-orange-500 to-amber-500 backdrop-blur-sm rounded-full text-xs font-semibold mb-4 shadow-lg">
+                    <span className="w-1 h-1 bg-white rounded-full mr-2"></span>
+                    Power Systems Engineering
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Power Distribution & Control</h3>
-                  <p className="text-sm opacity-90 leading-relaxed">
+                  <h3 className="text-3xl font-bold mb-4">Power Distribution & Control</h3>
+                  <p className="text-lg opacity-90 leading-relaxed mb-4">
                     Advanced electrical switchgear, distribution panels, and high-voltage power systems engineered for industrial and maritime applications
                   </p>
+                  <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                      <span className="text-sm">High-Voltage Systems</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span className="text-sm">Marine Certified</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Two Smaller Cards - Each spans 5 columns, stacked vertically */}
-            <div className="col-span-12 lg:col-span-5 space-y-6">
+            {/* Secondary Service Cards */}
+            <div className="col-span-12 lg:col-span-5 space-y-8">
               <div className="group">
-                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl border border-white/20">
                   <img 
                     src={controlPanelImage}
                     alt="Female engineer operating CNC machinery in modern factory"
@@ -323,11 +348,12 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
-                    <div className="inline-flex items-center justify-center px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
-                      Automation
+                    <div className="inline-flex items-center justify-center px-3 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 backdrop-blur-sm rounded-full text-xs font-semibold mb-3 shadow-lg">
+                      <span className="w-1 h-1 bg-white rounded-full mr-2"></span>
+                      Automation Systems
                     </div>
-                    <h3 className="text-lg font-bold mb-2">Industrial Control Systems</h3>
-                    <p className="text-xs opacity-90">
+                    <h3 className="text-xl font-bold mb-2">Industrial Control Systems</h3>
+                    <p className="text-sm opacity-90 leading-relaxed">
                       Cutting-edge automation and process control solutions
                     </p>
                   </div>
@@ -335,7 +361,7 @@ export default function Home() {
               </div>
 
               <div className="group">
-                <div className="relative h-44 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                <div className="relative h-48 rounded-3xl overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl border border-white/20">
                   <img 
                     src={marineControlImage}
                     alt="Marine control room with navigation and monitoring systems"
@@ -343,11 +369,12 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 group-hover:translate-y-[-2px]">
-                    <div className="inline-flex items-center justify-center px-3 py-1 bg-cyan-600/80 backdrop-blur-sm rounded-full text-xs font-medium mb-2">
-                      Maritime
+                    <div className="inline-flex items-center justify-center px-3 py-1 bg-gradient-to-r from-cyan-500 to-teal-500 backdrop-blur-sm rounded-full text-xs font-semibold mb-3 shadow-lg">
+                      <span className="w-1 h-1 bg-white rounded-full mr-2"></span>
+                      Maritime Electronics
                     </div>
-                    <h3 className="text-lg font-bold mb-2">Marine Electronics</h3>
-                    <p className="text-xs opacity-90">
+                    <h3 className="text-xl font-bold mb-2">Marine Systems</h3>
+                    <p className="text-sm opacity-90 leading-relaxed">
                       Specialized electronic systems for maritime vessels
                     </p>
                   </div>
@@ -356,16 +383,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stylish Explore Button */}
+          {/* Enhanced Call-to-Action */}
           <div className="text-center">
             <Link href="/products-services">
               <Button 
-                className="group relative px-8 py-4 bg-white border-2 border-blue-600 hover:border-blue-700 text-blue-600 hover:text-blue-700 font-semibold rounded-full shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden"
+                className="group relative px-12 py-6 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold text-lg rounded-2xl shadow-2xl hover:shadow-3xl transform transition-all duration-500 hover:scale-105 overflow-hidden border border-blue-500/20"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
                 <span className="relative flex items-center">
-                  Explore Full Services
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <span className="mr-3">Explore Complete Solutions</span>
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
                 </span>
               </Button>
             </Link>
