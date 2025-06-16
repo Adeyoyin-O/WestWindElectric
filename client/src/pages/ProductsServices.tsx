@@ -117,14 +117,73 @@ export default function ProductsServices() {
     <div className="page-transition">
       {/* Hero Section with Background Image */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        {/* Background Image */}
+        {/* Modern Professional Background */}
         <div className="absolute inset-0">
-          <img 
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI4MDAiIHZpZXdCb3g9IjAgMCAxOTIwIDgwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjE5MjAiIHkyPSI4MDAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0Y4RkFGQyIvPgo8c3RvcCBvZmZzZXQ9IjAuNSIgc3RvcC1jb2xvcj0iI0Y1RjhGQSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNFMEU3RkYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhY2tncm91bmQgLS0+CjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNiZykiLz4KCjwhLS0gTWFyaXRpbWUgU2hpcCBTaWxob3VldHRlcyAtLT4KPGcgb3BhY2l0eT0iMC4wNSI+CjxwYXRoIGQ9Ik0xMDAgNjAwIEwyMDAgNTUwIEw0MDAgNTgwIEw2MDAgNTYwIEw4MDAgNTcwIEwxMDAwIDU1MCBMMTI2MCA1NjAgTDE1MDAgNTgwIEwxNzAwIDU2MCBMMTU4MCA2NDBMMTQ2MCA2NDBMMTMyMCA2MTBMMTI4MCA2MTBMMTE0MCA2NTBMMTA4MCA2NTBMOTY2IDYzMEw5MjAgNjMwTDc4NiA2NTBMNzQwIDY1MEw2MTYgNjMwTDU3MCA2MzBMNDQ2IDY1MEw0MDAgNjUwTDI2NiA2MzBMMjIwIDYzMEwxMDYgNjUwWiIgZmlsbD0iIzE5MjIzMSIvPgo8L2c+Cgo8IS0tIEVsZWN0cmljYWwgRXF1aXBtZW50IC0tPgo8ZyBvcGFjaXR5PSIwLjA4Ij4KPCEtLSBDb250cm9sIFBhbmVscyAtLT4KPHJlY3QgeD0iMTQwMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4MCIgcng9IjEwIiBmaWxsPSIjMzc0RjY2Ii8+CjxyZWN0IHg9IjE0MjAiIHk9IjIyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNDAiIHJ4PSI4IiBmaWxsPSIjNDc1NTY5Ii8+CjxyZWN0IHg9IjE0MzAiIHk9IjI0MCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzI5NCyMEU1RSIvPgo8cmVjdCB4PSIxNDcwIiB5PSIyNDAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IiNGRjQ0NDQiLz4KPHJlY3QgeD0iMTUxMCIgeT0iMjQwIiB3aWR0aD0iMzAiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjMjJDNTVFIi8+Cgo8IS0tIE1vdG9yIC0tPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNjAiIHI9IjEwMCIgZmlsbD0iIzM3NEY2NiIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNjAiIHI9IjcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM2MzY2RjkiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNjAiIHI9IjIwIiBmaWxsPSIjNGE1MDYxIi8+Cgo8IS0tIFBvd2VyIExpbmVzIC0tPgo8cGF0aCBkPSJNNjAwIDEwMCBMNjAwIDcwMCIgc3Ryb2tlPSIjOTFBM0I4IiBzdHJva2Utd2lkdGg9IjgiLz4KPHBhdGggZD0iTTgwMCAxMDAgTDgwMCA3MDAiIHN0cm9rZT0iIzkxQTNCOCIgc3Ryb2tlLXdpZHRoPSI4Ii8+CjxwYXRoIGQ9Ik0xMDAwIDEwMCBMMTAwMCA3MDAiIHN0cm9rZT0iIzkxQTNCOCIgc3Ryb2tlLXdpZHRoPSI4Ii8+Cgo8IS0tIEluc3RydW1lbnRhdGlvbiAtLT4KPHJlY3QgeD0iMTYwIiB5PSI1MDAiIHdpZHRoPSIxODAiIGhlaWdodD0iMTIwIiByeD0iOCIgZmlsbD0iIzM3NEY2NiIvPgo8Y2lyY2xlIGN4PSIyMDAiIGN5PSI1NDAiIHI9IjIwIiBmaWxsPSIjNjM2NkY5Ii8+CjxjaXJjbGUgY3g9IjI2MCIgY3k9IjU0MCIgcj0iMjAiIGZpbGw9IiNGRkFDMzMiLz4KPGNpcmNsZSBjeD0iMzIwIiBjeT0iNTQwIiByPSIyMCIgZmlsbD0iIzIyQzU1RSIvPgo8L2c+Cgo8IS0tIEdyaWQgUGF0dGVybiAtLT4KPGRlZnM+CjxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgo8cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRUJFQ0YyIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuMyIvPgo8L3BhdHRlcm4+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODAwIiBmaWxsPSJ1cmwoI2dyaWQpIi8+Cjwvc3ZnPg=="
-            alt="Maritime Engineering Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-white/80"></div>
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/50 to-slate-100"></div>
+          
+          {/* Technical Circuit Pattern Overlay */}
+          <div className="absolute inset-0 opacity-20">
+            <svg className="w-full h-full" viewBox="0 0 1920 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                {/* Technical Grid Pattern */}
+                <pattern id="tech-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                  <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#cbd5e1" strokeWidth="0.5" opacity="0.6"/>
+                  <circle cx="0" cy="0" r="1" fill="#64748b" opacity="0.4"/>
+                </pattern>
+                
+                {/* Circuit Gradient */}
+                <linearGradient id="circuit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.15"/>
+                  <stop offset="50%" stopColor="#1e40af" stopOpacity="0.08"/>
+                  <stop offset="100%" stopColor="#1e3a8a" stopOpacity="0.12"/>
+                </linearGradient>
+              </defs>
+              
+              {/* Grid Background */}
+              <rect width="100%" height="100%" fill="url(#tech-grid)"/>
+              
+              {/* Technical Circuit Lines */}
+              <g opacity="0.4">
+                {/* Horizontal Circuit Lines */}
+                <path d="M0 180 L250 180 L270 160 L450 160 L470 180 L720 180" stroke="#3b82f6" strokeWidth="2" fill="none"/>
+                <path d="M0 320 L180 320 L200 300 L380 300 L400 320 L580 320" stroke="#1e40af" strokeWidth="1.5" fill="none"/>
+                <path d="M0 460 L320 460 L340 440 L520 440 L540 460 L800 460" stroke="#3b82f6" strokeWidth="1" fill="none"/>
+                
+                {/* Vertical Circuit Lines */}
+                <path d="M250 0 L250 180 L270 200 L270 380 L250 400 L250 600" stroke="#1e40af" strokeWidth="1.5" fill="none"/>
+                <path d="M580 0 L580 150 L600 170 L600 350 L580 370 L580 800" stroke="#3b82f6" strokeWidth="1" fill="none"/>
+                <path d="M800 0 L800 250 L820 270 L820 450 L800 470 L800 800" stroke="#1e40af" strokeWidth="1" fill="none"/>
+                
+                {/* Connection Nodes */}
+                <circle cx="250" cy="180" r="3" fill="#3b82f6" opacity="0.8"/>
+                <circle cx="580" cy="320" r="3" fill="#1e40af" opacity="0.8"/>
+                <circle cx="800" cy="460" r="3" fill="#3b82f6" opacity="0.8"/>
+                <circle cx="270" cy="300" r="2" fill="#1e40af" opacity="0.6"/>
+                <circle cx="600" cy="440" r="2" fill="#3b82f6" opacity="0.6"/>
+              </g>
+              
+              {/* Professional Geometric Elements */}
+              <g opacity="0.12">
+                <rect x="1100" y="120" width="140" height="90" rx="6" fill="url(#circuit-gradient)"/>
+                <rect x="1300" y="200" width="110" height="70" rx="4" fill="url(#circuit-gradient)"/>
+                <rect x="1200" y="350" width="160" height="100" rx="8" fill="url(#circuit-gradient)"/>
+                
+                {/* Left side technical elements */}
+                <rect x="80" y="500" width="180" height="100" rx="8" fill="url(#circuit-gradient)"/>
+                <rect x="40" y="350" width="140" height="80" rx="6" fill="url(#circuit-gradient)"/>
+              </g>
+              
+              {/* Subtle Maritime Wave Pattern */}
+              <g opacity="0.08">
+                <path d="M0 650 Q480 620 960 650 T1920 650 L1920 800 L0 800 Z" fill="#1e40af"/>
+                <path d="M0 680 Q480 650 960 680 T1920 680 L1920 800 L0 800 Z" fill="#3b82f6"/>
+              </g>
+            </svg>
+          </div>
+          
+          {/* Clean Overlay */}
+          <div className="absolute inset-0 bg-white/60"></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
