@@ -117,78 +117,64 @@ export default function ProductsServices() {
     <div className="page-transition">
       {/* Hero Section with Background Image */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        {/* Dynamic Professional Background */}
+        {/* Modern Diagonal Background */}
         <div className="absolute inset-0">
-          {/* Rich Gradient Base */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-slate-50 to-blue-100"></div>
+          {/* Diagonal Split Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"></div>
           
-          {/* Animated Geometric Shapes */}
+          {/* Diagonal Light Section */}
           <div className="absolute inset-0">
-            {/* Large Background Shapes */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-blue-500/10 via-purple-500/5 to-transparent rounded-full blur-3xl transform translate-x-48 -translate-y-48"></div>
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-orange-500/10 via-blue-500/8 to-transparent rounded-full blur-3xl transform -translate-x-40 translate-y-40"></div>
-            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-r from-blue-400/8 to-purple-400/6 rounded-full blur-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50 to-slate-100 transform rotate-12 scale-150 origin-top-left"></div>
+            <div className="absolute inset-0 bg-white/90"></div>
           </div>
 
-          {/* Technical Pattern Overlay */}
-          <div className="absolute inset-0 opacity-60">
-            <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Professional Hexagon Pattern */}
+          <div className="absolute inset-0 opacity-30">
+            <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
-                  <circle cx="15" cy="15" r="1" fill="#64748b" opacity="0.3"/>
-                </pattern>
-                <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                  <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#e2e8f0" strokeWidth="1"/>
+                <pattern id="hexagons" width="60" height="52" patternUnits="userSpaceOnUse">
+                  <polygon points="30,4 48,15 48,37 30,48 12,37 12,15" 
+                           fill="none" stroke="#3b82f6" strokeWidth="0.5" opacity="0.4"/>
                 </pattern>
               </defs>
-              
-              {/* Dot Pattern */}
-              <rect width="100%" height="100%" fill="url(#dots)"/>
-              
-              {/* Grid Overlay */}
-              <rect width="100%" height="100%" fill="url(#grid)" opacity="0.4"/>
-              
-              {/* Modern Circuit Design */}
-              <g opacity="0.7">
-                {/* Main Circuit Lines */}
-                <path d="M100 150 L300 150 L320 130 L500 130 L520 150 L750 150" 
-                      stroke="#3b82f6" strokeWidth="3" fill="none" opacity="0.6"/>
-                <path d="M100 300 L200 300 L220 280 L400 280 L420 300 L650 300" 
-                      stroke="#1e40af" strokeWidth="2" fill="none" opacity="0.5"/>
-                <path d="M100 450 L350 450 L370 430 L550 430 L570 450 L800 450" 
-                      stroke="#6366f1" strokeWidth="2" fill="none" opacity="0.4"/>
-                
-                {/* Vertical Connections */}
-                <path d="M300 50 L300 200 L320 220 L320 380 L300 400 L300 550" 
-                      stroke="#1e40af" strokeWidth="2" fill="none" opacity="0.5"/>
-                <path d="M650 80 L650 250 L670 270 L670 430 L650 450 L650 600" 
-                      stroke="#3b82f6" strokeWidth="2" fill="none" opacity="0.4"/>
-                
-                {/* Circuit Nodes */}
-                <circle cx="300" cy="150" r="6" fill="#3b82f6" opacity="0.8"/>
-                <circle cx="650" cy="300" r="6" fill="#1e40af" opacity="0.8"/>
-                <circle cx="320" cy="280" r="4" fill="#6366f1" opacity="0.7"/>
-                <circle cx="570" cy="450" r="5" fill="#3b82f6" opacity="0.6"/>
-              </g>
-              
-              {/* Professional Geometric Elements */}
-              <g opacity="0.3">
-                <rect x="850" y="100" width="120" height="80" rx="8" fill="#3b82f6"/>
-                <rect x="900" y="220" width="100" height="60" rx="6" fill="#1e40af"/>
-                <rect x="950" y="320" width="140" height="90" rx="10" fill="#6366f1"/>
-                
-                {/* Left Side Elements */}
-                <rect x="50" y="380" width="160" height="100" rx="12" fill="#3b82f6"/>
-                <rect x="20" y="250" width="120" height="80" rx="8" fill="#1e40af"/>
-              </g>
+              <rect width="100%" height="100%" fill="url(#hexagons)"/>
             </svg>
           </div>
 
-          {/* Subtle Texture Overlay */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_70%)]"></div>
-          
-          {/* Final Overlay for Content Clarity */}
-          <div className="absolute inset-0 bg-white/30"></div>
+          {/* Modern Accent Elements */}
+          <div className="absolute inset-0">
+            {/* Top Right Accent */}
+            <div className="absolute top-0 right-0 w-64 h-64">
+              <div className="absolute top-8 right-8 w-32 h-32 bg-blue-500/10 rounded-lg rotate-45"></div>
+              <div className="absolute top-16 right-16 w-24 h-24 bg-orange-500/10 rounded-lg rotate-12"></div>
+            </div>
+            
+            {/* Bottom Left Accent */}
+            <div className="absolute bottom-0 left-0 w-48 h-48">
+              <div className="absolute bottom-6 left-6 w-28 h-28 bg-purple-500/10 rounded-lg -rotate-12"></div>
+              <div className="absolute bottom-12 left-12 w-20 h-20 bg-blue-500/15 rounded-lg rotate-45"></div>
+            </div>
+
+            {/* Center Technical Elements */}
+            <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2">
+              <div className="w-4 h-4 bg-blue-500/20 rounded-full"></div>
+              <div className="absolute top-8 left-8 w-3 h-3 bg-orange-500/20 rounded-full"></div>
+              <div className="absolute -top-4 left-12 w-2 h-2 bg-purple-500/20 rounded-full"></div>
+            </div>
+            
+            <div className="absolute top-1/3 right-1/3">
+              <div className="w-6 h-6 bg-blue-500/15 rotate-45"></div>
+              <div className="absolute top-6 -left-6 w-4 h-4 bg-orange-500/15 rotate-12"></div>
+            </div>
+          </div>
+
+          {/* Subtle Grid Lines */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+          </div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
