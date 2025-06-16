@@ -143,7 +143,7 @@ export default function ProductsServices() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {epicServices.map((service, index) => (
               <div key={service.letter} className="group relative">
-                <div className="relative bg-white rounded-lg shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <div className="relative bg-white rounded shadow-md border border-slate-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                   {/* Service Image Header */}
                   <div className="relative h-32 bg-gradient-to-br from-slate-100 to-slate-50">
                     <img 
@@ -165,7 +165,7 @@ export default function ProductsServices() {
                   
                   <div className="p-6">
                     {/* Large Letter */}
-                    <div className="absolute -top-3 -right-3 w-12 h-12 bg-white border-2 border-slate-300 rounded-md flex items-center justify-center shadow-sm">
+                    <div className="absolute -top-3 -right-3 w-12 h-12 bg-white border-2 border-slate-300 rounded-sm flex items-center justify-center shadow-sm">
                       <span className="text-xl font-bold text-slate-800">{service.letter}</span>
                     </div>
 
@@ -207,7 +207,7 @@ export default function ProductsServices() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Proven Excellence</h3>
@@ -215,7 +215,7 @@ export default function ProductsServices() {
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Ship className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Maritime Expertise</h3>
@@ -223,7 +223,7 @@ export default function ProductsServices() {
             </div>
             
             <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Users className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Complete Support</h3>
@@ -234,7 +234,7 @@ export default function ProductsServices() {
           <div className="text-center">
             <Button 
               size="lg"
-              className="bg-white text-slate-900 hover:bg-gray-100 font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="bg-white text-slate-900 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
               onClick={handleRequestQuote}
             >
               Start Your Project Today
