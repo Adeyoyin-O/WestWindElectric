@@ -49,7 +49,7 @@ export default function ProductsServices() {
     {
       letter: "I",
       title: "Installation",
-      description: "Professional installation and system integration",
+      description: "Expert professional installation and seamless system integration",
       icon: Wrench,
       color: "from-orange-600 to-orange-700",
       features: ["Expert Installation", "System Integration", "Testing & Validation", "Documentation"]
