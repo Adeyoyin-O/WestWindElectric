@@ -124,8 +124,8 @@ export default function ProductsServices() {
           
           {/* Diagonal Light Section */}
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 transform rotate-12 scale-150 origin-top-left"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-50/90 via-amber-50/85 to-yellow-50/90"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-slate-50 transform rotate-12 scale-150 origin-top-left"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 via-cyan-50/85 to-slate-50/90"></div>
           </div>
 
           {/* Professional Hexagon Pattern */}
