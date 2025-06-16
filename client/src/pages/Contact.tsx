@@ -8,9 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { 
-  MapPin, 
-  Phone, 
-  Mail
+  Building2, 
+  PhoneCall, 
+  MailOpen
 } from "lucide-react";
 
 const contactFormSchema = z.object({
@@ -61,18 +61,6 @@ export default function Contact() {
 
   return (
     <div className="page-transition">
-      {/* Clean Header Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Contact Us</h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Get in touch with our maritime electronics experts
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Main Content */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,14 +71,14 @@ export default function Contact() {
               <div>
                 <h2 className="text-3xl font-bold text-slate-900 mb-8">Get In Touch</h2>
                 <p className="text-lg text-slate-600 mb-12">
-                  Ready to discuss your project? Contact our expert team for professional maritime electronics solutions.
+                  Ready to discuss your project? Contact our expert team.
                 </p>
               </div>
 
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="text-white h-6 w-6" />
+                    <Building2 className="text-white h-6 w-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
@@ -104,7 +92,7 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-white h-6 w-6" />
+                    <PhoneCall className="text-white h-6 w-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Phone Numbers</h3>
@@ -117,7 +105,7 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-white h-6 w-6" />
+                    <MailOpen className="text-white h-6 w-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Email Address</h3>
