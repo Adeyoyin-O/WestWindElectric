@@ -4,16 +4,16 @@ import footerLogo from "@assets/3-removebg-preview_1749920563703.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 text-white py-12 relative overflow-hidden">
-      {/* Thin stripe background pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <footer className="bg-slate-800 text-white py-12 diagonal-pattern relative overflow-hidden">
+      {/* Diagonal stripe pattern */}
+      <div className="absolute inset-0 opacity-30">
         <div className="h-full w-full" style={{
           backgroundImage: `repeating-linear-gradient(
             45deg,
-            transparent,
-            transparent 2px,
-            rgba(255,255,255,0.1) 2px,
-            rgba(255,255,255,0.1) 4px
+            #000000 0px,
+            #000000 10px,
+            #333333 10px,
+            #333333 20px
           )`
         }}></div>
       </div>
