@@ -22,6 +22,12 @@ import {
   Layers
 } from "lucide-react";
 
+// Import service images
+import engineeringImg from "@assets/erinada-valpurgieva-QCOg4dicY74-unsplash_1750062999962.jpg";
+import procurementImg from "@assets/hassan-pasha-0gzN6YsgAjo-unsplash_1750062955446.jpg";
+import installationImg from "@assets/rob-lambert-9Q_pLLP_jmA-unsplash_1750062971469.jpg";
+import commissioningImg from "@assets/ricardo-gomez-angel-MagdWoazARo-unsplash_1750062987636.jpg";
+
 export default function ProductsServices() {
   const [, setLocation] = useLocation();
 
@@ -148,14 +154,10 @@ export default function ProductsServices() {
                   <div className="relative h-32 bg-gradient-to-br from-slate-100 to-slate-50">
                     <img 
                       src={[
-                        // Engineering - Electrical control panel/commissioning
-                        "@assets/erinada-valpurgieva-QCOg4dicY74-unsplash_1750062999962.jpg",
-                        // Procurement - Construction workers with equipment
-                        "@assets/hassan-pasha-0gzN6YsgAjo-unsplash_1750062955446.jpg",
-                        // Installation - Welding/fabrication work
-                        "@assets/rob-lambert-9Q_pLLP_jmA-unsplash_1750062971469.jpg",
-                        // Commissioning - Marine/technical installation
-                        "@assets/ricardo-gomez-angel-MagdWoazARo-unsplash_1750062987636.jpg"
+                        engineeringImg,
+                        procurementImg,
+                        installationImg,
+                        commissioningImg
                       ][index]}
                       alt={service.title}
                       className="w-full h-full object-cover"
