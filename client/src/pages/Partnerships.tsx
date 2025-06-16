@@ -1,207 +1,53 @@
-import { useLocation } from "wouter";
-import Hero from "@/components/Hero";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { 
-  Handshake, 
-  Users, 
-  Network, 
-  Briefcase, 
-  GraduationCap, 
-  Globe,
-  CheckCircle
-} from "lucide-react";
-
 export default function Partnerships() {
-  const [, setLocation] = useLocation();
-
-  const handleExploreOpportunities = () => {
-    setLocation("/contact");
-  };
-
-  const partnershipTypes = [
-    {
-      icon: Handshake,
-      title: "Strategic Alliances",
-      description: "Long-term partnerships focused on mutual growth and market expansion",
-      features: [
-        "Joint market development",
-        "Shared resources and expertise", 
-        "Collaborative innovation"
-      ]
-    },
-    {
-      icon: Users,
-      title: "Technology Partners",
-      description: "Collaborations with technology providers and equipment manufacturers",
-      features: [
-        "Equipment integration",
-        "Technology transfer",
-        "Joint product development"
-      ]
-    },
-    {
-      icon: Network,
-      title: "Channel Partners",
-      description: "Distribution and sales partnerships to extend market reach",
-      features: [
-        "Sales representation",
-        "Local market access",
-        "Customer relationship management"
-      ]
-    },
-    {
-      icon: Briefcase,
-      title: "Project Partnerships",
-      description: "Collaborative partnerships for specific projects and initiatives",
-      features: [
-        "Joint project execution",
-        "Risk sharing",
-        "Complementary capabilities"
-      ]
-    },
-    {
-      icon: GraduationCap,
-      title: "Training Partners",
-      description: "Educational partnerships for skill development and knowledge transfer",
-      features: [
-        "Technical training programs",
-        "Certification courses",
-        "Knowledge sharing initiatives"
-      ]
-    },
-    {
-      icon: Globe,
-      title: "Regional Partners",
-      description: "Local partnerships for regional market penetration and support",
-      features: [
-        "Local market knowledge",
-        "Regional service delivery",
-        "Cultural understanding"
-      ]
-    }
-  ];
-
-  const partnershipBenefits = [
-    "Access to Expertise",
-    "Quality Assurance", 
-    "Market Expansion",
-    "Ongoing Support"
-  ];
-
   return (
     <div className="page-transition">
-      {/* Partnership Hero */}
-      <Hero
-        title="Strategic Partnerships"
-        subtitle="Building strong relationships to deliver exceptional maritime solutions"
-      />
-
-      {/* Partnership Approach */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[var(--navy)] mb-6">Our Partnership Approach</h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              We believe in collaborative partnerships that create mutual value and drive innovation in the maritime industry. Our partnership model is built on trust, expertise, and shared commitment to excellence.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="h-96 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white">
-                <div className="text-center">
-                  <Handshake className="h-24 w-24 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold">Nigerian Business Professionals</h3>
-                  <p className="text-blue-100 mt-2">Partnership Meeting</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-[var(--navy)] mb-6">Partnership Benefits</h3>
-              <div className="space-y-4">
-                {partnershipBenefits.map((benefit) => (
-                  <div key={benefit} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 gold-gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="text-white h-4 w-4" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-[var(--navy)] mb-2">{benefit}</h4>
-                      <p className="text-gray-600">
-                        {benefit === "Access to Expertise" && "Leverage our deep maritime electronics knowledge and industry experience"}
-                        {benefit === "Quality Assurance" && "Benefit from our rigorous quality standards and proven methodologies"}
-                        {benefit === "Market Expansion" && "Expand your reach across West Africa through our established network"}
-                        {benefit === "Ongoing Support" && "Receive continuous support and collaboration throughout projects"}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+      {/* Main Content */}
+      <section className="min-h-[80vh] bg-gray-50 relative flex items-center justify-center">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.4) 2px, transparent 0),
+                             radial-gradient(circle at 75px 75px, rgba(71, 85, 105, 0.3) 1px, transparent 0)`,
+            backgroundSize: '100px 100px'
+          }}></div>
         </div>
-      </section>
 
-      {/* Partnership Types */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[var(--navy)] mb-4">Types of Partnerships</h2>
-            <p className="text-xl text-gray-600">Flexible partnership models to suit different business needs</p>
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-20 w-32 h-32 border border-slate-200 rounded-lg rotate-12 opacity-20"></div>
+        <div className="absolute bottom-20 right-20 w-24 h-24 border border-blue-200 rounded-full opacity-30"></div>
+        <div className="absolute top-40 right-40 w-16 h-16 bg-orange-100 rounded-lg rotate-45 opacity-40"></div>
+        <div className="absolute bottom-40 left-40 w-20 h-20 bg-blue-100 rounded-full opacity-30"></div>
+
+        {/* Geometric lines */}
+        <div className="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent opacity-20"></div>
+        <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent opacity-20"></div>
+        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-20"></div>
+        <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent opacity-20"></div>
+
+        {/* Main content */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Badge */}
+            <div className="inline-flex items-center justify-center px-6 py-3 bg-blue-600/10 backdrop-blur-sm rounded-full text-blue-700 font-medium mb-8 border border-blue-200/50">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              Partnership Status
+            </div>
+            
+            {/* Main message */}
+            <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              A Mother Company of{" "}
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-600 bg-clip-text text-transparent">
+                Westwind Marine Electronics Limited
+              </span>
+            </h1>
+
+            {/* Subtle divider */}
+            <div className="flex items-center justify-center mt-12">
+              <div className="w-16 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent"></div>
+              <div className="w-3 h-3 bg-blue-500 rounded-full mx-4 opacity-40"></div>
+              <div className="w-16 h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent"></div>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partnershipTypes.map((partnership) => (
-              <Card key={partnership.title} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <div className="w-16 h-16 maritime-gradient rounded-full flex items-center justify-center mb-4">
-                    <partnership.icon className="text-white h-8 w-8" />
-                  </div>
-                  <CardTitle className="text-xl font-semibold text-[var(--navy)]">
-                    {partnership.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">{partnership.description}</p>
-                  <ul className="text-sm text-gray-600 space-y-2">
-                    {partnership.features.map((feature) => (
-                      <li key={feature}>• {feature}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partnership CTA */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="maritime-gradient text-white">
-            <CardContent className="p-8 lg:p-12 text-center">
-              <h2 className="text-3xl font-bold mb-6">Interested in Partnership?</h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join our network of partners and leverage our expertise to grow your business in the maritime industry
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg"
-                  className="gold-gradient hover:opacity-90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300"
-                  onClick={handleExploreOpportunities}
-                >
-                  Explore Partnership Opportunities
-                </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] font-semibold py-4 px-8 rounded-lg transition-all duration-300"
-                >
-                  Download Partnership Guide
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </div>
