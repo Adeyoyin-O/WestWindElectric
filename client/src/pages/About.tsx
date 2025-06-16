@@ -32,30 +32,40 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="elevated-card p-10 bg-gradient-to-br from-white via-blue-50 to-white border border-gray-200 shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[var(--primary-blue)] to-transparent opacity-10 rounded-bl-full"></div>
-              <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-[var(--bright-coral)] to-transparent opacity-10 rounded-tr-full"></div>
+            <div className="elevated-card p-10 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 border border-slate-600 shadow-xl relative overflow-hidden">
+              {/* Diagonal stripe pattern */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="h-full w-full" style={{
+                  backgroundImage: `repeating-linear-gradient(
+                    45deg,
+                    #000000 0px,
+                    #000000 15px,
+                    #333333 15px,
+                    #333333 18px
+                  )`
+                }}></div>
+              </div>
               
               <div className="grid grid-cols-2 gap-10 text-center relative z-10">
                 <div className="group transform transition-transform duration-300 hover:scale-105">
-                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
-                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">2011</div>
-                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Established</div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-4xl font-bold text-cyan-400 mb-2">2011</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Established</div>
                 </div>
                 <div className="group transform transition-transform duration-300 hover:scale-105">
-                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
-                  <div className="text-4xl font-bold text-[var(--bright-coral)] mb-2">13+</div>
-                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Years Experience</div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-4xl font-bold text-cyan-400 mb-2">13+</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Years Experience</div>
                 </div>
                 <div className="group transform transition-transform duration-300 hover:scale-105">
-                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
-                  <div className="text-2xl font-bold text-[var(--bright-coral)] mb-2">EPIC</div>
-                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">Services</div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">EPIC</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">Services</div>
                 </div>
                 <div className="group transform transition-transform duration-300 hover:scale-105">
-                  <div className="w-16 h-1 bg-gradient-to-r from-[var(--bright-coral)] to-red-400 mx-auto mb-3 rounded-full"></div>
-                  <div className="text-lg font-bold text-[var(--bright-coral)] mb-2">968009</div>
-                  <div className="text-gray-600 text-sm font-medium uppercase tracking-wide">RC Number</div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-3 rounded-full"></div>
+                  <div className="text-lg font-bold text-cyan-400 mb-2">968009</div>
+                  <div className="text-gray-300 text-sm font-medium uppercase tracking-wide">RC Number</div>
                 </div>
               </div>
             </div>
