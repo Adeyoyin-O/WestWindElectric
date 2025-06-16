@@ -250,33 +250,54 @@ export default function ProductsServices() {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Why Choose Us</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <Award className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Proven Industry Expertise</h3>
-              <p className="text-blue-100">Over a decade of hands-on experience delivering trusted solutions across power and maritime sectors.</p>
-            </div>
-            
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <Settings className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Full-Service Capability</h3>
-              <p className="text-blue-100">From concept to commissioning, we provide complete EPIC solutions tailored to your project needs.</p>
+          <div className="max-w-4xl mx-auto">
+            {/* Main Heading */}
+            <div className="text-center mb-20">
+              <h2 className="text-5xl font-bold mb-4">Why Choose Us</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-orange-400 mx-auto"></div>
             </div>
 
-            <div className="text-center group">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <CheckCircle className="w-10 h-10 text-white" />
+            {/* Creative Staggered Layout */}
+            <div className="space-y-16">
+              {/* First Item - Left Aligned */}
+              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div className="lg:w-1/3">
+                  <div className="relative">
+                    <div className="text-8xl font-bold text-blue-500/20 leading-none">01</div>
+                    <div className="absolute top-4 left-4 w-16 h-16 bg-gradient-to-br from-blue-500/20 to-blue-600/30 rounded transform rotate-12"></div>
+                  </div>
+                </div>
+                <div className="lg:w-2/3 text-center lg:text-left">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Proven Industry Expertise</h3>
+                  <p className="text-blue-100 text-lg leading-relaxed">Over a decade of hands-on experience delivering trusted solutions across power and maritime sectors.</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4">Uncompromised Quality</h3>
-              <p className="text-blue-100">We prioritize excellence, using best-in-class practices to ensure safe, reliable, and efficient outcomes.</p>
+
+              {/* Second Item - Right Aligned */}
+              <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
+                <div className="lg:w-1/3">
+                  <div className="relative">
+                    <div className="text-8xl font-bold text-orange-500/20 leading-none">02</div>
+                    <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-500/20 to-orange-600/30 rounded transform -rotate-12"></div>
+                  </div>
+                </div>
+                <div className="lg:w-2/3 text-center lg:text-right">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Full-Service Capability</h3>
+                  <p className="text-blue-100 text-lg leading-relaxed">From concept to commissioning, we provide complete EPIC solutions tailored to your project needs.</p>
+                </div>
+              </div>
+
+              {/* Third Item - Center Aligned */}
+              <div className="text-center">
+                <div className="relative inline-block mb-8">
+                  <div className="text-8xl font-bold text-green-500/20 leading-none">03</div>
+                  <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-green-500/20 to-green-600/30 rounded-full"></div>
+                </div>
+                <div className="max-w-2xl mx-auto">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Uncompromised Quality</h3>
+                  <p className="text-blue-100 text-lg leading-relaxed">We prioritize excellence, using best-in-class practices to ensure safe, reliable, and efficient outcomes.</p>
+                </div>
+              </div>
             </div>
           </div>
 
