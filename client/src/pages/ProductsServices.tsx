@@ -254,21 +254,29 @@ export default function ProductsServices() {
             <h2 className="text-4xl font-bold mb-6">Why Choose Us</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Proven Industry Expertise</h3>
-              <p className="text-blue-100 text-lg">Over a decade of hands-on experience delivering trusted solutions across power and maritime sectors.</p>
+              <h3 className="text-xl font-bold mb-4">Proven Industry Expertise</h3>
+              <p className="text-blue-100">Over a decade of hands-on experience delivering trusted solutions across power and maritime sectors.</p>
             </div>
             
             <div className="text-center group">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <Settings className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Full-Service Capability</h3>
-              <p className="text-blue-100 text-lg">From concept to commissioning, we provide complete EPIC solutions tailored to your project needs.</p>
+              <h3 className="text-xl font-bold mb-4">Full-Service Capability</h3>
+              <p className="text-blue-100">From concept to commissioning, we provide complete EPIC solutions tailored to your project needs.</p>
+            </div>
+
+            <div className="text-center group">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-lg mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <CheckCircle className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Uncompromised Quality</h3>
+              <p className="text-blue-100">We prioritize excellence, using best-in-class practices to ensure safe, reliable, and efficient outcomes.</p>
             </div>
           </div>
 
