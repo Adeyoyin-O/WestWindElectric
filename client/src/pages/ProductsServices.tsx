@@ -1,5 +1,5 @@
 import { useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -35,21 +35,23 @@ export default function ProductsServices() {
   const [, setLocation] = useLocation();
   const [expandedServices, setExpandedServices] = useState<Set<number>>(new Set());
 
-  const handleRequestQuote = () => {
+  const handleRequestQuote = useCallback(() => {
     setLocation("/contact");
-  };
+  }, [setLocation]);
 
-  const toggleService = (index: number) => {
-    const newExpanded = new Set(expandedServices);
-    if (newExpanded.has(index)) {
-      newExpanded.delete(index);
-    } else {
-      newExpanded.add(index);
-    }
-    setExpandedServices(newExpanded);
-  };
+  const toggleService = useCallback((index: number) => {
+    setExpandedServices(prev => {
+      const newExpanded = new Set(prev);
+      if (newExpanded.has(index)) {
+        newExpanded.delete(index);
+      } else {
+        newExpanded.add(index);
+      }
+      return newExpanded;
+    });
+  }, []);
 
-  const services = [
+  const services = useMemo(() => [
     { name: "Pumps and Motors", description: "High-performance pumps and electric motors for industrial and marine applications, ensuring reliable fluid handling and mechanical drive solutions." },
     { name: "Electrical and Lighting Fittings", description: "Comprehensive range of electrical components and LED lighting systems designed for harsh marine and industrial environments." },
     { name: "Circuit Breakers", description: "Advanced circuit protection devices including MCBs, MCCBs, and ACBs for reliable electrical system safety and fault isolation." },
@@ -63,16 +65,17 @@ export default function ProductsServices() {
     { name: "Rewinding of Motors and Generator Spare Parts", description: "Professional motor and generator refurbishment services including rewinding, balancing, and supply of genuine spare parts." },
     { name: "Inverters and UPS Systems", description: "Uninterruptible power supplies and power inverters ensuring continuous operation of critical systems and equipment." },
     { name: "Motor Control Centers (MCC)", description: "Centralized motor control solutions with intelligent protection, monitoring, and remote operation capabilities for industrial applications." }
-  ];
+  ], []);
 
-  const epicServices = [
+  const epicServices = useMemo(() => [
     {
       letter: "E",
       title: "Engineering",
       description: "Advanced system design and technical engineering solutions",
       icon: Settings,
       color: "from-blue-600 to-blue-700",
-      features: ["System Architecture", "Technical Specifications", "Custom Solutions", "Performance Analysis"]
+      features: ["System Architecture", "Technical Specifications", "Custom Solutions", "Performance Analysis"],
+      image: engineeringImg
     },
     {
       letter: "P",
@@ -80,7 +83,8 @@ export default function ProductsServices() {
       description: "Strategic sourcing and equipment acquisition services",
       icon: Target,
       color: "from-green-600 to-green-700",
-      features: ["Equipment Sourcing", "Vendor Management", "Quality Assurance", "Cost Optimization"]
+      features: ["Equipment Sourcing", "Vendor Management", "Quality Assurance", "Cost Optimization"],
+      image: procurementImg
     },
     {
       letter: "I",
@@ -88,7 +92,8 @@ export default function ProductsServices() {
       description: "Expert professional installation and seamless system integration",
       icon: Wrench,
       color: "from-orange-600 to-orange-700",
-      features: ["Expert Installation", "System Integration", "Testing & Validation", "Documentation"]
+      features: ["Expert Installation", "System Integration", "Testing & Validation", "Documentation"],
+      image: installationImg
     },
     {
       letter: "C",
@@ -96,11 +101,12 @@ export default function ProductsServices() {
       description: "Complete system commissioning and operational validation",
       icon: Activity,
       color: "from-purple-600 to-purple-700",
-      features: ["System Commissioning", "Performance Testing", "Crew Training", "Operational Handover"]
+      features: ["System Commissioning", "Performance Testing", "Crew Training", "Operational Handover"],
+      image: commissioningImg
     }
-  ];
+  ], []);
 
-  const serviceCategories = [
+  const serviceCategories = useMemo(() => [
     {
       icon: Zap,
       title: "Electrical Equipment",
@@ -141,7 +147,7 @@ export default function ProductsServices() {
       badgeColor: "bg-cyan-100 text-cyan-700",
       solutions: ["Electric Installations", "System Integration", "Maintenance Services", "Technical Support"]
     }
-  ];
+  ], []);
 
   return (
     <div className="page-transition">
@@ -158,18 +164,8 @@ export default function ProductsServices() {
             <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-gray-50/90 to-slate-50/95"></div>
           </div>
 
-          {/* Professional Hexagon Pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="hexagons" width="60" height="52" patternUnits="userSpaceOnUse">
-                  <polygon points="30,4 48,15 48,37 30,48 12,37 12,15" 
-                           fill="none" stroke="#3b82f6" strokeWidth="0.5" opacity="0.4"/>
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#hexagons)"/>
-            </svg>
-          </div>
+          {/* Simplified Background Pattern */}
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
 
           {/* Modern Accent Elements */}
           <div className="absolute inset-0">
@@ -198,13 +194,7 @@ export default function ProductsServices() {
             </div>
           </div>
 
-          {/* Subtle Grid Lines */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
-            <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
-            <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
-            <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
-          </div>
+
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -233,13 +223,9 @@ export default function ProductsServices() {
                   {/* Service Image Header */}
                   <div className="relative h-32 bg-gradient-to-br from-slate-100 to-slate-50">
                     <img 
-                      src={[
-                        engineeringImg,
-                        procurementImg,
-                        installationImg,
-                        commissioningImg
-                      ][index]}
+                      src={service.image}
                       alt={service.title}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black/10"></div>
