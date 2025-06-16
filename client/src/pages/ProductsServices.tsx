@@ -152,7 +152,7 @@ export default function ProductsServices() {
   return (
     <div className="page-transition">
       {/* Hero Section with Background Image */}
-      <section className="relative pt-20 pb-12 overflow-hidden">
+      <section className="relative pt-24 pb-16 overflow-hidden">
         {/* Modern Diagonal Background */}
         <div className="absolute inset-0">
           {/* Diagonal Split Background */}
@@ -160,38 +160,62 @@ export default function ProductsServices() {
           
           {/* Diagonal Light Section */}
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-slate-100 transform rotate-12 scale-150 origin-top-left"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-gray-50/90 to-slate-50/95"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50 to-slate-100 transform rotate-12 scale-150 origin-top-left"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-blue-50/90 to-slate-100/95"></div>
           </div>
 
-          {/* Simplified Background Pattern */}
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
+          {/* Professional Hexagon Pattern */}
+          <div className="absolute inset-0 opacity-30">
+            <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="hexagons" width="60" height="52" patternUnits="userSpaceOnUse">
+                  <polygon points="30,4 48,15 48,37 30,48 12,37 12,15" 
+                           fill="none" stroke="#3b82f6" strokeWidth="0.5" opacity="0.4"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#hexagons)"/>
+            </svg>
+          </div>
 
           {/* Modern Accent Elements */}
           <div className="absolute inset-0">
-            {/* Top Left Accent - Moved from Bottom */}
-            <div className="absolute top-0 left-0 w-48 h-48">
-              <div className="absolute top-6 left-6 w-28 h-28 bg-purple-500/10 rounded-lg -rotate-12"></div>
-              <div className="absolute top-12 left-12 w-20 h-20 bg-blue-500/15 rounded-lg rotate-45"></div>
-            </div>
-            
             {/* Top Right Accent */}
             <div className="absolute top-0 right-0 w-64 h-64">
               <div className="absolute top-8 right-8 w-32 h-32 bg-blue-500/10 rounded-lg rotate-45"></div>
               <div className="absolute top-16 right-16 w-24 h-24 bg-orange-500/10 rounded-lg rotate-12"></div>
             </div>
+            
+            {/* Bottom Left Accent */}
+            <div className="absolute bottom-0 left-0 w-48 h-48">
+              <div className="absolute bottom-6 left-6 w-28 h-28 bg-purple-500/10 rounded-lg -rotate-12"></div>
+              <div className="absolute bottom-12 left-12 w-20 h-20 bg-blue-500/15 rounded-lg rotate-45"></div>
+            </div>
 
-            {/* Simplified accent elements */}
-            <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-blue-500/10 rounded-full"></div>
-            <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-blue-500/10 rotate-45"></div>
+            {/* Center Technical Elements */}
+            <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2">
+              <div className="w-4 h-4 bg-blue-500/20 rounded-full"></div>
+              <div className="absolute top-8 left-8 w-3 h-3 bg-orange-500/20 rounded-full"></div>
+              <div className="absolute -top-4 left-12 w-2 h-2 bg-purple-500/20 rounded-full"></div>
+            </div>
+            
+            <div className="absolute top-1/3 right-1/3">
+              <div className="w-6 h-6 bg-blue-500/15 rotate-45"></div>
+              <div className="absolute top-6 -left-6 w-4 h-4 bg-orange-500/15 rotate-12"></div>
+            </div>
           </div>
 
-
+          {/* Subtle Grid Lines */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+            <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
+          </div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Innovative Title Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center px-6 py-3 bg-blue-600/10 backdrop-blur-sm rounded-full text-blue-700 font-medium mb-6 border border-blue-200/50">
               <Layers className="w-5 h-5 mr-2" />
               Complete Solutions Portfolio
