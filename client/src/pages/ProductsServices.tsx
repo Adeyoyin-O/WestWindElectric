@@ -146,7 +146,7 @@ export default function ProductsServices() {
   return (
     <div className="page-transition">
       {/* Hero Section with Background Image */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
+      <section className="relative pt-20 pb-12 overflow-hidden">
         {/* Modern Diagonal Background */}
         <div className="absolute inset-0">
           {/* Diagonal Split Background */}
@@ -173,16 +173,16 @@ export default function ProductsServices() {
 
           {/* Modern Accent Elements */}
           <div className="absolute inset-0">
+            {/* Top Left Accent - Moved from Bottom */}
+            <div className="absolute top-0 left-0 w-48 h-48">
+              <div className="absolute top-6 left-6 w-28 h-28 bg-purple-500/10 rounded-lg -rotate-12"></div>
+              <div className="absolute top-12 left-12 w-20 h-20 bg-blue-500/15 rounded-lg rotate-45"></div>
+            </div>
+            
             {/* Top Right Accent */}
             <div className="absolute top-0 right-0 w-64 h-64">
               <div className="absolute top-8 right-8 w-32 h-32 bg-blue-500/10 rounded-lg rotate-45"></div>
               <div className="absolute top-16 right-16 w-24 h-24 bg-orange-500/10 rounded-lg rotate-12"></div>
-            </div>
-            
-            {/* Bottom Left Accent */}
-            <div className="absolute bottom-0 left-0 w-48 h-48">
-              <div className="absolute bottom-6 left-6 w-28 h-28 bg-purple-500/10 rounded-lg -rotate-12"></div>
-              <div className="absolute bottom-12 left-12 w-20 h-20 bg-blue-500/15 rounded-lg rotate-45"></div>
             </div>
 
             {/* Center Technical Elements */}
@@ -209,7 +209,7 @@ export default function ProductsServices() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Innovative Title Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center px-6 py-3 bg-blue-600/10 backdrop-blur-sm rounded-full text-blue-700 font-medium mb-6 border border-blue-200/50">
               <Layers className="w-5 h-5 mr-2" />
               Complete Solutions Portfolio
