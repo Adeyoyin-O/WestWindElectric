@@ -196,19 +196,6 @@ export default function ProductsServices() {
           </div>
 
           {/* EPIC Services Showcase */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Our <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-extrabold tracking-wider">
-                  EPIC
-                </span>
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-              </span> Methodology
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Engineering • Procurement • Installation • Commissioning
-            </p>
-          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {epicServices.map((service, index) => (
               <div key={service.letter} className="group relative">
@@ -230,8 +217,8 @@ export default function ProductsServices() {
                   
                   <div className="p-6">
                     {/* Large Letter */}
-                    <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 border-4 border-white rounded-lg flex items-center justify-center shadow-xl transform rotate-3 hover:rotate-0 transition-all duration-300">
-                      <span className="text-2xl font-bold text-white drop-shadow-sm">{service.letter}</span>
+                    <div className="absolute -top-3 -right-3 w-12 h-12 bg-white border-2 border-slate-300 rounded-sm flex items-center justify-center shadow-sm">
+                      <span className="text-xl font-bold text-slate-800">{service.letter}</span>
                     </div>
 
                     <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
