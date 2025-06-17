@@ -7,7 +7,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { 
   Building2, 
   PhoneCall, 
@@ -40,7 +39,7 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      const response = await apiRequest('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -152,8 +151,12 @@ export default function Contact() {
                         <FormControl>
                           <Input 
                             placeholder="Your full name" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500" 
-                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                            value={field.value}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            ref={field.ref}
                           />
                         </FormControl>
                         <FormMessage />
@@ -171,8 +174,12 @@ export default function Contact() {
                           <Input 
                             type="email" 
                             placeholder="your.email@example.com" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500" 
-                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                            value={field.value}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            ref={field.ref}
                           />
                         </FormControl>
                         <FormMessage />
@@ -189,8 +196,12 @@ export default function Contact() {
                         <FormControl>
                           <Input 
                             placeholder="What is this about?" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500" 
-                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                            value={field.value}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            ref={field.ref}
                           />
                         </FormControl>
                         <FormMessage />
@@ -208,8 +219,12 @@ export default function Contact() {
                           <Textarea 
                             rows={6} 
                             placeholder="Tell us about your project requirements..." 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none" 
-                            {...field} 
+                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none"
+                            value={field.value}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            ref={field.ref}
                           />
                         </FormControl>
                         <FormMessage />
