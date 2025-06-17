@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import { 
   Building2, 
   PhoneCall, 
@@ -7,57 +6,32 @@ import {
 } from "lucide-react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const { toast } = useToast();
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [statusMessage, setStatusMessage] = useState("");
 
-  const validateForm = () => {
-    const newErrors: Record<string, string> = {};
-    
-    if (!formData.name || formData.name.length < 2) {
-      newErrors.name = "Name must be at least 2 characters";
-    }
-    
-    if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
-    }
-    
-    if (!formData.subject || formData.subject.length < 3) {
-      newErrors.subject = "Subject must be at least 3 characters";
-    }
-    
-    if (!formData.message || formData.message.length < 10) {
-      newErrors.message = "Message must be at least 10 characters";
-    }
-    
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: "" }));
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    if (!validateForm()) {
+    // Basic validation
+    if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
+      setSubmitStatus("error");
+      setStatusMessage("Please fill in all fields");
+      return;
+    }
+
+    if (!email.includes("@")) {
+      setSubmitStatus("error");
+      setStatusMessage("Please enter a valid email address");
       return;
     }
 
     setIsSubmitting(true);
+    setSubmitStatus("idle");
     
     try {
       const response = await fetch('/api/contact', {
@@ -65,180 +39,179 @@ export default function Contact() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          subject: subject.trim(),
+          message: message.trim()
+        }),
       });
 
       const result = await response.json();
 
-      if (result.success) {
-        toast({
-          title: "Message Sent Successfully!",
-          description: result.message,
-        });
-        setFormData({ name: "", email: "", subject: "", message: "" });
+      if (response.ok && result.success) {
+        setSubmitStatus("success");
+        setStatusMessage("Message sent successfully! We'll get back to you within 24 hours.");
+        // Clear form
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
       } else {
-        throw new Error(result.message || "Failed to send message");
+        setSubmitStatus("error");
+        setStatusMessage(result.message || "Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error('Contact form submission error:', error);
-      toast({
-        title: "Error",
-        description: error instanceof Error ? error.message : "Failed to send message. Please try again.",
-        variant: "destructive"
-      });
+      setSubmitStatus("error");
+      setStatusMessage("Network error. Please check your connection and try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="page-transition">
-      {/* Main Content */}
-      <section className="py-20 bg-gray-50 relative">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 opacity-[0.02]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.4) 2px, transparent 0),
-                             radial-gradient(circle at 75px 75px, rgba(71, 85, 105, 0.3) 1px, transparent 0)`,
-            backgroundSize: '100px 100px'
-          }}></div>
-        </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            
-            {/* Contact Information - Left Side */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-8">Get In Touch</h2>
-                <p className="text-lg text-slate-600 mb-12">
-                  Ready to discuss your project? Contact our expert team.
-                </p>
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12">
+          
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div>
+              <h1 className="text-3xl font-bold text-slate-900 mb-4">Get In Touch</h1>
+              <p className="text-lg text-slate-600">
+                Ready to discuss your project? Contact our expert team.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center">
+                  <Building2 className="text-slate-600 h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
+                  <p className="text-slate-600">
+                    Plot 8, The Providence Street<br />
+                    Lekki Phase 1, Lagos<br />
+                    Nigeria
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Building2 className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Office Address</h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      Plot 8, The Providence Street<br />
-                      Lekki Phase 1, Lagos<br />
-                      Nigeria
-                    </p>
-                  </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center">
+                  <PhoneCall className="text-slate-600 h-6 w-6" />
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <PhoneCall className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Phone Numbers</h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      Tel: +234 703 250 9442<br />
-                      Mobile: +234 806 465 1345
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Phone Numbers</h3>
+                  <p className="text-slate-600">
+                    Tel: +234 703 250 9442<br />
+                    Mobile: +234 806 465 1345
+                  </p>
                 </div>
+              </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MailOpen className="text-slate-600 h-6 w-6" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Email Address</h3>
-                    <p className="text-slate-600">
-                      admin@westwindelectricpower.com
-                    </p>
-                  </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-slate-300 rounded-lg flex items-center justify-center">
+                  <MailOpen className="text-slate-600 h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Email Address</h3>
+                  <p className="text-slate-600">admin@westwindelectricpower.com</p>
                 </div>
               </div>
             </div>
-
-            {/* Contact Form - Right Side */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-slate-700 font-medium mb-2">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your full name"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                  />
-                  {errors.name && (
-                    <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-slate-700 font-medium mb-2">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                  />
-                  {errors.email && (
-                    <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-slate-700 font-medium mb-2">Subject</label>
-                  <input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    placeholder="What is this about?"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                  />
-                  {errors.subject && (
-                    <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-slate-700 font-medium mb-2">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    placeholder="Tell us about your project requirements..."
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none resize-none"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                  />
-                  {errors.message && (
-                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-                  )}
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </button>
-              </form>
-            </div>
-            
           </div>
+
+          {/* Contact Form */}
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
+            
+            {submitStatus === "success" && (
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
+                <p className="text-green-800">{statusMessage}</p>
+              </div>
+            )}
+
+            {submitStatus === "error" && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
+                <p className="text-red-800">{statusMessage}</p>
+              </div>
+            )}
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="contact-name" className="block text-sm font-medium text-slate-700 mb-2">
+                  Name *
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Your full name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="contact-email" className="block text-sm font-medium text-slate-700 mb-2">
+                  Email *
+                </label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your.email@example.com"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="contact-subject" className="block text-sm font-medium text-slate-700 mb-2">
+                  Subject *
+                </label>
+                <input
+                  id="contact-subject"
+                  type="text"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  placeholder="What is this about?"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="contact-message" className="block text-sm font-medium text-slate-700 mb-2">
+                  Message *
+                </label>
+                <textarea
+                  id="contact-message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Tell us about your project requirements..."
+                  rows={6}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
+            </form>
+          </div>
+          
         </div>
-      </section>
+      </div>
     </div>
   );
 }
