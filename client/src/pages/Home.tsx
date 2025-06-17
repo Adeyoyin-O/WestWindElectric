@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Trophy, Workflow, Ship, Cpu, ArrowRight, Zap, Settings, ChevronLeft, ChevronRight } from "lucide-react";
-import heroBackground from "@assets/buddy-an-uy5ZZI3rGXk-unsplash_1749921189527.jpg";
+import heroBackground from "@assets/sim-kimhort-V44nuvn1WDo-unsplash_1750155247042.jpg";
 import serviceImage1 from "@assets/service11_1749934695026.jpg";
 import serviceImage2 from "@assets/service10_1749934751504.jpg";
 import serviceImage3 from "@assets/service7_1749934776068.jpg";
