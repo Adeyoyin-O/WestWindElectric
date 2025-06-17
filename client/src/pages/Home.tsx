@@ -179,7 +179,7 @@ export default function Home() {
       <section className="bg-gradient-to-r from-gray-50 to-slate-100 py-16 border-b border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            <div className="text-center group p-6 rounded-3xl bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
+            <div className="text-center group p-6 rounded-lg bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-800 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Trophy className="w-7 h-7 text-white" />
               </div>
@@ -187,7 +187,7 @@ export default function Home() {
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Trusted expertise in<br />complex engineering projects</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
+            <div className="text-center group p-6 rounded-lg bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-800 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Workflow className="w-7 h-7 text-white" />
               </div>
@@ -195,7 +195,7 @@ export default function Home() {
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Complete engineering, procurement, installation & commissioning</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
+            <div className="text-center group p-6 rounded-lg bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-800 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Ship className="w-7 h-7 text-white" />
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
               <p className="text-sm text-slate-700 group-hover:text-slate-600 transition-colors duration-300">Specialized solutions for<br />power and maritime industries</p>
             </div>
             
-            <div className="text-center group p-6 rounded-3xl bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
+            <div className="text-center group p-6 rounded-lg bg-white/60 shadow-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/80 hover:shadow-2xl hover:scale-105 border border-white/20">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-800 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl">
                 <Cpu className="w-7 h-7 text-white" />
               </div>
