@@ -1,8 +1,4 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { 
   Building2, 
@@ -10,38 +6,66 @@ import {
   MailOpen
 } from "lucide-react";
 
-const contactFormSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  subject: z.string().min(3, "Subject must be at least 3 characters"),
-  message: z.string().min(10, "Message must be at least 10 characters")
-});
-
-type ContactFormData = z.infer<typeof contactFormSchema>;
-
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const { toast } = useToast();
 
-  const form = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
+  const validateForm = () => {
+    const newErrors: Record<string, string> = {};
+    
+    if (!formData.name || formData.name.length < 2) {
+      newErrors.name = "Name must be at least 2 characters";
     }
-  });
+    
+    if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    
+    if (!formData.subject || formData.subject.length < 3) {
+      newErrors.subject = "Subject must be at least 3 characters";
+    }
+    
+    if (!formData.message || formData.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-  const onSubmit = async (data: ContactFormData) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: "" }));
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
+    
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       });
 
       const result = await response.json();
@@ -51,7 +75,7 @@ export default function Contact() {
           title: "Message Sent Successfully!",
           description: result.message,
         });
-        form.reset();
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         throw new Error(result.message || "Failed to send message");
       }
@@ -137,18 +161,20 @@ export default function Contact() {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
               
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-slate-700 font-medium mb-2">Name</label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     placeholder="Your full name"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
-                    {...form.register("name")}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                    value={formData.name}
+                    onChange={handleInputChange}
                   />
-                  {form.formState.errors.name && (
-                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.name.message}</p>
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">{errors.name}</p>
                   )}
                 </div>
 
@@ -156,13 +182,15 @@ export default function Contact() {
                   <label htmlFor="email" className="block text-slate-700 font-medium mb-2">Email</label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="your.email@example.com"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
-                    {...form.register("email")}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                    value={formData.email}
+                    onChange={handleInputChange}
                   />
-                  {form.formState.errors.email && (
-                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.email.message}</p>
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                   )}
                 </div>
 
@@ -170,13 +198,15 @@ export default function Contact() {
                   <label htmlFor="subject" className="block text-slate-700 font-medium mb-2">Subject</label>
                   <input
                     id="subject"
+                    name="subject"
                     type="text"
                     placeholder="What is this about?"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
-                    {...form.register("subject")}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                    value={formData.subject}
+                    onChange={handleInputChange}
                   />
-                  {form.formState.errors.subject && (
-                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.subject.message}</p>
+                  {errors.subject && (
+                    <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
                   )}
                 </div>
 
@@ -184,23 +214,25 @@ export default function Contact() {
                   <label htmlFor="message" className="block text-slate-700 font-medium mb-2">Message</label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={6}
                     placeholder="Tell us about your project requirements..."
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none resize-none"
-                    {...form.register("message")}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none resize-none"
+                    value={formData.message}
+                    onChange={handleInputChange}
                   />
-                  {form.formState.errors.message && (
-                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.message.message}</p>
+                  {errors.message && (
+                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
                   )}
                 </div>
 
-                <Button 
-                  type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold rounded-lg"
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
+                </button>
               </form>
             </div>
             
