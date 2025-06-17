@@ -3,9 +3,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { 
   Building2, 
@@ -140,107 +137,71 @@ export default function Contact() {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
               
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-slate-700 font-medium">Name</FormLabel>
-                        <FormControl>
-                          <Input 
-                            placeholder="Your full name" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                            value={field.value}
-                            onChange={field.onChange}
-                            onBlur={field.onBlur}
-                            name={field.name}
-                            ref={field.ref}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-slate-700 font-medium mb-2">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Your full name"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
+                    {...form.register("name")}
                   />
+                  {form.formState.errors.name && (
+                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.name.message}</p>
+                  )}
+                </div>
 
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-slate-700 font-medium">Email</FormLabel>
-                        <FormControl>
-                          <Input 
-                            type="email" 
-                            placeholder="your.email@example.com" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                            value={field.value}
-                            onChange={field.onChange}
-                            onBlur={field.onBlur}
-                            name={field.name}
-                            ref={field.ref}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                <div>
+                  <label htmlFor="email" className="block text-slate-700 font-medium mb-2">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="your.email@example.com"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
+                    {...form.register("email")}
                   />
+                  {form.formState.errors.email && (
+                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.email.message}</p>
+                  )}
+                </div>
 
-                  <FormField
-                    control={form.control}
-                    name="subject"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-slate-700 font-medium">Subject</FormLabel>
-                        <FormControl>
-                          <Input 
-                            placeholder="What is this about?" 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                            value={field.value}
-                            onChange={field.onChange}
-                            onBlur={field.onBlur}
-                            name={field.name}
-                            ref={field.ref}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                <div>
+                  <label htmlFor="subject" className="block text-slate-700 font-medium mb-2">Subject</label>
+                  <input
+                    id="subject"
+                    type="text"
+                    placeholder="What is this about?"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none"
+                    {...form.register("subject")}
                   />
+                  {form.formState.errors.subject && (
+                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.subject.message}</p>
+                  )}
+                </div>
 
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-slate-700 font-medium">Message</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            rows={6} 
-                            placeholder="Tell us about your project requirements..." 
-                            className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none"
-                            value={field.value}
-                            onChange={field.onChange}
-                            onBlur={field.onBlur}
-                            name={field.name}
-                            ref={field.ref}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                <div>
+                  <label htmlFor="message" className="block text-slate-700 font-medium mb-2">Message</label>
+                  <textarea
+                    id="message"
+                    rows={6}
+                    placeholder="Tell us about your project requirements..."
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none resize-none"
+                    {...form.register("message")}
                   />
+                  {form.formState.errors.message && (
+                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.message.message}</p>
+                  )}
+                </div>
 
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold rounded-lg"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </Form>
+                <Button 
+                  type="submit" 
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-semibold rounded-lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+              </form>
             </div>
             
           </div>
