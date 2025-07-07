@@ -221,7 +221,7 @@ class EmailService {
       <body>
         <div class="header">
           <h1>New Contact Form Message</h1>
-          <p>West Wind Marine Electronics Ltd</p>
+          <p>West Wind Electric Power Ltd</p>
         </div>
         
         <div class="content">
@@ -255,7 +255,7 @@ class EmailService {
         </div>
         
         <div class="footer">
-          <p>This message was sent from the West Wind website contact form.</p>
+          <p>This message was sent from the West Wind Electric Power Ltd website contact form.</p>
           <p>To reply, simply respond to this email or contact ${this.escapeHtml(formData.email)} directly.</p>
         </div>
       </body>
@@ -267,7 +267,7 @@ class EmailService {
     const timestamp = new Date().toLocaleString();
     
     return `
-New Contact Form Message - West Wind Marine Electronics Ltd
+New Contact Form Message - West Wind Electric Power Ltd
 
 Name: ${formData.name}
 Email: ${formData.email}
@@ -279,7 +279,7 @@ ${formData.message}
 Received: ${timestamp}
 
 ---
-This message was sent from the West Wind website contact form.
+This message was sent from the West Wind Electric Power Ltd website contact form.
 To reply, contact ${formData.email} directly.
     `.trim();
   }
