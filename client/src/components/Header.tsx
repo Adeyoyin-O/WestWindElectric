@@ -61,10 +61,10 @@ export default function Header() {
             </Link>
             <div className="flex items-center space-x-4 ml-4">
               <div className="w-px h-6 bg-gray-300"></div>
-              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
                 <FaFacebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
+              <a href="https://wa.me/2348060417377" target="_blank" rel="noopener noreferrer" className="text-[var(--medium-gray)] hover:text-[var(--primary-blue)] transition-colors">
                 <FaWhatsapp className="h-5 w-5" />
               </a>
             </div>
