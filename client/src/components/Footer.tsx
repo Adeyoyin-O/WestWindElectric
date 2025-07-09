@@ -42,19 +42,19 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Our Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><Link href="/products-services#service-0" className="hover:text-[#B7410E] transition-colors">Pumps and Motors</Link></li>
-              <li><Link href="/products-services#service-1" className="hover:text-[#B7410E] transition-colors">Electrical and Lighting Fittings</Link></li>
-              <li><Link href="/products-services#service-2" className="hover:text-[#B7410E] transition-colors">Circuit Breakers</Link></li>
-              <li><Link href="/products-services#service-3" className="hover:text-[#B7410E] transition-colors">Transformers</Link></li>
-              <li><Link href="/products-services#service-4" className="hover:text-[#B7410E] transition-colors">Medium and Low Voltage Panels</Link></li>
-              <li><Link href="/products-services#service-5" className="hover:text-[#B7410E] transition-colors">DC Panels, Battery Chargers and Batteries</Link></li>
-              <li><Link href="/products-services#service-6" className="hover:text-[#B7410E] transition-colors">Starters (DOL, Star-Delta, Auto Transformer)</Link></li>
-              <li><Link href="/products-services#service-7" className="hover:text-[#B7410E] transition-colors">Variable Frequency Drives (VFD)</Link></li>
-              <li><Link href="/products-services#service-8" className="hover:text-[#B7410E] transition-colors">Control Consoles</Link></li>
-              <li><Link href="/products-services#service-9" className="hover:text-[#B7410E] transition-colors">Electric Installations</Link></li>
-              <li><Link href="/products-services#service-10" className="hover:text-[#B7410E] transition-colors">Rewinding of Motors and Generator Spare Parts</Link></li>
-              <li><Link href="/products-services#service-11" className="hover:text-[#B7410E] transition-colors">Inverters and UPS Systems</Link></li>
-              <li><Link href="/products-services#service-12" className="hover:text-[#B7410E] transition-colors">Motor Control Centers (MCC)</Link></li>
+              <li><a href="/products-services#service-0" className="hover:text-[#B7410E] transition-colors">Pumps and Motors</a></li>
+              <li><a href="/products-services#service-1" className="hover:text-[#B7410E] transition-colors">Electrical and Lighting Fittings</a></li>
+              <li><a href="/products-services#service-2" className="hover:text-[#B7410E] transition-colors">Circuit Breakers</a></li>
+              <li><a href="/products-services#service-3" className="hover:text-[#B7410E] transition-colors">Transformers</a></li>
+              <li><a href="/products-services#service-4" className="hover:text-[#B7410E] transition-colors">Medium and Low Voltage Panels</a></li>
+              <li><a href="/products-services#service-5" className="hover:text-[#B7410E] transition-colors">DC Panels, Battery Chargers and Batteries</a></li>
+              <li><a href="/products-services#service-6" className="hover:text-[#B7410E] transition-colors">Starters (DOL, Star-Delta, Auto Transformer)</a></li>
+              <li><a href="/products-services#service-7" className="hover:text-[#B7410E] transition-colors">Variable Frequency Drives (VFD)</a></li>
+              <li><a href="/products-services#service-8" className="hover:text-[#B7410E] transition-colors">Control Consoles</a></li>
+              <li><a href="/products-services#service-9" className="hover:text-[#B7410E] transition-colors">Electric Installations</a></li>
+              <li><a href="/products-services#service-10" className="hover:text-[#B7410E] transition-colors">Rewinding of Motors and Generator Spare Parts</a></li>
+              <li><a href="/products-services#service-11" className="hover:text-[#B7410E] transition-colors">Inverters and UPS Systems</a></li>
+              <li><a href="/products-services#service-12" className="hover:text-[#B7410E] transition-colors">Motor Control Centers (MCC)</a></li>
             </ul>
           </div>
 

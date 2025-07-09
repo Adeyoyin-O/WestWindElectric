@@ -52,7 +52,7 @@ export default function ProductsServices() {
   }, []);
 
   // Handle anchor links from footer
-  useEffect(() => {
+  const handleHashChange = useCallback(() => {
     const hash = window.location.hash;
     if (hash && hash.startsWith('#service-')) {
       const serviceIndex = parseInt(hash.replace('#service-', ''));
@@ -70,6 +70,19 @@ export default function ProductsServices() {
       }
     }
   }, []);
+
+  useEffect(() => {
+    // Handle initial hash on page load
+    handleHashChange();
+    
+    // Listen for hash changes (when clicking same page links)
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, [handleHashChange]);
 
   const services = useMemo(() => [
     { name: "Pumps and Motors", description: "High-performance pumps and electric motors for industrial and marine applications, ensuring reliable fluid handling and mechanical drive solutions." },
