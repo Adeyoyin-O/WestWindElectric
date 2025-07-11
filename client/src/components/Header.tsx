@@ -13,6 +13,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Products & Services", href: "/products-services" },
   { name: "Partnerships", href: "/partnerships" },
+  { name: "West Wind Marine", href: "https://westwind.ng/", external: true },
 ];
 
 export default function Header() {
@@ -39,18 +40,30 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-2">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={cn(
-                  "px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl",
-                  location === item.href
-                    ? "text-[var(--primary-blue)] nav-link active bg-gradient-to-r from-blue-50 to-teal-50"
-                    : "text-[var(--medium-gray)] hover:text-[var(--primary-blue)] hover:bg-gray-50"
-                )}
-              >
-                {item.name}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl text-[var(--medium-gray)] hover:text-[var(--primary-blue)] hover:bg-gray-50"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={cn(
+                    "px-5 py-3 font-semibold text-sm transition-all duration-300 rounded-xl",
+                    location === item.href
+                      ? "text-[var(--primary-blue)] nav-link active bg-gradient-to-r from-blue-50 to-teal-50"
+                      : "text-[var(--medium-gray)] hover:text-[var(--primary-blue)] hover:bg-gray-50"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
             <Link href="/contact">
               <Button 
@@ -86,19 +99,32 @@ export default function Header() {
           <div className="lg:hidden modern-glass border-t border-gray-100">
             <div className="p-6 space-y-4">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={cn(
-                    "block py-4 px-6 font-semibold rounded-xl transition-all duration-300",
-                    location === item.href
-                      ? "text-[var(--primary-blue)] bg-gradient-to-r from-blue-50 to-teal-50"
-                      : "text-[var(--medium-gray)] hover:bg-gray-50"
-                  )}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-4 px-6 font-semibold rounded-xl transition-all duration-300 text-[var(--medium-gray)] hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={cn(
+                      "block py-4 px-6 font-semibold rounded-xl transition-all duration-300",
+                      location === item.href
+                        ? "text-[var(--primary-blue)] bg-gradient-to-r from-blue-50 to-teal-50"
+                        : "text-[var(--medium-gray)] hover:bg-gray-50"
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full mt-6 blue-gradient text-white py-4 text-lg font-bold rounded-xl">
